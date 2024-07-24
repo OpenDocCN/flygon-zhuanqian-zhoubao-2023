@@ -1,0 +1,45 @@
+- qas:
+  - 问题1：域名对谷歌 SEO 的影响是什么？
+  - 回答1：域名中的关键词影响谷歌排名，需要同时考虑品牌词和搜索关键词。
+  - 问题2：如何选择合适的新域名？
+  - 回答2：参考竞品的关键词，使用 keywords research 工具找到相关的关键词，避免语法错误，确保域名易记且与品牌和关键词相关。
+  - 问题3：如何判断一个域名是否有不良历史？
+  - 回答3：可以通过 web.archive.org 查询域名历史情况，使用 ahrefs 或 semrush 检查外链质量，以及通过 Google 的安全浏览报告检测是否被谷歌拉黑。
+  - 问题4：推荐哪些平台购买域名？
+  - 回答4：推荐使用 namecheap、namesilo 和 godaddy，尤其推荐 godaddy 提供的匿名隐私保护服务。
+  - 问题5：建站和 SEO 工具选型有哪些建议？
+  - 回答5：对于工具型站点建议选择自建或使用厂商服务器，内容型站点推荐使用 github page 或 vercel；在技术选型上推荐 Wordpress、Hexo
+    和 Nextra，针对谷歌 SEO 可以使用 wappalyzer、GTmetrix 和谷歌 pagespeed 进行技术分析。
+  text: '# 海外工具站必备的域名选择和技术选型指南> 原文：[`www.yuque.com/for_lazy/thfiu8/ue7gavp5syaw9rtr`](https://www.yuque.com/for_lazy/thfiu8/ue7gavp5syaw9rtr)##
+    (94 赞)海外工具站必备的域名选择和技术选型指南作者： 子木（二哥）日期：2023-08-22先聊聊，一个海外工具站必备的域名：**1.1 域名的作用**对于谷歌
+    SEO 来说，域名是一个影响排名的因素。其中域名中的关键词，是作为谷歌 SEO 匹配的一个点。所以域名既要品牌词、又要搜索关键词最佳：比如 [calculator.net](http://calculator.net)**1.2
+    域名注意点**顶级域名：com / net / org / edu。我一般 com 为主，net 为辅避免使用连字符、注意域名的年龄等等**新域名 vs 二手域名**新手建议不要搞二手域名，需要一定的经验。新域名挑选，如何呢？下面展开讲讲步骤**1.3
+    如何挑选域名**![](img/734436e4c17a8bbfee234cfe5b58a1ff.png)新手记住一句话：参考竞品的域名1.  参考竞品的关键词，用
+    keywords research 找到更多合适的关键词。比如同义词等2.  用在线工具 domain generator 找找灵感当然也有几个点注意：好记、没有语法错误、最好品牌词和关键词都相关具体如何看域名是否有黑历史呢？黑历史影响权重1.  用
+    [`web.archive.org/`](https://web.archive.org) 查询域名历史情况 或 国内的桔子 SEO2.  用 ahrefs
+    或 semrush 看下外链，是否存在垃圾外链3.  用 [`transparencyreport.google.com/safe-browsing/search`](https://transparencyreport.google.com/safe-browsing/search)
+    检测是否被谷歌拉黑**1.4 如何买**namecheap、namesilo 和 godaddy 都够可以买（支持支付宝）：注意买个匿名隐私保护最推荐 [`www.godaddy.com/`](https://www.godaddy.com)
+    ：DNS 解析响应快再来建站和 SEO 工具选型### **「技术选型」**工具型：建议自建内容型：下面是我经常用的 CMS 框架1.  Wordpress2.  Hexo3.  Nextra
+    (多语言、SEO Friendly)### **「服务器选型」**这个看站下菜碟1.  内容型或纯 HTML：推荐 github page 、 vercel
+    ([`vercel.com/`](https://vercel.com/))2.  工具型：厂商基本都行，Google Cloud 、AWS 乃至阿里云海外机房小技巧，我会配合搞：自建工具用厂商服务器，其对应的
+    /blog 路径用上面的### **「谷歌 SEO」****技术维度**：1.  wappalyzer 插件：竞品技术选型分析2.  GTmetrix：[`gtmetrix.com/`](https://gtmetrix.com/)3.  谷歌官方
+    pagespeed ：'
+- qas:
+  - 问题1：DeepL 的网址是什么？
+  - 回答1：[`www.deepl.com`](https://www.deepl.com/)
+  - 问题2：如何检查内容的原创度？
+  - 回答2：使用 [`www.copyscape.com`](https://www.copyscape.com/)
+  - 问题3：哪里可以进行内容抄袭检查？
+  - 回答3：[`www.quetext.com/plagiarism-checker`](https://www.quetext.com/plagiarism-checker)
+  - 问题4：用于检查内容语法问题的工具是什么？
+  - 回答4：[`app.grammarly.com`](https://app.grammarly.com/)
+  - 问题5：什么工具用于 SEO 建设中的关键词分析？
+  - 回答5：[`keywordsea.com`](https://keywordsea.com/)
+  text: '[`developers.google.com/speed/pagespeed/insights/`](https://developers.google.com/speed/pagespeed/insights)**内容维度**：1.  DeepL：深度翻译2.  内容原创度：[`www.copyscape.com/`](https://www.copyscape.com/)3.  内容抄袭检查器：[`www.quetext.com/plagiarism-checker`](https://www.quetext.com/plagiarism-checker)4.  内容语法问题：[`app.grammarly.com/`](https://app.grammarly.com/)**SEO
+    建设维度**：1.  小排老师的工具 KeywordSea：[`keywordsea.com/`](https://keywordsea.com/)2.  similarweb
+    插件3.  Keywords Everywhere 插件4.  MozBar 插件5.  Detailed SEO Extension 插件6.  ahrefs圈友们，做海外的可以评论推荐，交流下*
+    * *评论区：阿帆 : 先赞后看，子木老师牛逼子木（二哥） : 感谢感谢 我是小弟阿帆 : 看完了，关于服务器选型里边的：内容型或纯 HTML，用 Cloudflare
+    Pages 也是个蛮好的选择，自带 DNS 加速（图片也包括了），自带 SSL 证书，免费好使。然后有个小问题，Google 检查是否被拉黑，返回结果 No
+    available data 就是没有被拉黑吗 [惊讶]子木（二哥） : 第二个问题 就是新的意思子木（二哥） : 第一个推荐也不错阿帆 : 原来是这样子晴天哥哥
+    : 我的纯前端也是用 vercel 哈哈哈哈子木（二哥） : 牛![](img/1c37d505930596d12a88ab23e11aa07a.png)*
+    * *'
