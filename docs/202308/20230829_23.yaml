@@ -1,0 +1,21 @@
+- qas:
+  - 问题1：文档作者提到的主要内容是什么？
+  - 回答1：帮助使用者快速实现产品需求，提高编码效率，以及介绍GitHub Copilot的安装和使用方法。
+  - 问题2：GitHub Copilot的基本原理是什么？
+  - 回答2：原文未详细说明GitHub Copilot的基本原理。
+  - 问题3：如何安装GitHub Copilot？
+  - 回答3：详细的安装步骤可以在提供的链接中找到。
+  - 问题4：GitHub Copilot的优势和缺陷有哪些？
+  - 回答4：优势和缺陷在原文中有所提及。
+  - 问题5：作者如何回应评论区的技术问题？
+  - 回答5：作者通过感谢并提供解决方案来回应评论区的技术问题。
+  text: '# GitHub Copilot 详细安装步骤和使用指南> 原文：[`www.yuque.com/for_lazy/thfiu8/wr3turni8y3f39un`](https://www.yuque.com/for_lazy/thfiu8/wr3turni8y3f39un)##
+    (98 赞)GitHub Copilot 详细安装步骤和使用指南作者： 熊猫 Jay日期：2023-08-21GitHub Copilot 详细安装步骤和使用指南，帮助任何人快速实现产品需求刚才看了刘小排大佬的分享，感受良多，在此感谢大佬的分享。AI
+    时代，时间就是金钱，如何提效是所有人都需要考虑的问题。那我们怎么提效，怎么快速实现需求呢？如果您是程序员，如何提高编码效率？如果您不是程序员，如何掌握编程的方法呢？现在都不是问题！为了让大家更加方便和快速的使用
+    GitHub Copilot，我分享下具体的安装步骤，和入门的使用方式。希望对大家有所帮助。的确 AI 大模型的到来，降低了编程的门槛，使得即使没有编程经验的人都具备了实现工具的能力，但是发现需求的能力一点也没有改变，需要大量的经验，和一双善于发现痛点的眼睛。教程大纲如下：1、Copilot
+    是什么?2、Copilot 可以提供什么价值?3、Copilot 的基本原理4、Copilot 的优势和缺陷5、如何安装 Copilot6、Copilot
+    的初体验7、Copilot Chat 的初体验8、简单功能9、常规功能10、总结全文请移步：有用的话，帮忙点个赞哦，感谢各位。[`sif8f6uboze.feishu.cn/docx/BzLFdNeVwopZkvxDM24cdLrVnTe?from=from_copylink`](https://sif8f6uboze.feishu.cn/docx/BzLFdNeVwopZkvxDM24cdLrVnTe?from=from_copylink)![](img/e793fc550702d85b02e5573a3c8c4df2.png)![](img/55297ae25fbe33c68b30aa03e65906db.png)![](img/ac1616c369b098ea813dab21f38992ff.png)![](img/39e245a38de062acc5e142ff4a3c188c.png)![](img/7c9542623fc3140662e93e8a06952df5.png)*
+    * *评论区：晨冬 : 有个 proxy 需要设置 127.0.0.1 梯子做代理，否则连接失败熊猫 Jay : 好的。感谢提供。是否可以帮忙提供遇到的问题呢。是因为无法连接到官网吗？书情小跟班
+    : 学习了熊猫 Jay : 互相学习[呲牙]胖虎 : 昨天装了一下午，一直有问题，显示 github 未授权，解决方法是退出 github 账号，关闭 vscode
+    再重新打开，再登录 github 账号，看到右下角有出现小青蛙图像（没有斜杠）就表示可以使用了熊猫 Jay : 👍。谢谢提供。![](img/1c37d505930596d12a88ab23e11aa07a.png)*
+    * *'
