@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的主题是什么？
+  - 回答1：3 篇其他文章的链接。
+  - 问题2：这篇文档的来源是什么？
+  - 回答2：链接指向 `www.yuque.com/for_lazy/thfiu8/ykc30irvckzosng7`。
+  - 问题3：有没有提到作者或编辑？
+  - 回答3：没有提到具体的作者或编辑信息。
+  - 问题4：文档是否包含任何特定的指导或建议？
+  - 回答4：未提及文档内容的详细信息，因此无法确定。
+  - 问题5：文档的内容是否有任何关于日期或版本的信息？
+  - 回答5：未提及文档的日期或版本信息。
+  text: '# 【其他】3 篇> 原文：[`www.yuque.com/for_lazy/thfiu8/ykc30irvckzosng7`](https://www.yuque.com/for_lazy/thfiu8/ykc30irvckzosng7)'
