@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档工程师和高级编辑的内容主要是什么？
+  - 回答1：主要是处理和编辑文档，确保其格式正确和语义清晰。
+  - 问题2：为什么要注意不省略格式的概要前部分？
+  - 回答2：因为格式的概要前部分包含了问答的结构信息，省略会导致无法正确解析问题和回答。
+  - 问题3：文本中提到的网址指向哪里？
+  - 回答3：指向[`www.yuque.com/for_lazy/thfiu8/avs8rg3bq6hlk5hr`](https://www.yuque.com/for_lazy/thfiu8/avs8rg3bq6hlk5hr)。
+  - 问题4：如何处理要回答的问题？
+  - 回答4：要按照原文的意思来回答问题。
+  - 问题5：回答问题时需要注意什么？
+  - 回答5：需要确保回答与问题对应，准确反映原文的意思。
+  text: '# 【AI 相关】8 篇> 原文：[`www.yuque.com/for_lazy/thfiu8/avs8rg3bq6hlk5hr`](https://www.yuque.com/for_lazy/thfiu8/avs8rg3bq6hlk5hr)'
