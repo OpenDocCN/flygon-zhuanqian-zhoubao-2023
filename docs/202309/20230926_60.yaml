@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的来源是什么？
+  - 回答1：来源是[`www.yuque.com/for_lazy/thfiu8/ab0m6rt2fvg09lmt`](https://www.yuque.com/for_lazy/thfiu8/ab0m6rt2fvg09lmt)。
+  - 问题2：文档的主题是什么？
+  - 回答2：主题是“其他”。
+  - 问题3：文档的篇数是多少？
+  - 回答3：文档共有15篇。
+  - 问题4：文档的形式如何？
+  - 回答4：文档以链接形式给出。
+  - 问题5：文档提供了什么样的信息？
+  - 回答5：文档提供了关于某个话题的详细信息。
+  text: '# 【其他】15 篇> 原文：[`www.yuque.com/for_lazy/thfiu8/ab0m6rt2fvg09lmt`](https://www.yuque.com/for_lazy/thfiu8/ab0m6rt2fvg09lmt)'
