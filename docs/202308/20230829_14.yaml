@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文章的标题是什么？
+  - 回答1：文章的标题是“【AI 相关】5 篇> 原文”。
+  - 问题2：文章的链接是什么？
+  - 回答2：文章的链接是[`www.yuque.com/for_lazy/thfiu8/txyaxrxcoifr4gvy`](https://www.yuque.com/for_lazy/thfiu8/txyaxrxcoifr4gvy)。
+  - 问题3：文章的分类标签是什么？
+  - 回答3：文章的分类标签是“AI 相关”。
+  - 问题4：有多少篇文章包含在这个文档中？
+  - 回答4：文档中包含了5篇文章。
+  - 问题5：这些文章的主题是什么？
+  - 回答5：这些文章的主题是与人工智能相关的内容。
+  text: '# 【AI 相关】5 篇> 原文：[`www.yuque.com/for_lazy/thfiu8/txyaxrxcoifr4gvy`](https://www.yuque.com/for_lazy/thfiu8/txyaxrxcoifr4gvy)'
