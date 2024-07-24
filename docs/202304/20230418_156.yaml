@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的来源是什么？
+  - 回答1：[`www.yuque.com/for_lazy/thfiu8/zlv09fx0qaf7zhz7`](https://www.yuque.com/for_lazy/thfiu8/zlv09fx0qaf7zhz7)
+  - 问题2：这篇文档的主题是什么？
+  - 回答2：【其他】
+  - 问题3：文档的定位是什么？
+  - 回答3：高级编辑和文档工程师
+  - 问题4：文档中的注意事项有哪些？
+  - 回答4：1. 只需要输出问答，不需要重复原文
+  - 问题5：需要根据原文做什么样的回答？
+  - 回答5：需要按照原文的意思来回答问题。
+  text: '# 【其他】> 原文：[`www.yuque.com/for_lazy/thfiu8/zlv09fx0qaf7zhz7`](https://www.yuque.com/for_lazy/thfiu8/zlv09fx0qaf7zhz7)'
