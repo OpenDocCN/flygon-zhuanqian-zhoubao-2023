@@ -1,0 +1,15 @@
+- qas:
+  - 问题1：文章的主题是什么？
+  - 回答1：一个 RPA 小工具：文本快速采集器+文本一键生成 xlsx
+  - 问题2：谁是文章的作者？
+  - 回答2：坚韧的土豆
+  - 问题3：文章发布的日期是什么时候？
+  - 回答3：2023-09-06
+  - 问题4：作者使用哪种编程语言开发了这个小工具？
+  - 回答4：Python
+  - 问题5：读者可以通过什么方式进一步了解这个工具？
+  - 回答5：可以加作者微信或访问飞书链接
+  text: '# 一个 RPA 小工具：文本快速采集器+文本一键生成 xlsx> 原文：[`www.yuque.com/for_lazy/thfiu8/uqw4y4ihlaxu49gk`](https://www.yuque.com/for_lazy/thfiu8/uqw4y4ihlaxu49gk)##
+    (29 赞)一个 RPA 小工具：文本快速采集器+文本一键生成 xlsx作者： 坚韧的土豆日期：2023-09-06前几天刚开始航海的时候，在群里帮大家整理了破冰文档，是自己用
+    python 写的一个小工具，结果好像很多人有兴趣，很多加过来问我怎么实现啥的，有的甚至想学习如何制作，所以我就写了这篇分享文章了。面对圈友，基本都是开源和免费分享的态度，大家想进一步深入了解的可以加我微信。飞书链接：[`xq23zki45o8.feishu.cn/docx/WIhodIaJ4oz7EqxFaencMltYnNg`](https://xq23zki45o8.feishu.cn/docx/WIhodIaJ4oz7EqxFaencMltYnNg)*
+    * *评论区：暂无评论![](img/1c37d505930596d12a88ab23e11aa07a.png)* * *'
