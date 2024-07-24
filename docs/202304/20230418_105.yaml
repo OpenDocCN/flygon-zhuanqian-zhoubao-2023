@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的主题是什么？
+  - 回答1：【生财技能】
+  - 问题2：文章的原始链接是什么？
+  - 回答2：[`www.yuque.com/for_lazy/thfiu8/tkhu63lr1ugeuynm`](https://www.yuque.com/for_lazy/thfiu8/tkhu63lr1ugeuynm)
+  - 问题3：需要注意文档的哪些格式要求？
+  - 回答3：不要省略概要前的格式（-   ）或（1.  ）
+  - 问题4：文档工程师需要做什么？
+  - 回答4：阅读文本并提出五个问题
+  - 问题5：如何回答问题？
+  - 回答5：按照原文的意思来回答
+  text: '# 【生财技能】> 原文：[`www.yuque.com/for_lazy/thfiu8/tkhu63lr1ugeuynm`](https://www.yuque.com/for_lazy/thfiu8/tkhu63lr1ugeuynm)'
