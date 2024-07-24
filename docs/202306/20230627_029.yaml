@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的来源是什么？
+  - 回答1：来源是[`www.yuque.com/for_lazy/thfiu8/xtsi23isasc3m5rg`](https://www.yuque.com/for_lazy/thfiu8/xtsi23isasc3m5rg)。
+  - 问题2：文档的主题是什么？
+  - 回答2：主题是关于抖音的内容。
+  - 问题3：文档中提供了几篇文章？
+  - 回答3：文档提供了3篇文章。
+  - 问题4：文档的作者是谁？
+  - 回答4：文档的作者未在提供的文本中具体说明。
+  - 问题5：文档中是否包含其他相关信息？
+  - 回答5：文档中未提到是否包含其他相关信息。
+  text: '# 【抖音】3 篇> 原文：[`www.yuque.com/for_lazy/thfiu8/xtsi23isasc3m5rg`](https://www.yuque.com/for_lazy/thfiu8/xtsi23isasc3m5rg)'
