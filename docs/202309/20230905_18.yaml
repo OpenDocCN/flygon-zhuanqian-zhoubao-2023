@@ -1,0 +1,117 @@
+- qas:
+  - 问题1：如何描述需求让 ChatGPT 理解清楚？
+  - 回答1：向 ChatGPT 描述需求时，应详细说明使用的技术栈（Python 和 Selenium）、目标网站（搜狗微信搜索）、关键字（AIGC）、需要获取的信息（标题、链接、来源）、以及输出要求（前10页内容输出到Excel）。
+  - 问题2：根据文本，为什么选择使用 Selenium 和 Chrome 驱动器？
+  - 回答2：选择使用 Selenium 和 Chrome 驱动器是因为需要模拟浏览器行为，例如在搜狗微信上执行搜索、获取动态加载的内容，并且 Selenium
+    提供了操作浏览器的便捷接口。
+  - 问题3：如何确定爬取的内容包括标题、链接和来源？
+  - 回答3：爬虫程序需要通过解析页面的 HTML 结构，定位到包含标题、链接和来源的元素，然后提取这些信息存储到数据结构中。
+  - 问题4：为什么要将爬取结果输出到 Excel 文件中？
+  - 回答4：将爬取结果输出到 Excel 文件中便于后续的数据分析和处理，Excel 格式能够方便地展示和分享数据。
+  - 问题5：在整理需求时，为什么要按照 ChatGPT 给出的要点进行整理？
+  - 回答5：按照 ChatGPT 给出的要点进行整理可以确保程序的准确性和完整性，避免遗漏关键步骤和信息，同时提高与 ChatGPT 的交互效率。
+  text: '# 用 ChatGPT 写个爬虫爬取微信公众号文章> 原文：[`www.yuque.com/for_lazy/thfiu8/aq0ms7vwic78hnq8`](https://www.yuque.com/for_lazy/thfiu8/aq0ms7vwic78hnq8)##
+    (精华帖)(250 赞)用 ChatGPT 写个爬虫爬取微信公众号文章作者： 邱比特日期：2023-08-28在生财看到很多圈友用 ChatGPT 写代码，今天分享一个我以前用
+    ChatGPT 写的爬虫。3 月底的时候，AIGC 比较火，天天在知乎和微信里面刷相关内容，切换 app 比较麻烦，就想到了用爬虫去爬一些比较火的文章去读，于是想到了搜狗(搜狗里面有知乎和微信的搜索)，在搜狗中搜索【AIGC】抓取每天发布的阅读量高的文章来看。当时
+    ChatGPT 也是🔥的不行，于是就用 ChatGPT 写了个爬虫做这件事，下面是实操的步骤👇🏻## 0: 如何向 ChatGPT 描述我的需求？想法有了，接下来要去用
+    ChatGPT 写代码了。那如何向他描述我的需求呢。不妨先问一下它，我怎么描述它能理解清楚我的需求。![](img/21f868e852214554d4ca9f9aec12bc60.png)如上图，ChatGPT
+    的回答非常具体清晰，我们按它的建议提出我们的需求即可。## 1：整理需求，交给 ChatGPT 生成代码按 ChatGPT 给我的要点，我整理了一下我的需求按以下要求写一个爬虫程序1.使用
+    python 和 selenium2.网站[URL:weixin.sogou.com](http://about:blank)3.输入关键字 [AIGC]4.爬取标题、链接、来源5.抓取前
+    10 页的内容6.爬取的结果输出到 Excel 文件中,Excel 文件命名为 AIGC+微信+日期如图：![](img/207877a342d439a17ea51c87a232023f.png)ChatGPT
+    生成第一版代码import osfrom datetime import datetimefrom selenium import webdriverfrom
+    [selenium.webdriver.common.keys](http://selenium.webdriver.common.keys) import
+    Keysfrom [selenium.webdriver.common.by](http://selenium.webdriver.common.by) import
+    Byfrom [selenium.webdriver.support.ui](http://selenium.webdriver.support.ui) import
+    WebDriverWaitfrom selenium.webdriver.support import expected_conditions as ECfrom
+    openpyxl import Workbook# 设置 Chrome 驱动器路径chromedriver_path = "/path/to/chromedriver"#
+    设置搜索关键字keyword = "AIGC"# 初始化 Chrome 驱动器driver = webdriver.Chrome(chromedriver_path)#
+    打开网站 URL'
+- qas:
+  - 问题1：程序执行失败的原因是什么？
+  - 回答1：程序在执行过程中出现了异常，可能是由于未能正确定位到所有页面元素导致的。
+  - 问题2：为什么生成的 Excel 文件只有最后一页的数据？
+  - 回答2：因为程序在循环爬取每一页内容时，没有正确处理分页逻辑，只保存了最后一页的数据。
+  - 问题3：如何修改代码以确保获取每一页的所有文章数据？
+  - 回答3：需要在循环爬取每一页内容的过程中，正确处理翻页逻辑，确保将每一页的文章数据都写入 Excel 工作表中。
+  - 问题4：程序中可能的错误点是哪些？
+  - 回答4：可能的错误点包括页面元素定位不准确、翻页按钮点击失败、异常处理不完善等。
+  - 问题5：如何优化代码以避免类似问题？
+  - 回答5：可以加强异常处理机制、确保页面元素的显式等待时间足够长、确认翻页按钮的定位正确，并且确保每一页的文章数据都成功写入 Excel 文件。
+  text: '[driver.get](http://driver.get)("[`weixin.sogou.com`](https://weixin.sogou.com)")#
+    找到搜索框并输入关键字search_box = driver.find_element(By.ID, "query")search_box.send_keys(keyword)search_box.send_keys(Keys.ENTER)#
+    循环爬取前 10 页的内容for page in range(1, 11):# 等待页面加载完成WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME,
+    "news-list")))# 获取当前页面的所有文章元素articles = driver.find_elements(By.CLASS_NAME, "news-list").pop().find_elements(By.TAG_NAME,
+    "li")# 创建 Excel 工作簿wb = Workbook()# 创建工作表ws = [wb.active](http://wb.active)# 设置工作表表头[ws.append](http://ws.append)(["标题",
+    "链接", "来源"])# 循环处理每篇文章for article in articles:# 获取文章标题和链接title = article.find_element(By.TAG_NAME,
+    "h3").textlink = article.find_element(By.TAG_NAME, "a").get_attribute("href")#
+    获取文章来源try:source = article.find_element(By.CLASS_NAME, "account").textexcept:source
+    = ""# 将文章信息写入 Excel 工作表中[ws.append](http://ws.append)([title, link, source])#
+    保存 Excel 文件date_str = [datetime.now](http://datetime.now)().strftime("%Y%m%d")filename
+    = f"AIGC 微信{date_str}.xlsx"[wb.save](http://wb.save)(filename)# 点击下一页按钮next_btn
+    = driver.find_element(By.CLASS_NAME, "np")[next_btn.click](http://next_btn.click)()#
+    关闭 Chrome 驱动器[driver.quit](http://driver.quit)()我们复制代码到 PyCharm，然后执行一下，看看结果是否符合预期。![](img/0395f9806b2346a97cd3500ec2f1c358.png)从截图我们可以看到，程序执行失败了。但是生成了文件。我们再看一下文件生成的数据对不对？![](img/ba39611fa59cf5cbf6f22338c6430a9c.png)生成的文件里面确实有内容，但是只有最后一页的数据！##
+    2：跟 ChatGPT 互动，让它修改代码（改 bug）我把上面代码执行的结果和异常信息告诉它，看它如何回复。'
+- qas:
+  - 问题1：为什么要直接贴代码给它？
+  - 回答1：因为希望它能直接修改自己的错误。
+  - 问题2：为什么要等待页面加载完成？
+  - 回答2：为了确保页面元素已经完全加载，以便后续操作不会出错。
+  - 问题3：日期字符串的格式是怎样的？
+  - 回答3：日期字符串格式是 "%Y%m%d"，例如 "20240101" 表示2024年1月1日。
+  - 问题4：工作簿创建后下一步是什么？
+  - 回答4：下一步是设置工作表的表头，即标题、链接、来源。
+  - 问题5：循环爬取的页数范围是多少？
+  - 回答5：循环爬取的页数范围是从第1页到第10页。
+  text: '![](img/516f9ab5f0ebd31dd0d4b89d2928add4.png)这个回复对小白来说显然不友好，我先不管它。直接让它修改自己的代码。我直接把刚才的代码贴给它（为什么这么做？），让它去修改
+    bug。![](img/e8f95a0f8ac8c477166723b753e879f4.png)把它写的代码贴给它后，它很显然发现了自己的错误，然后它自己修改了代码。![](img/a2b01df9fc20c8f7dff306dde914da73.png)修改后代码import
+    osfrom datetime import datetimefrom selenium import webdriverfrom [selenium.webdriver.common.keys](http://selenium.webdriver.common.keys)
+    import Keysfrom [selenium.webdriver.common.by](http://selenium.webdriver.common.by)
+    import Byfrom [selenium.webdriver.support.ui](http://selenium.webdriver.support.ui)
+    import WebDriverWaitfrom selenium.webdriver.support import expected_conditions
+    as ECfrom openpyxl import Workbook# 设置 Chrome 驱动器路径chromedriver_path = "/path/to/chromedriver"#
+    设置搜索关键字keyword = "AIGC"# 初始化 Chrome 驱动器driver = webdriver.Chrome(chromedriver_path)#
+    打开网站 URL[driver.get](http://driver.get)("[`weixin.sogou.com`](https://weixin.sogou.com)")#
+    找到搜索框并输入关键字search_box = driver.find_element(By.ID, "query")search_box.send_keys(keyword)search_box.send_keys(Keys.ENTER)#
+    等待页面加载完成WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CLASS_NAME,
+    "news-list")))# 获取 Excel 文件名date_str = [datetime.now](http://datetime.now)().strftime("%Y%m%d")filename
+    = f"AIGC 微信{date_str}.xlsx"# 创建 Excel 工作簿wb = Workbook()# 创建工作表ws = [wb.active](http://wb.active)#
+    设置工作表表头[ws.append](http://ws.append)(["标题", "链接", "来源"])# 循环爬取前 10 页的内容for page
+    in range(1, 11):# 获取当前页面的所有文章元素'
+- qas:
+  - 问题1：这段代码的主要功能是什么？
+  - 回答1：这段代码的主要功能是从搜狗微信搜索结果中爬取前十页的微信公众号文章，并将标题、链接和来源写入Excel工作表中，最后保存Excel文件。
+  - 问题2：如何处理找不到文章来源的情况？
+  - 回答2：如果找不到文章来源，代码会将来源字段留空。
+  - 问题3：代码中的`np`类按钮是用来做什么的？
+  - 回答3：`np`类按钮是用来点击下一页的按钮，以便继续获取后续页面的文章内容。
+  - 问题4：为什么在第10页时会保存Excel文件？
+  - 回答4：在第10页时保存Excel文件是因为代码预设了在获取完前10页的文章后进行保存操作。
+  - 问题5：为什么在最后一个评论中提到了腾讯反爬虫措施？
+  - 回答5：最后一个评论提到了腾讯反爬虫措施，因为在微信端搜索爬取记录时会受到腾讯的反爬虫限制，所以需要通过WEB端抓取文章内容。
+  text: 'articles = driver.find_elements(By.CLASS_NAME, "news-list").pop().find_elements(By.TAG_NAME,
+    "li")# 循环处理每篇文章for article in articles:# 获取文章标题和链接title = article.find_element(By.TAG_NAME,
+    "h3").textlink = article.find_element(By.TAG_NAME, "a").get_attribute("href")#
+    获取文章来源try:source = article.find_element(By.CLASS_NAME, "account").textexcept:source
+    = ""# 将文章信息写入 Excel 工作表中[ws.append](http://ws.append)([title, link, source])#
+    保存 Excel 文件if page == 10:[wb.save](http://wb.save)(filename)# 点击下一页按钮try:next_btn
+    = driver.find_element(By.CLASS_NAME, "np")[next_btn.click](http://next_btn.click)()except:break#
+    关闭 Chrome 驱动器[driver.quit](http://driver.quit)()这次我们执行代码后获取到了满意的效果，在搜狗输入【AIGC】后把前
+    10 页的微信公众号文章到抓取到了。篇幅有限只截取一部分。![](img/c18cc12f3e8bfd5445db1cb610fee0a4.png)## 3：总结1.  整体效果还算满意，基本不用费太大劲就能实现我的需求。2.  提示词很重要，除了网上收集的模板，大家也可以用我的思路。先去问
+    ChatGPT 怎么向他提问它才能理解你的需求。然后按它的调调给它提示词。1.  比较触动的是 ChatGPT 能发现自己的 bug 并自主修改。2.  目前看对一点编程经验的小白来说还不能那么容易的自己用
+    ChatGPT 写代码，需要一些编程的通识。## 4：最后回答一下我为什么把之前写的代码直接贴给它去修改？有人或许说他不是能记住上下文吗。看下图，当我让它重写时它又换了一个写法去写代码。对写代码这种需求来说，我们上一版的代码都调一半了，它在换个思路显然是不合适。所以我把之前的代码贴给它，让它去修改，否则用重写的方案又得再调一遍比较浪费时间。![](img/35139476b166188641f488ab49456a90.png)关于【爬取微信公众号文章和知乎】的代码感兴趣同学可以找我要，我私下发。这个代码其实是通用的代码，咱们把【AIGC】换成你感兴趣的关键字就可以自己采集信息了。*
+    * *评论区：我爱这世界 : 赞良辰美 : 搜狗微信的好像不是特别全，而且没办法看到阅读量和评论，也不能按照最新和热度排序，所以我就自己弄了个 RPA 机器人，在微信端搜索爬取记录，当然腾讯是反爬虫的，所以内容还是要到
+    WEB 端去抓，当然文章链接已经有了，剩下都不是事了良辰美 : 找不到你联系方式哦，要不你针对这个代码的使用写个操作手册吧，然后咱们就可以呼唤了，我有微信版本的自动化抓取爆文和最新文章手册——公众号自动化批量上传文档
+    SOP 之一，咱们说不定可以互换哈哈，我就不花时间测试了亦仁 : 感谢分享，已加精华。'
+- qas:
+  - 问题1：文本中提到的两个名词是什么？
+  - 回答1：优秀和邱比特。
+  - 问题2：谁感谢了“亦仁老板”？
+  - 回答2：邱比特。
+  - 问题3：晚上下班丰富什么？
+  - 回答3：晚上下班丰富代码。
+  - 问题4：文本末尾提到了什么类型的文件？
+  - 回答4：图片文件。
+  - 问题5：文本中提到的表情符号是什么？
+  - 回答5：😊。
+  text: '我来 : 优秀，邱比特 : bit2coding，我的微信，分享代码给你邱比特 : 谢谢亦仁老板，[抱拳]邱比特 : 晚上下班丰富一下，谢谢😊![](img/1c37d505930596d12a88ab23e11aa07a.png)*
+    * *'
