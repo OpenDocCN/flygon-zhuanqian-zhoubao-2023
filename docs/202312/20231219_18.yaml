@@ -1,0 +1,17 @@
+- qas:
+  - 问题1：文章的主题是什么？
+  - 回答1：技术分享之 docker 搭建 docker 能干什么？
+  - 问题2：作者是谁？
+  - 回答2：帅峰
+  - 问题3：文章提到 Docker 可以用来做哪些事情？
+  - 回答3：可以给搭建一个免 fq 就能对接 chatgpt 对话的镜像站、可以给自己工作室搭建一个专属聊天室、搭建网站、跑各种小应用等等等
+  - 问题4：如何查看详细的教程？
+  - 回答4：移步飞书[`wq47vbhmbi1.feishu.cn/docx/XnlLd77nYoZbFZxQADscBo3Jnsh?from=from_copylink`](https://wq47vbhmbi1.feishu.cn/docx/XnlLd77nYoZbFZxQADscBo3Jnsh?from=from_copylink)
+  - 问题5：有哪些读者评论？
+  - 回答5：若风期待下篇分享，南鹄猜测会用潘多拉，帅峰回应“👌俩行搞定!”
+  text: '# 技术分享之 docker 搭建 docker 能干什么？> 原文：[`www.yuque.com/for_lazy/thfiu8/xqa6if2snp3z0g92`](https://www.yuque.com/for_lazy/thfiu8/xqa6if2snp3z0g92)##
+    (28 赞)技术分享之 docker 搭建 docker 能干什么？作者： 帅峰日期：2023-12-12技术分享之 docker 搭建docker 能干什么？可以给搭建一个免
+    fq 就能对接 chatgpt 对话的镜像站、可以给自己工作室搭建一个专属聊天室、搭建网站、跑各种小应用等等等下期咱们来使用 docker 搭建一个免 fq
+    就能对接 chatgpt 对话的镜像站，今天咱们先把 docker 搭建起来，教程移步飞书[`wq47vbhmbi1.feishu.cn/docx/XnlLd77nYoZbFZxQADscBo3Jnsh?from=from_copylink`](https://wq47vbhmbi1.feishu.cn/docx/XnlLd77nYoZbFZxQADscBo3Jnsh?from=from_copylink)*
+    * *评论区：若风 : 期待下篇分享南鹄 : 我盲猜一下，要用潘多拉。帅峰 : 👌俩行搞定![](img/21de372a77ea1f441c613f7316831ae1.png)*
+    * *'
