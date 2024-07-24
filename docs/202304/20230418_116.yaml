@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的主题是什么？
+  - 回答1：生财项目
+  - 问题2：文档的原始链接是什么？
+  - 回答2：[`www.yuque.com/for_lazy/thfiu8/ecs76b1kgvacg4qz`](https://www.yuque.com/for_lazy/thfiu8/ecs76b1kgvacg4qz)
+  - 问题3：文档中提到了哪些重要注意事项？
+  - 回答3：1. 只需要输出问答，不需要重复原文；2. 不要省略概要前的格式
+  - 问题4：需要注意的格式要求有哪些？
+  - 回答4：需要保留“-”或“1.”等原文中的格式；回答需按原文意思进行
+  - 问题5：回答格式要求的具体细节是什么？
+  - 回答5：回答需使用“回答X：{xxx}”的格式，并与问题紧密相关
+  text: '# 【生财项目】> 原文：[`www.yuque.com/for_lazy/thfiu8/ecs76b1kgvacg4qz`](https://www.yuque.com/for_lazy/thfiu8/ecs76b1kgvacg4qz)'
