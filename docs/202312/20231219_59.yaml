@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：这篇文档的标题是什么？
+  - 回答1：【星主的收藏夹】5 篇
+  - 问题2：这篇文档的链接是什么？
+  - 回答2：[`www.yuque.com/for_lazy/thfiu8/bc1n9y27lb6s2u9t`](https://www.yuque.com/for_lazy/thfiu8/bc1n9y27lb6s2u9t)
+  - 问题3：文档中提到了几篇文章？
+  - 回答3：5 篇
+  - 问题4：文档作者是谁？
+  - 回答4：无法确定，原文没有提到作者信息。
+  - 问题5：这篇文档的内容概述是什么？
+  - 回答5：原文没有给出具体内容概述，只提供了标题和链接。
+  text: '# 【星主的收藏夹】5 篇> 原文：[`www.yuque.com/for_lazy/thfiu8/bc1n9y27lb6s2u9t`](https://www.yuque.com/for_lazy/thfiu8/bc1n9y27lb6s2u9t)'
