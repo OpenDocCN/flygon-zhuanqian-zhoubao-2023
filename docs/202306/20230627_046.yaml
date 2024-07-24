@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的来源是什么？
+  - 回答1：文档的来源是[`www.yuque.com/for_lazy/thfiu8/utr483mzrftbvnsg`](https://www.yuque.com/for_lazy/thfiu8/utr483mzrftbvnsg)。
+  - 问题2：这篇文档属于哪个分类？
+  - 回答2：这篇文档属于“其他”分类。
+  - 问题3：文档的主题是什么？
+  - 回答3：文档的主题是原文。
+  - 问题4：作者的身份是什么？
+  - 回答4：原文的作者身份未知。
+  - 问题5：文档中可能包含哪些信息？
+  - 回答5：文档中可能包含有关指定的主题的详细信息。
+  text: '# 【其他】5 篇> 原文：[`www.yuque.com/for_lazy/thfiu8/utr483mzrftbvnsg`](https://www.yuque.com/for_lazy/thfiu8/utr483mzrftbvnsg)'
