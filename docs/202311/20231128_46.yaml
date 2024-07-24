@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的来源是什么？
+  - 回答1：[`www.yuque.com/for_lazy/thfiu8/nysyzipwkt4u93qf`](https://www.yuque.com/for_lazy/thfiu8/nysyzipwkt4u93qf)
+  - 问题2：文档的主题是什么？
+  - 回答2：知识付费
+  - 问题3：文档包含几篇原文？
+  - 回答3：3 篇
+  - 问题4：文档的格式要求是什么？
+  - 回答4：按照原文的意思来回答
+  - 问题5：输出内容时是否需要包含概要前的格式？
+  - 回答5：是
+  text: '# 【知识付费】3 篇> 原文：[`www.yuque.com/for_lazy/thfiu8/nysyzipwkt4u93qf`](https://www.yuque.com/for_lazy/thfiu8/nysyzipwkt4u93qf)'
