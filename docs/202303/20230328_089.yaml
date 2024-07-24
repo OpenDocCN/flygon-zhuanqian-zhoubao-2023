@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：这篇文章的标题是什么？
+  - 回答1：【亦仁专访】
+  - 问题2：文章的原文链接是什么？
+  - 回答2：[`www.yuque.com/for_lazy/thfiu8/slka65h07uofe99t`](https://www.yuque.com/for_lazy/thfiu8/slka65h07uofe99t)
+  - 问题3：这篇文章的作者是谁？
+  - 回答3：无法从提供的文本中确定作者身份。
+  - 问题4：文章的主要内容涵盖了哪些方面？
+  - 回答4：无法从提供的文本中确定文章的具体内容。
+  - 问题5：这篇文章是什么类型的？
+  - 回答5：无法从提供的文本中确定文章的类型。
+  text: '# 【亦仁专访】> 原文：[`www.yuque.com/for_lazy/thfiu8/slka65h07uofe99t`](https://www.yuque.com/for_lazy/thfiu8/slka65h07uofe99t)'
