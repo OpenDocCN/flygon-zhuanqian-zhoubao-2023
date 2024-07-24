@@ -1,4 +1,15 @@
-- text: '# 十分钟掌握 AI 绘画，Stable Diffusion 绘画出光影图片> 原文：[`www.yuque.com/for_lazy/thfiu8/cncsl3d6i25uf49g`](https://www.yuque.com/for_lazy/thfiu8/cncsl3d6i25uf49g)##
+- qas:
+  - 问题1：什么是 Stable Diffusion 绘画？
+  - 回答1：Stable Diffusion 是一种用于绘画的技术，可以创建光影效果的图片。
+  - 问题2：为什么很多人无法使用 Stable Diffusion？
+  - 回答2：因为 Stable Diffusion 对计算机配置要求很高，很多人的电脑无法运行它。
+  - 问题3：这篇教程的主要内容是什么？
+  - 回答3：教程主要是教如何简单快速地使用 Stable Diffusion，包括如何制作特定类型的隐藏图。
+  - 问题4：如何描述作者对教程的态度？
+  - 回答4：作者认为现有的教程大多数从不适合初学者开始，他试图用最简单的方式来解释如何使用 Stable Diffusion。
+  - 问题5：哪里可以找到更好的阅读体验？
+  - 回答5：更好的阅读体验可以在飞书文档链接中找到。
+  text: '# 十分钟掌握 AI 绘画，Stable Diffusion 绘画出光影图片> 原文：[`www.yuque.com/for_lazy/thfiu8/cncsl3d6i25uf49g`](https://www.yuque.com/for_lazy/thfiu8/cncsl3d6i25uf49g)##
     (61 赞)十分钟掌握 AI 绘画，Stable Diffusion 绘画出光影图片作者： 侠狼日期：2023-07-20最近这类型的图片非常的火，网上教程银很多，但是很多教程都不会从零开始讲解，很多人都是告诉你使用
     Stable Diffusion 就可以做。但是大部分人的电脑他们是无法运行 Stable Diffusion 的，因为要求配置太高了，导致很多人就卡死在不知道怎么使用
     Stable Diffusion，后面的就都别谈了。这里就给大家用最最最简单的方式说一下，几分钟教你们跑一下 Stable Diffusion，超级简单，开箱即可使用，不需要浪费时间，不需要下载模型，只需要几块钱就可以了。本教程包含
