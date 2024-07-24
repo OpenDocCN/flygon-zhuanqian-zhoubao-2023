@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的主题是什么？
+  - 回答1：抖音相关内容。
+  - 问题2：在哪里可以找到原文？
+  - 回答2：可以在[`www.yuque.com/for_lazy/thfiu8/eyc5g7oksft9i0il`](https://www.yuque.com/for_lazy/thfiu8/eyc5g7oksft9i0il)找到原文。
+  - 问题3：文档中的内容是否涉及注意事项？
+  - 回答3：是的，文档开头明确列出了注意事项。
+  - 问题4：文档格式要求有哪些？
+  - 回答4：文档要求按照特定的格式输出问题和回答。
+  - 问题5：我需要重复原文的哪些部分？
+  - 回答5：只需要按照问题和回答的格式输出，不需要重复原文的具体内容。
+  text: '# 【抖音】> 原文：[`www.yuque.com/for_lazy/thfiu8/eyc5g7oksft9i0il`](https://www.yuque.com/for_lazy/thfiu8/eyc5g7oksft9i0il)'
