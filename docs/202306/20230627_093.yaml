@@ -1,0 +1,15 @@
+- qas:
+  - 问题1：这篇文章的主题是什么？
+  - 回答1：淘宝模特 AI 换装教程。
+  - 问题2：文章的作者是谁？
+  - 回答2：彦灵。
+  - 问题3：文章中提到的具体技术是什么？
+  - 回答3：SD 和炼制定衣服的 lora 技术。
+  - 问题4：曹超峰提到的问题是什么？
+  - 回答4：是否能给生成的模特指定特定的衣服。
+  - 问题5：彦灵如何回答曹超峰的问题？
+  - 回答5：炼制定衣服的 lora，炼到过拟合，就能生成接近原图的衣服。
+  text: '# 淘宝模特 AI 换装教程> 原文：[`www.yuque.com/for_lazy/thfiu8/cgt6ntki5maubtcs`](https://www.yuque.com/for_lazy/thfiu8/cgt6ntki5maubtcs)##
+    (43 赞)淘宝模特 AI 换装教程作者： 彦灵日期：2023-06-13淘宝模特 AI 换装教程最近和团队在做一些 AI 课程，写了一个淘宝模特 AI 换装的教程，使用的是
+    SD,具体的教程放在飞书里面觉得有用，记得给我点赞[https://ciw2i24cl6.feishu.cn/docx/IysYdFRYKoqbqdxeNSGcxr0Qnkb](https://ciw2i24cl6.feishu.cn/docx/IysYdFRYKoqbqdxeNSGcxr0Qnkb)![](img/a1358f2ddb42cd6abdc7d7626fac3f64.png)![](img/ac2a5957530383be2504a8de45fef1f5.png)评论区：曹超峰
+    : 大佬，模特生成之后，可以给她指定的衣服生成吗？给他一张衣服图片，而不是让他生成新的衣服，这样可以吗？ 彦灵 : 要指定衣服，就要炼制定衣服的 lora,炼到过拟合，就能生成接近原图的衣服。'
