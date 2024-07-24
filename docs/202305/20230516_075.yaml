@@ -1,4 +1,15 @@
-- text: '# 《用 ChatGPT 超级写手批量制作抖音带货文案》> 原文：[`www.yuque.com/for_lazy/thfiu8/ci3n1g5r01tfk1qw`](https://www.yuque.com/for_lazy/thfiu8/ci3n1g5r01tfk1qw)##
+- qas:
+  - 问题1：文中提到的用于抖音带货的工具有哪些？
+  - 回答1：抖音热点宝（手机端）、total control、轻抖（网页版）、uibot、chatgpt、temperature、webchatgpt 谷歌插件、一帧秒创
+  - 问题2：如何利用抖音热点宝找到带货文案？
+  - 回答2：通过选择种草视频或筛选出最多点赞、半年内的带货视频，提取出文案。
+  - 问题3：如何利用chatgpt改写带货文案？
+  - 回答3：可以根据抖音商城的爆款商品提炼卖点，然后根据卖点和适用人群，仿写出新的带货文案。
+  - 问题4：如何批量自动化文案生成和视频制作？
+  - 回答4：通过RPA（自动过程自动化），将搜索下拉词、相关搜索和关键词埋入视频文案、详情描述和标签，实现全自动化。
+  - 问题5：如何实现抖音SEO霸屏效果？
+  - 回答5：确保视频文案和标签包含广泛的关键词，使得无论用户搜索何种关键词，都能找到你的作品。
+  text: '# 《用 ChatGPT 超级写手批量制作抖音带货文案》> 原文：[`www.yuque.com/for_lazy/thfiu8/ci3n1g5r01tfk1qw`](https://www.yuque.com/for_lazy/thfiu8/ci3n1g5r01tfk1qw)##
     (236 赞)《用 ChatGPT 超级写手批量制作抖音带货文案》作者： 渣渣浩日期：2023-05-06![](img/17cdbefb573755f29d39086803708c98.png)本文用到的工具清单：1.抖音热点宝（手机端）2.total
     control                 方便电脑控制手机（苹果用虫洞）3.轻抖（网页版）             新用户送 30 分钟，视频文案提取4.uibot
                                chatgpt 超级写手机器人基于 uibot 开发完成5.chatgpt              
