@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的来源是什么？
+  - 回答1：文档的来源是[`www.yuque.com/for_lazy/thfiu8/mrru1ek55hgyrkci`](https://www.yuque.com/for_lazy/thfiu8/mrru1ek55hgyrkci)。
+  - 问题2：文档的主题是什么？
+  - 回答2：文档的主题是【生财认知】。
+  - 问题3：文档的作者是谁？
+  - 回答3：文档没有提及作者信息。
+  - 问题4：文档的格式或者类型是什么？
+  - 回答4：文档的格式是 Markdown，并且是以链接的形式提供的。
+  - 问题5：文档提供了多少个段落？
+  - 回答5：文档在提供的信息中并未说明段落的具体数量。
+  text: '# 【生财认知】> 原文：[`www.yuque.com/for_lazy/thfiu8/mrru1ek55hgyrkci`](https://www.yuque.com/for_lazy/thfiu8/mrru1ek55hgyrkci)'
