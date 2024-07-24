@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的主题是什么？
+  - 回答1：【小红书】6 篇
+  - 问题2：原文的链接是什么？
+  - 回答2：[`www.yuque.com/for_lazy/thfiu8/twh0eyw8c6igtbqg`](https://www.yuque.com/for_lazy/thfiu8/twh0eyw8c6igtbqg)
+  - 问题3：哪里可以找到完整的原文？
+  - 回答3：在指定的链接中可以找到完整的原文。
+  - 问题4：这篇文档中包含多少篇原文？
+  - 回答4：这篇文档包含6篇原文。
+  - 问题5：文档的作者是谁？
+  - 回答5：文档未提及作者信息。
+  text: '# 【小红书】6 篇> 原文：[`www.yuque.com/for_lazy/thfiu8/twh0eyw8c6igtbqg`](https://www.yuque.com/for_lazy/thfiu8/twh0eyw8c6igtbqg)'
