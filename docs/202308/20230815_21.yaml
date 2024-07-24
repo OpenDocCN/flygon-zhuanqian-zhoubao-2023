@@ -1,4 +1,15 @@
-- text: '# 如何使用 Claude2 完成深度写作？> 原文：[`www.yuque.com/for_lazy/thfiu8/kvccbhwtq7ha4ey2`](https://www.yuque.com/for_lazy/thfiu8/kvccbhwtq7ha4ey2)##
+- qas:
+  - 问题1：文中提到 Claude2 的出现对作者工作流的影响如何？
+  - 回答1：作者认为 Claude2 的出现让他的工作流更加深度融合，能够直接起飞，例如写作了一篇 9k 字的产品分析获得了认可。
+  - 问题2：Claude2 的长文润色功能为何会大幅削减原文？
+  - 回答2：Dyna 提到尽管嘱咐保留原文，Claude2 在润色时仍然会大幅削减文本，除非特别指定保留某些部分。
+  - 问题3：如何解决使用 Claude2 润色长文时的问题？
+  - 回答3：需要告知 Claude2 针对某一小节尽量保留原文，在润色时专注于提升基础上的保留操作。
+  - 问题4：在原文中，什么引起了 Dyna 对 Claude 长文润色功能的不满？
+  - 回答4：Dyna 对 Claude 长文润色功能的不满源于其对长文的大幅削减，尽管她已经嘱咐保留原文。
+  - 问题5：Claude2 的出现对作者的工作流产生了什么样的影响？
+  - 回答5：Claude2 的出现让作者的工作流更加深度融合，使得他能够在写作和其他工作中得到更直接的提升。
+  text: '# 如何使用 Claude2 完成深度写作？> 原文：[`www.yuque.com/for_lazy/thfiu8/kvccbhwtq7ha4ey2`](https://www.yuque.com/for_lazy/thfiu8/kvccbhwtq7ha4ey2)##
     (精华帖)(202 赞)如何使用 Claude2 完成深度写作？作者： Super 黄日期：2023-08-07AI 将会带来“超级个体创作者时代”！这是绿洲资本张津剑的判断，我非常认同，今年
     7 月 11 日，Claude2 的出现，我持续的体验后，非常深度的融合到了自己的工作流，直接原地起飞！使用 Claude2 写的 9k 字产品分析，直接得到上市公司联创的认可，背后有
     AI 的功劳。如何使用 Claude2 完成深度写作？我把全流程放出，欢迎大家移步飞书阅读： [https://superhuang.feishu.cn/wiki/XHJnw19sXigYnQkYdu0cUQ0cnjd?from=from_copylink](https://superhuang.feishu.cn/wiki/XHJnw19sXigYnQkYdu0cUQ0cnjd?from=from_copylink)评论区：陈雪🦉碎碎念
