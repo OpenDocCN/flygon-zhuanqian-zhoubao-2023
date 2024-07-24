@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的来源是什么？
+  - 回答1：原文链接是[`www.yuque.com/for_lazy/thfiu8/tyehubnmenqyy75v`](https://www.yuque.com/for_lazy/thfiu8/tyehubnmenqyy75v)。
+  - 问题2：文章的主题是什么？
+  - 回答2：AI 相关的主题。
+  - 问题3：有多少篇相关文章？
+  - 回答3：共有11篇相关文章。
+  - 问题4：有什么要求需要注意？
+  - 回答4：注意事项包括只输出问答、不省略格式和回答要符合原文意思。
+  - 问题5：阅读和回答的要求是什么？
+  - 回答5：阅读文本并提出五个问题，然后根据原文意思来回答。
+  text: '# 【AI 相关 11 篇】> 原文：[`www.yuque.com/for_lazy/thfiu8/tyehubnmenqyy75v`](https://www.yuque.com/for_lazy/thfiu8/tyehubnmenqyy75v)'
