@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的主题是什么？
+  - 回答1：龙哥赚钱周报
+  - 问题2：文档的时间范围是多久？
+  - 回答2：20230411~20230418
+  - 问题3：文档的来源是什么？
+  - 回答3：[`www.yuque.com/for_lazy/thfiu8`](https://www.yuque.com/for_lazy/thfiu8)
+  - 问题4：文档的作者是谁？
+  - 回答4：未提及作者信息
+  - 问题5：文档的预期读者是谁？
+  - 回答5：未明确指定预期读者
+  text: '# 龙哥赚钱周报 20230411~20230418来源：[`www.yuque.com/for_lazy/thfiu8`](https://www.yuque.com/for_lazy/thfiu8)'
