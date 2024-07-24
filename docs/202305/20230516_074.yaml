@@ -1,0 +1,19 @@
+- qas:
+  - 问题1：文中的主要应用方向有哪些？
+  - 回答1：主要有辅助设计（包括产品设计、建筑设计、海报设计）、AI 模特、分镜脚本等。
+  - 问题2：分享内容涵盖了哪三个方面？
+  - 回答2：1、stable diffusion 的应用方向；2、lora 模型训练工作流；3、云端部署 stable diffusion。
+  - 问题3：为什么作者在广州生财群分享了关于 stable diffusion 的内容？
+  - 回答3：因为被群友咨询如何生成风格化的头像，并表示自己擅长这一技能。
+  - 问题4：读者可以在哪里找到更详细的分享总结？
+  - 回答4：读者可以移步飞书查看详细分享总结。
+  - 问题5：作者的职业身份是什么？
+  - 回答5：作者是一枚 saas 产品经理，就职于生财三年。
+  text: '# 《Stable Diffusion 应用场景和模型训练》> 原文：[`www.yuque.com/for_lazy/thfiu8/ggyno6tgd36ipnme`](https://www.yuque.com/for_lazy/thfiu8/ggyno6tgd36ipnme)##
+    (110 赞)《Stable Diffusion 应用场景和模型训练》作者： 沧海日期：2023-05-06Stable Diffusion 应用场景和模型训练
+    大家好，我是沧海，是一枚 saas 产品经理，今年是加入生财的第三年，一直都是一个小透明～今年 4 月很巧合的一个机会，广州生财群有群友咨询怎么生成风格化的头像，我多嘴的说了一句我会，然后就被热情的组局官要求组一个线下局，分享关于
+    stable diffusion 的应用和训练模型。 目前 stable diffusion 主流的应用方向有辅助设计（包括产品设计、建筑设计、海报设计）、AI
+    模特、分镜脚本等。本次分享主要有三方面： 1、stable diffusion 的应用方向 2、lora 模型训练工作流 3、云端部署 stable diffusion
+    具体分享请移步飞书的总结 如果你觉得这篇文章对你有帮助，欢迎点赞，有什么不清楚的地方，可以评论区留言，谢谢[握手] （PS：昨天第一次发文，飞书里带了个人二维码，不太清楚生财的发帖规则，这次调整后重发了，如有刷屏，这里给大家道个歉）[https://ov4jtf5rf0.feishu.cn/docx/ZXvbdq7RGoKEeLxryxAckCtSnPf](https://ov4jtf5rf0.feishu.cn/docx/ZXvbdq7RGoKEeLxryxAckCtSnPf)评论区：孟大富
+    : 超级赞 周彦充 : 会代码的都厉害 沧海 : 这些不怎么需要懂代码，经过很多程序员的努力，都已经开发操作界面了 顺时针 : 已经逐步开始到应用层面了 沧海
+    : 现在关注这个领域绝对是最好的时机，生态在逐步发展当中，海量的模型和插件 疯一样自由 : 感谢分享'
