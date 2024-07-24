@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的标题是什么？
+  - 回答1：【小红书】13 篇
+  - 问题2：文档的链接是什么？
+  - 回答2：[`www.yuque.com/for_lazy/thfiu8/xo9elurn0c39feec`](https://www.yuque.com/for_lazy/thfiu8/xo9elurn0c39feec)
+  - 问题3：这篇文档有多少篇文章？
+  - 回答3：13 篇
+  - 问题4：文档的作者是谁？
+  - 回答4：信息不足，无法确定作者
+  - 问题5：文档的主题或内容是什么？
+  - 回答5：信息不足，无法确定主题
+  text: '# 【小红书】13 篇> 原文：[`www.yuque.com/for_lazy/thfiu8/xo9elurn0c39feec`](https://www.yuque.com/for_lazy/thfiu8/xo9elurn0c39feec)'
