@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的主题是什么？
+  - 回答1：抖音相关内容。
+  - 问题2：文档的作者是谁？
+  - 回答2：网址中提到的作者。
+  - 问题3：文档中有多少篇文章？
+  - 回答3：文档包含三篇文章。
+  - 问题4：文档的链接地址是什么？
+  - 回答4：[`www.yuque.com/for_lazy/thfiu8/zxhrxn9ri646ruzo`](https://www.yuque.com/for_lazy/thfiu8/zxhrxn9ri646ruzo)
+  - 问题5：文档的格式要求是什么？
+  - 回答5：需要按照特定的格式输出问答对。
+  text: '# 【抖音】3 篇> 原文：[`www.yuque.com/for_lazy/thfiu8/zxhrxn9ri646ruzo`](https://www.yuque.com/for_lazy/thfiu8/zxhrxn9ri646ruzo)'
