@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的主题是什么？
+  - 回答1：【微信】6 篇
+  - 问题2：文档的链接是什么？
+  - 回答2：[`www.yuque.com/for_lazy/thfiu8/wf6n965scp74tzcn`](https://www.yuque.com/for_lazy/thfiu8/wf6n965scp74tzcn)
+  - 问题3：这篇文档有多少篇原文？
+  - 回答3：6 篇
+  - 问题4：原文的作者是谁？
+  - 回答4：for_lazy
+  - 问题5：文档的格式要求有哪些？
+  - 回答5：需要保留原文的格式，包括标题和链接的格式。
+  text: '# 【微信】6 篇> 原文：[`www.yuque.com/for_lazy/thfiu8/wf6n965scp74tzcn`](https://www.yuque.com/for_lazy/thfiu8/wf6n965scp74tzcn)'

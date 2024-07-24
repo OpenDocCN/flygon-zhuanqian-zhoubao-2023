@@ -1,0 +1,22 @@
+- qas:
+  - 问题1：文章的主题是什么？
+  - 回答1：文章的主题是《ChatGPT 任务指令万能模板：人人都能学会的 BRTR 原则》。
+  - 问题2：作者在文章中提到的“BRTR”原则具体指什么？
+  - 回答2：作者提到的“BRTR”原则是任务指令的基础框架，包括说背景(B)、定角色(R)、派任务(T)、提要求(R)。
+  - 问题3：作者为什么写这篇文章？
+  - 回答3：作者写这篇文章是为了帮助新人快速熟悉和掌握如何使用 ChatGPT，提供一套通用的任务指令方法论。
+  - 问题4：作者如何描述他之前的作品对 ChatGPT 社区的影响？
+  - 回答4：作者描述他之前的作品对 ChatGPT 社区的影响是每天有许多人加他，希望深入学习如何使用 ChatGPT。
+  - 问题5：作者在文章中提到了一个什么样的辅助工具？
+  - 回答5：作者在文章中提到了一个叫做“ChatGPT 指令生成器”的辅助工具，基于 BRTR 原则帮助一键生成任务指令模板。
+  text: '# ChatGPT 任务指令万能模板：人人都能学会的 BRTR 原则> 原文：[`www.yuque.com/for_lazy/thfiu8/ackp7oxlnzn3mb4v`](https://www.yuque.com/for_lazy/thfiu8/ackp7oxlnzn3mb4v)##
+    (48 赞)ChatGPT 任务指令万能模板：人人都能学会的 BRTR 原则作者： 台风-gpt 魔法师日期：2023-07-14![](img/892d8a9e6babf432822565c0595c1509.png)大家好，我是台风，一名
+    chatgpt 魔法师，生财有术 ChatGPT 航海教练；《ChatGPT 产品商业俱乐部》创始人，公众号矩阵粉丝近 2 万。自从我发表《人人都能学会的
+    ChatGPT 角色指令调教指南》的文章、上线 ChatGPT 角色生成器之后，每天都有不少朋友加我，希望深入学习如何使用 ChatGPT。由于“ChatGPT
+    角色指令调教指南”主要是针对产品应用类的指令调教，因此有一定的局限性。于是我琢磨着写一篇 ChatGPT 任务指令的通用方法论，帮助新人快速熟悉和掌握 ChatGPT
+    的用法。虽迟但到，《ChatGPT 任务指令万能模板：人人都能学会的 BRTR 原则》4000 多字的长文，花了 20 多小时总算是肝完了。参考生活工作场景中布置任务的高效话术，我总结了一套能让
+    ChatGPT 更好理解和执行的任务指令框架：“BRTR”原则。任务指令=说背景(B)+定角色(R)+派任务(T)+提要求(R)“BRTR”原则是一个基础框架，你可以基于这个任务指令模板，快速创作出明确具体的
+    ChatGPT 沟通话术，减少不必要的返工和追问，提高交流效率。“BRTR”原则并非我独创，它更像是无数人深度使用 ChatGPT 之后，越来越趋同的思想认同和方法选择。为了进一步降低学习门槛，我同样配备了“ChatGPT
+    指令生成器”，基于 BRTR 原则帮你一键生成任务指令模板，为你提供思路参考。应用地址：[https://ai.gptprompts.com.cn](https://ai.gptprompts.com.cn?f=feishu)4000
+    字的文章请移步飞书：[https://xq6mz7nkknp.feishu.cn/docx/L2eMdbYAfoIqBQxfA6ScKtI5nch](https://xq6mz7nkknp.feishu.cn/docx/L2eMdbYAfoIqBQxfA6ScKtI5nch)评论区：红烧电饭煲
+    : 亲测好用，感谢分享！[太阳] 台风-gpt 魔法师 : 有用就好～![](img/894d30a529e7c37bcd3392323c99941c.png)'
