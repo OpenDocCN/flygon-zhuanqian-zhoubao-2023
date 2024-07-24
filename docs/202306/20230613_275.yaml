@@ -1,0 +1,9 @@
+- text: '# 《Stable Diffuion 出图玩法及落地应用大全》> 原文：[`www.yuque.com/for_lazy/thfiu8/sqpxfaag3rc29sus`](https://www.yuque.com/for_lazy/thfiu8/sqpxfaag3rc29sus)##
+    (精华帖)(163 赞)《Stable Diffuion 出图玩法及落地应用大全》作者： 番茄🍅日期：2023-05-18大家好，本篇我将从玩法应用的角度带领大家认识不一样的
+    stable diffusion本篇主要内容如下：①持续学习 stable diffusion2 个月，如今的我已经基本构建起了对 SD 较为全面功能的认识及应用玩法全流程的整体框架，特别来跟大家分享关于
+    SD 目前较为进阶的玩法及案例应用等的相关思路和个人对于 SD 的相关经验总结，希望能帮大家打开思路，收获经验。②对比 midjourney，stable
+    diffusion 有什么优劣势？stable diffusion 到底怎么玩？如何将玩法代入应用？本篇将以案例逐一讲解，带你看到不一样的 stable diffusion！③为了更好地观感体验，烦请大家移步飞书吧~[https://wx65rrreyex.feishu.cn/docx/SQ8JdLEmroom9WxGtgScIfyinTg](https://wx65rrreyex.feishu.cn/docx/SQ8JdLEmroom9WxGtgScIfyinTg)内容创作属实不易，还望大家多多点赞支持！![](img/1de70206c572dd2511319cf849714ed4.png)![](img/3a585de22cc084c722d0519fd728888a.png)![](img/c255b45502d32783d882c5d0e9b1749e.png)![](img/b0fc0ea889b4a70d447ef2afc686af96.png)评论区：周彦充
+    : 厉害，不懂设计，知识盲区，我居然看完了，也不知道到底看懂了没有[偷笑] Rex : 真的很干货，但我估计不实操的人看不懂哈哈哈哈，虽然我也只看懂了个片面
+    aebn : 非常厉害，学起来。 陈文轩 : 太厉害了 徐濠萦的老公 : 看不懂，词有点专业 番茄🍅 : 既然大家都有不太理解的问题 明天会局部修改 技术性内容没办法通俗解释
+    而图片的效果和作用能够更让大家直观理解 阿秋 : 非常厉害，学起来。 明月 : 补充一下，文中提到的 CN 是指的 SD 中的一个插件，全称叫 controlnet，很少看到有人这么缩写，自己也楞了一下。文中大多数思路和配图都没问题，6-3
+    商业落地部分，人物换模特换背景也是通过 controlnet 插件实现的，后面部分的 LoRA 模型目前没办法商用，仅供参考。'
