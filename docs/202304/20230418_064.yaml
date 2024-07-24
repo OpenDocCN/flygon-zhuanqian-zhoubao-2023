@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的来源是什么？
+  - 回答1：文档的来源是[`www.yuque.com/for_lazy/thfiu8/udz0rmf9gb4w8bcf`](https://www.yuque.com/for_lazy/thfiu8/udz0rmf9gb4w8bcf)。
+  - 问题2：这篇文档的主题是什么？
+  - 回答2：这篇文档的主题是线下实体。
+  - 问题3：在文档中有哪些特定的注意事项？
+  - 回答3：在文档中有特定的注意事项，需要注意输出问答格式，不需重复原文格式。
+  - 问题4：文档的格式要求是什么？
+  - 回答4：文档的格式要求包括具体的问答格式和处理的文本。
+  - 问题5：文档的处理方式是怎样的？
+  - 回答5：文档的处理方式是按照原文的意思来回答提出的问题。
+  text: '# 【线下实体】> 原文：[`www.yuque.com/for_lazy/thfiu8/udz0rmf9gb4w8bcf`](https://www.yuque.com/for_lazy/thfiu8/udz0rmf9gb4w8bcf)'
