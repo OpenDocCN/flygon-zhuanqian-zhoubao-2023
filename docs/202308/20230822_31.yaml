@@ -1,4 +1,15 @@
-- text: '# 公众号 AI 写作，原创情感文写作 prompt 开源> 原文：[`www.yuque.com/for_lazy/thfiu8/pycknfi7gzyxmelw`](https://www.yuque.com/for_lazy/thfiu8/pycknfi7gzyxmelw)##
+- qas:
+  - 问题1：这篇文章的主题是什么？
+  - 回答1：公众号 AI 写作，原创情感文写作 prompt 开源。
+  - 问题2：作者是谁？
+  - 回答2：伟豪。
+  - 问题3：作者提到使用 AI 工具的目的是什么？
+  - 回答3：让 AI 工具更加懂我们。
+  - 问题4：作者为什么会开源两条 prompt？
+  - 回答4：为了帮助圈内朋友增加写作灵感，共同进步。
+  - 问题5：读者评论中有哪位提到关于使用的 AI 版本的问题？
+  - 回答5：静儿。
+  text: '# 公众号 AI 写作，原创情感文写作 prompt 开源> 原文：[`www.yuque.com/for_lazy/thfiu8/pycknfi7gzyxmelw`](https://www.yuque.com/for_lazy/thfiu8/pycknfi7gzyxmelw)##
     (精华帖)(336 赞)公众号 AI 写作，原创情感文写作 prompt 开源作者： 伟豪日期：2023-08-16公众号 AI 写作，原创情感文写作 prompt
     开源，5 分钟一篇情感故事大家好，我是伟豪，最近一直在研究 AI 提示词的使用，我觉得使用好关键词可以让 AI 工具更加懂我们。最近在经营一个情感号的写作，经常由于选题，写大纲，写内容，虽然采用了
     chatgpt 进行了辅助，但一篇文章搞下来手动润色一下也要个半个小时到一个小时，由于情感号通常需要要铺大量的文章，看看那一篇文章能进公众号的池子，这样一天就得花个一两个小时在情感号的写作上。参考了一些结构化
