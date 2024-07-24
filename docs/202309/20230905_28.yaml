@@ -1,0 +1,60 @@
+- qas:
+  - 问题1：文章的主题是什么？
+  - 回答1：利用 ChatGPT 实现零代码获取网页内容。
+  - 问题2：作者为什么提到了“Advanced Data Analysis”功能？
+  - 回答2：作者提到这个功能是为了说明 GPT 4.5 的能力，特别是其可以自动编写和执行代码的能力。
+  - 问题3：如何将网页内容保存到本地？
+  - 回答3：通过右键点击网页并选择“另存为 mhtml 文件”。
+  - 问题4：在文章中提到的“GPT 4.5”的功能有哪些？
+  - 回答4：可以上传文件、进行数据分析、图片编辑、PDF 数据读取等多种功能。
+  - 问题5：作者为什么认为这种方法对于没有开发经验的人有帮助？
+  - 回答5：因为利用 ChatGPT 可以避免编写代码，轻松实现网页数据爬取和其他复杂操作。
+  text: '# 利用 ChatGPT，不写一行代码，轻松获取网页内容> 原文：[`www.yuque.com/for_lazy/thfiu8/wp7eocsq5yqtesb9`](https://www.yuque.com/for_lazy/thfiu8/wp7eocsq5yqtesb9)##
+    (47 赞)利用 ChatGPT，不写一行代码，轻松获取网页内容作者： 毅鸣日期：2023-08-31早上打开生财有术，看到亦仁大佬发的这篇文章[`t.zsxq.com/11ia0VQxf`](https://t.zsxq.com/11ia0VQxf)，感叹大佬勤奋之余，更多的是
+    ChatGPT 对大家的提效实实在在看得到。其实还有一种方法，可以利用 ChatGPT，零代码实现爬取网页数据的方法，于是花点时间写下来分享给大家。这对没任何开发经验的大佬们，可能能带来些许帮助。具体怎么实现的呢？请大家继续往下看。大家都知道，GPT
+    4 有个功能叫“Code Interpreter”，近几天改名为“**Advanced Data Analysis**”，如下图所示：![](img/3bc882fa52ad988d568bc5971f69e589.png)这个功能，业内称之为
+    GPT 4.5，就是他可以直接自己写代码并执行，实现了简易版的 AI Agent 功能。因此，它的功能十分强大，不仅可以上传文件，通过代码实现数据分析报表、更可以实现图片编辑、PDF
+    数据读取等等。更多强大功能这里不做赘述。我们回归主题，如何实现不需要编码将网页上的数据爬取下来为我所用，以下是详细的步骤：1、将需要爬取的网页下载下来，很简单，就是鼠标停留在网页上，然后鼠标右键，另存为
+    mhtml 文件即可，如下图所示：![](img/baa49c3658785bd6237efed4956afec8.png)2、上述案例，是爬取生财有术精华帖索引工具网站中，关于小红书店铺中标的风向标内容做演示，'
+- qas:
+  - 问题1：请问网页的详细地址是什么？
+  - 回答1：网页详细地址请点击[这里](https://search01.shengcaiyoushu.com/search?query=6NkNRJP6QYYd9TgJbjU2hCv7VUDxYhrEyFgJEE7JSdJ2uZ61VRRBn31j5GnFgducGetPvByM1twPFHiQzXzFNKce4guVi8B581YfUXeTH4UBNNtDTkiZNsnovrMXHE1e2WUyJj88EGVwAj97ydbreh56eAYHnzuaV76Z5Qe8PLLp9KvBdmruYJfcHGW9J4GJ1SRHXsh1BHa2uPWEieJkpUqP3Aw1BxbrRsg7cszt6qNzeTNr7PCPWtKpL2iuDcJQoKFAhDo6xL2TbRA8Ex1iTsxHY5KZ8jgtFhBH1fMP5boZqKdVzKBECQxh4mRDnggJYGwznsWAEjAFAN7wv1rUpxth4eQMvvyKMDpgcmEfHqxRwKTxE9UW7THw6984RwZxjFV6qqdGfQ6yMj9iYGRRkTFmA6HNXndT3fRZBGMy8CsEWdtHj1Rn3wsSrF5m7tUqrX2XLShPWXz2mMGbYB2MPuct7SSKrHy7xVGecZkNxyVnUYzV7Sef3aEqrWdmVJZLdNYQGAsFyMqM1LohvC4vGcyf54NRVyMfJjDUhsYpk7WDNxX3a4w4xnb6U7bR9HES2Cbh2cBsnMXDn5shu5TsMZ1zG9EgT4aGKdXFdD4eEbdiLvpdQDxLLQ7xydiBkgcWnbjcwyjLALyK4hWQ45HVo8eKQbUU3oj6EEYfVnxg5f5chkKxbbUWEKEF8Yh9XrjhzcLegPSsP5niehnyfW9AmxTiPjW4Q6RkBAYUiMwiPGHv9e4zd7nNRBuDu9daSqZ5Yk9wLQHCJ79bYBFhPou1r4avEMPVVQd9ZhdomUSMFmufR76CVKUim2xcZZ1TyKgNM7oamBrqXUDttaeKvMf2R2nr35qNYZtG4iCd4YZrnS9e69S6NMdh4P2Pni7V2y4crGmFEX35YBCmYcXSpinkQxCuGEs23rnXs8r639yFTHcwEXfHh2u81hmvPWbDSMJKsGYjEVPoWu4XLnQhMi7osQrH5kkHTwTxvf1xNnMUszDCprMDjj9QuEPTwiCMXbyFSnLLcB2fi9DA84e6P8MF6Y8wYygtc1YVNWohssczbbNuZtRPfeAwPLoaDFfpVWb7EWVAFy9P6jzVhSaBnbN2pM3YzqHG7K3yEriTV7SVXJ7eVWFsxDS2fV2GpdBGTE3EGVtU18HnP6agRY8kdGRsLXkxLgB9HMX3Vnc12wCgfSFpHmjBEEXjAPCuE5wLQtbTkXdofkbeNUVwW6WM8hs3scYxgez3moSsC8bh5fomggQB2bqydn3YheJpX9eaddXGqouVTbNx5FRVAMhq3nEJtiv2dcE3kKwF7NqFMsG1yfw2kZ78cR3Gis5pSKXdPeFiBNiqLLrQqeoRaNwaNf4aCNc7Eu4X7NujgYbWcuRaVGwRSs7gCJ3674yU61gUjksvwtH149v9fus8U31AvzFbHwM2sZ2raQ3AtCnJxygqLv3gtn3pygYVfwBRaxiErzAwtbjQMZWys7r7KqVZyLLh3Fj8pfXfqHkvedvBbuogr4cnYP313pMktBLUkmYaawWZFPp4djtZ6GwTXddNujZPg3oVsJ1asq6NrL8hpna8nZaakfmq8BnYptrWGDzUM8Sv6Uxdr897Lj9BpCv9jjBpvxMM3hgEVUTVy5u2oVKGkPup6sniBrPYPtEudXeK3NokKthPiFsxkmnysJi5Y8UbxjhsDRWtib9TMqYeqFw7tZpd5Efoa3qMgjddDK49qKAxh5gPYBgRZMHenuqNPP9PVKgDDuLrzhmT3Ajj41Eq2uqKPLiNjju6oMx6suUc1XwGft9ExTN1zDJFRKANiJEhwR4Y9P2qTzA2Bpq4oykFmyS3sxre8T3aNTTLkba1cTF74guDGv1r8Dpq2ksnPTUrUTo9TnGxh1bZn9W1jMU3o21iXpBGkAqpwvQNxVQ8FYzGstNPHdQ9srv45MDRXpiSYo8pz9VFJYkm4L6t3QpgEDnCC4VeBT8vrHWGicD5rRAmwtp1nLEouCjqYfbHdQzYbuK4VZscv9anNVmEK4hAsPEb4mT6bGTNGed4JukH57euRkJp3fuEf4BM87tNkByyGpnpuXtQHPpPDT3SScVBoA95iC3GAiPLBuMGb9Y6buyGZgm11yi9GqfP2FxbFUiG8Au2EDGtWx4iz32oTcoeNu4Dw6gzRLP1ZMin614QkQJ9ABg9HpMv4s9WzEW3DboTQ66Zt2ewx2UuEvRvbi&_search=1)
+  text: 网页详细地址请点击[这里](https://search01.shengcaiyoushu.com/search?query=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&_search=1)（这里仅做演示作用，
+- qas:
+  - 问题1：文档工程师和高级编辑如何利用 ChatGPT 爬取网页内容？
+  - 回答1：通过上传 mhtml 文件并指定 CSS 样式的 class 值，让 ChatGPT 提取指定内容，并输出为 CSV 文件。
+  - 问题2：mhtml 文件与 html 文件的主要区别是什么？
+  - 回答2：mhtml 文件包含静态资源（如 CSS、JS 和图片），可以完整还原网页内容；而 html 文件只包含网页代码本身，不含其他资源。
+  - 问题3：如何在当前网页中查找并获取指定内容的 CSS class 值？
+  - 回答3：按下 F12 键打开源码模式，然后鼠标选中想要爬取的内容，即可获取对应的 CSS class 值。
+  - 问题4：如何查看 ChatGPT 输出的最终结果？
+  - 回答4：下载生成的 CSV 文件，并使用 Excel 或 WPS 打开查看，可以看到格式化的爬取内容。
+  - 问题5：如何进一步学习利用 ChatGPT 进行零代码实现爬虫？
+  - 回答5：可以参考作者在公众号上分享的文章和电子书《ChatGPT 从入门到精通》，了解更多实用的技巧和方法。
+  text: 非引导爬取生财网站哈~）。其中，另存为的文件为 mhtml 文件，如果你保存的是 html 文件也可以。其二者的区别是，mhtml 文件是包含了静态资源，包括
+    css 样式文件和 js 文件及图片等，方便打开的时候还可以还原网页的内容，而 html 文件，就只有网页本身的代码，不会将 css 样式文件及 js 文件、图片等资源一起保存下来。3、打开
+    ChatGPT，勾选上**Advanced Data Analysis，**将刚下载下来的 mhtml 文件上传，然后告诉 ChatGPT 你需要爬取的内容，这里为了让
+    ChatGPT 更精准的获取我想要的内容，我在提示词中，给他指定了具体的内容对应的 CSS 样式对应的 class 的值，这里可能需要一点点代码基础，如果没有也很简单，如何查找获取
+    class 的值，只需要在当前网页按下 F12 键，打开源码模式，鼠标选中想要爬取的内容，请看下方动图：![](img/120c81ec406e97ed18614745d806bfc5.png)![](img/59242e1125fe3f7ffbfd5f7450443595.png)4、上述提示词仅做参考，大概意思如上，让
+    ChatGPT 直接处理并输出一个 csv 文件即可，最终执行结果如下：![](img/08ea3066bdb8312b555982c11c9b9441.png)5、上述内容可以看到，由于第一个提示词中，我忽略了让他处理中文的问题，导致来回折腾了几下，最终才输出符合预期的内容。将最终的
+    CSV 文件下载下来后，用 Excel 或 WPS 打开后，内容如下：![](img/9a5a0f98d7e76dfa1dc27255f2d09e6d.png)以上，就是我想给大家分享的利用
+    GPT 4 零代码实现爬虫的所有内容，仅抛砖引玉，希望对各位大佬能有些许帮助。我是毅鸣，在 2 月份利用 ChatGPT 写过一本电子书《ChatGPT 从入门到精通》，且有幸拿到了生财给的一颗龙珠。原贴是：[`t.zsxq.com/11NJz2LL9`](https://t.zsxq.com/11NJz2LL9)最后，分享几篇我输出在公众号的文章，也希望能给大家带来些许帮助。[利用
+    ChatGPT 写出高质量原创自媒体文章，深度掌握提问技巧，看这一篇就够了！](https://mp.weixin.qq.com/s?__biz=Mzk0NjQ0NTQ1Mg==&mid=2247484403&idx=1&sn=84d5e8671284f3cfcf31555da3c86d21&chksm=c3074e10f470c7062faf1d84d0fb3e51b6599efffd5293e982fc2001edab5201c3ebffedfa86&token=1666556168&lang=zh_CN#rd)[强大的
+    Notion AI，底层 prompt 提示词揭秘（值得收藏）](https://mp.weixin.qq.com/s?__biz=Mzk0NjQ0NTQ1Mg==&mid=2247484411&idx=1&sn=11e5e7e6bddbee2efab7821182ccca94&chksm=c3074e18f470c70e62de1e451f9cbaa8c8bd4fe619865f47b22a90a379145e410959d0f279ff&token=1666556168&lang=zh_CN#rd)[利用这个
+    AI 插件，
+- qas:
+  - 问题1：文章链接提到了什么方法可以让读者在短时间内完成阅读？
+  - 回答1：可实现 3 分钟读完一本书的方法。
+  - 问题2：评论区提到了什么关于 GPT4.5 的疑问？
+  - 回答2：如果没有合适的提示词，是否 GPT4.5 就抓不到数据？如果只给一个页码的本地文件，那么是否 GPT4.5 就没办法抓到其他页面的数据？
+  - 问题3：评论中有谁提到了代码解释器的限制？
+  - 回答3：伟业提到了代码解释器无法访问网络，手工下载页面进行解析效率低的问题。
+  - 问题4：哪位评论者建议可以把阅读过程转换为代码工具？
+  - 回答4：人好话不多提到可以把过程转换为代码工具来用。
+  - 问题5：有评论者提到阅读方法能给哪类人带来效率提升？
+  - 回答5：毅鸣提到对完全不会代码的人来说，比纯手工复制可能会快一点。
+  text: '可实现 3 分钟读完一本书](https://mp.weixin.qq.com/s?__biz=Mzk0NjQ0NTQ1Mg==&mid=2247484431&idx=1&sn=ed56ffa15e2829346c74ef6debbfc235&chksm=c30749ecf470c0fadedfd29ffd5893b2199d3bc733eba7d4bc5dd802a9f9c3a2feb2224646bf&token=1666556168&lang=zh_CN#rd)*
+    * *评论区：良辰美 : 如果没有合适的提示词，那么是不是 GPT4.5 就抓不到数据？如果只给一个页码的本地文件，那么是不是 GPT4.5 就没办法抓到其他页面的数据？如果都是这样，那么
+    GPT4.5 就还是一个数据处理器，而且还得给到正确的标签来处理易生 : 命运齿轮转到起来，第二次看到这类方法了。伟业 : 代码解释器是无法访问网络的，手工下载页面进行解析的效率又比较低毅鸣
+    : 大佬说的对，可能存在部分场景，能给完全不会代码的人带来些许效率提升吧毅鸣 : 是的，但是对完全不会代码的人来说，比纯手工复制可能会快一点。[呲牙]人好话不多
+    : 可以做继续延伸，把过程转换为代码工具来用![](img/1c37d505930596d12a88ab23e11aa07a.png)* * *'
