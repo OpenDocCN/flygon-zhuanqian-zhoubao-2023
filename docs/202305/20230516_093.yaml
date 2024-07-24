@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的主题是什么？
+  - 回答1：【快团团】> 原文
+  - 问题2：文档的作者是谁？
+  - 回答2：for_lazy
+  - 问题3：文档的链接是什么？
+  - 回答3：[`www.yuque.com/for_lazy/thfiu8/wods2qgmfgmbu1k3`](https://www.yuque.com/for_lazy/thfiu8/wods2qgmfgmbu1k3)
+  - 问题4：这份文档是否包含任何特定的注意事项？
+  - 回答4：是的，包含。
+  - 问题5：作者的撰写意图是什么？
+  - 回答5：为了【快团团】
+  text: '# 【快团团】> 原文：[`www.yuque.com/for_lazy/thfiu8/wods2qgmfgmbu1k3`](https://www.yuque.com/for_lazy/thfiu8/wods2qgmfgmbu1k3)'
