@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的来源是什么？
+  - 回答1：原文链接是[`www.yuque.com/for_lazy/thfiu8/wilurdhiuhpsguql`](https://www.yuque.com/for_lazy/thfiu8/wilurdhiuhpsguql)。
+  - 问题2：文章的主题是什么？
+  - 回答2：主题是"AI 相关"。
+  - 问题3：这篇文章的作者是谁？
+  - 回答3：作者是"for_lazy"。
+  - 问题4：文章的格式是什么样的？
+  - 回答4：格式包含一个主标题和一个超链接。
+  - 问题5：是否有其他重要信息需要注意？
+  - 回答5：没有其他重要信息。
+  text: '# 【AI 相关】> 原文：[`www.yuque.com/for_lazy/thfiu8/wilurdhiuhpsguql`](https://www.yuque.com/for_lazy/thfiu8/wilurdhiuhpsguql)'
