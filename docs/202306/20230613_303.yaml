@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：原文链接是什么？
+  - 回答1：[`www.yuque.com/for_lazy/thfiu8/ix83dhbhcadhpdfo`](https://www.yuque.com/for_lazy/thfiu8/ix83dhbhcadhpdfo)
+  - 问题2：这篇文档的主题是什么？
+  - 回答2：好事分享
+  - 问题3：在文档中有什么内容需要特别注意的事项？
+  - 回答3：注意事项
+  - 问题4：文档的格式要求是什么？
+  - 回答4：需要按照指定的格式输出问答，包括标号和内容。
+  - 问题5：文档的阅读建议是什么？
+  - 回答5：建议按照原文的意思来回答问题，确保理解正确并保持一致性。
+  text: '# 【好事分享】> 原文：[`www.yuque.com/for_lazy/thfiu8/ix83dhbhcadhpdfo`](https://www.yuque.com/for_lazy/thfiu8/ix83dhbhcadhpdfo)'
