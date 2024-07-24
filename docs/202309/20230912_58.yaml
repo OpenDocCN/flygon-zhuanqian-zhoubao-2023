@@ -46,7 +46,18 @@
     dog coloring pagesh3 cute dog coloring pagesimg1 img2 img3 ……h3 little dog coloring
     pagesimg1 img2 img3 ……h2 cat coloring pagesh3 cute cat coloring pagesimg1 img2
     img3 ……h3 little cat coloring pagesimg1 img2 img3 ……h2 flower coloring pages
-- text: h3 red flower coloring pagesimg1 img2 img3 ……h3 yellow flower coloring pagesimg1
+- qas:
+  - 问题1：关于后端渲染的要求是什么？
+  - 回答1：需要直接在 html 代码中体现，而不能是前端渲染。
+  - 问题2：为什么需要确保 URL 的唯一性？
+  - 回答2：为了让搜索引擎知道当前网页的正确且唯一的 URL，需要在网页的 head 中设置 canonical。
+  - 问题3：如何通过 canonical 来处理多个 URL 打开同一页面的情况？
+  - 回答3：通过在网页的 head 中设置 canonical，指定规范且唯一的 URL。
+  - 问题4：域名购买时的建议是什么？
+  - 回答4：建议尽量选择国外的域名注册商，例如 GoDaddy、Namecheap 等。
+  - 问题5：服务器购买时有什么推荐？
+  - 回答5：可以选择阿里云、腾讯云等国内服务商，或者 AWS、谷歌云等国外服务商。
+  text: h3 red flower coloring pagesimg1 img2 img3 ……h3 yellow flower coloring pagesimg1
     img2 img3 ……### 1.5、后端渲染有一点一定要注意，以上所有这些都需要直接在 html 代码里体现出来，而不能是前端渲染。也就是说，我们打开网页，浏览器右键查看网页源代码，需要能够看到这些内容。那么搜索引擎的爬虫去抓取网页，也能够抓取到这些内容。虽然，的确搜索引擎有时候能够解析前端
     js，触发渲染。但这需要更多的算力资源，凭什么给我们的新网站用。所以新网站，老老实实后端渲染。### 1.6、确保 URL 唯一还有一点要注意，我们需要确保
     url 唯一。每一个网页，有可能会有多个 url 可以打开，但是我们需要在网页的 head 中通过设置 canonical 来让搜索引擎知道当前网页正确且唯一的
