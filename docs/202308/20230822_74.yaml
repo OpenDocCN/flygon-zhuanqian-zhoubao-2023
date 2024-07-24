@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：这篇文档的主题是什么？
+  - 回答1：海外项目
+  - 问题2：文档中提到了多少篇文章？
+  - 回答2：3篇
+  - 问题3：文档的原始链接是什么？
+  - 回答3：[`www.yuque.com/for_lazy/thfiu8/row9n1fqbg1ylo62`](https://www.yuque.com/for_lazy/thfiu8/row9n1fqbg1ylo62)
+  - 问题4：这篇文档的作者是谁？
+  - 回答4：无法从提供的文本中获取作者信息
+  - 问题5：文档中是否提到了特定的项目名称？
+  - 回答5：未提到
+  text: '# 【海外项目】3 篇> 原文：[`www.yuque.com/for_lazy/thfiu8/row9n1fqbg1ylo62`](https://www.yuque.com/for_lazy/thfiu8/row9n1fqbg1ylo62)'
