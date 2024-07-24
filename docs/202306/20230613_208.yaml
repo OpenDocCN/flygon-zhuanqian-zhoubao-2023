@@ -1,0 +1,43 @@
+- qas:
+  - 问题1：谁是本文的作者？
+  - 回答1：闲富
+  - 问题2：作者提到的 ChatGPT 是基于哪个开源模型微调的？
+  - 回答2：基于LLaMA微调的模型
+  - 问题3：作者认为未来几个月内可能会出现怎样的 ChatGPT 版本？
+  - 回答3：私有独立部署的版本，甚至装在一个类似 U 盘的硬件中，即插即用
+  - 问题4：Vicuna 使用了什么样的数据和时间来达到 90%+ 的 ChatGPT 水平？
+  - 回答4：使用了 ShareGPT 的数据，仅用了 3 周时间
+  - 问题5：Facebook 最近发布的工作要求仅需要多少条数据就可以超过 GPT-3.5 的水平？
+  - 回答5：1000 条
+  text: '# 硬核科技，如何自己手搓一个 ChatGPT> 原文：[`www.yuque.com/for_lazy/thfiu8/qork3e01g0wm7nll`](https://www.yuque.com/for_lazy/thfiu8/qork3e01g0wm7nll)##
+    (81 赞)硬核科技，如何自己手搓一个 ChatGPT作者： 闲富日期：2023-05-24#### 大家好，我是硬核科技创业这闲富，今天给大家带来一个硬核科技，如何自己手搓一个
+    ChatGPT3.5。######## 内容过于硬核，先说结论，目测在未来 6 个月内，将会出现私有独立部署的 chatgpt 版本，甚至装在一个 U 盘类似的硬件当中，即插即用，toB
+    商业场景巨大，所以我们团队决定挑战手搓一个 ChatGPT。##### 事情起由这个事情要从 2022.02 月份说起，当时清华的一个小兄弟，给我介绍了 gpt3
+    的模型，聊天对话在此：![](img/e18559d70b0d948284aeb1ff8a16b824.png)当时我们对 GPT 的能力和商业落地就有了一些探讨。时间过得很快，到了
+    11 月份，gpt3.5 就快速的 引爆了全世界。我上一边帖子：https://articles.zsxq.com/id_m35r2smop4q1.html
+    就在是应运而做的一件事情前几天这个清华小兄弟又找到我，说准备手搓一个 ChatGPT，我猛的一听，觉得不可思议，但是听他介绍下思路：Facebook 开源了
+    LLaMA 基础模型，从此产生了很多基于 LLaMA 微调的模型，Vicuna 仅用 3 周时间，效果达到 90%+ ChatGPT 水平![](img/b198d3c68bc86ea2238fc2cfe779b01b.png)谷歌技术报告：[https://www.semianalysis.com/p/google-we-have-no-moat-and-neither](https://www.semianalysis.com/p/google-we-have-no-moat-and-neither)最近这两天，Facebook
+    发布了新工作，只需要用 1000 条数据，就可以超过 GPT-3.5 (DaVinci 003) 的水平LIMA: Less Is More for Alignment![](img/5b088f70448abd497e2f815d4917f0c2.png)基础模型具有了足够的潜力，只需要少量高质量数据微调，就能达到目标水平![](img/7a9d022f63ea521cf56b8301f6af0971.png)既然
+    Vicuna 使用了 ShareGPT 的数据，我们可以抓取并进行清洗，筛选所有高质量数据，只要几千条足够想法很大胆，不过清华就是清华，开搞！# 开始行动为了配合他的训练模型，我继续用
+    ChatGPT 套娃，首先要从[sharegpt.com](http://sharegpt.com) 这网站上爬一些其他的语料数据来源：[https://sharegpt.com/sitemap.xml](https://sharegpt.com/sitemap.xml)数据来源
+    2：'
+- qas:
+  - 问题1：有人在哪里分享了数据？
+  - 回答1：好心人在百度网盘分享了数据。
+  - 问题2：如何描述 GPT-3.5 对程序员的友好程度？
+  - 回答2：GPT-3.5 对程序员比较友好。
+  - 问题3：根据文本，私有化部署 ChatGPT 对哪个市场有永恒的需求？
+  - 回答3：私有化部署 ChatGPT 对商业公司有永恒的需求。
+  - 问题4：有人对中文支持问题提出了什么看法？
+  - 回答4：有人认为 basemodel 阉割了中文，需要大佬出 basemodel。
+  - 问题5：有人对重新洗数据进行了什么操作？
+  - 回答5：有人重新洗了数据，把 GPT-4 的部分挑出来。
+  text: '[https://huggingface.co/datasets/philschmid/sharegpt-raw/tree/main/sharegpt_90k_raw_dataset](https://huggingface.co/datasets/philschmid/sharegpt-raw/tree/main/sharegpt_90k_raw_dataset)
+    好心人在关闭搜索之前，把这个给保存下来了。套娃开始：![](img/dbfcb0a14ebb766193b7aca72b8adc4d.png)简直太丝滑了，gpt3.5
+    对程序员就比较友好了，通过三个小时的工作，这些数据都被整理出来了。提取里边的有用信息格式如下：来留个钩子： 我这边把搞到的数据已经上传到百度网盘，需要的朋友们可以私信获取！后续
+    有进度会继续同步大家，感兴趣的小伙伴们，可以加入我们，一起共创！# 商业场景在数据隐私保护的时代，私有化部署自己的 chatgpt 永远是一个永恒的大需求。在前边的
+    case 中，对于英文的商业公司来说，这是一个很大的可以出海的需求。当然对于国内这么庞大的需求来说，支持中文的话商业价值更大。我会和清华的小兄弟继续摸索 私有化手搓
+    ChatGPT 这条路。共创的朋友可以一起来！评论区：LiuNian : llama 不是说对中文支持比较差么，fine-tuning 能弥补么 闲富 :
+    不能，basemodel 阉割了中文，所以，做就来以后做出海产品。中文的要等大佬出 basemodel 了。 LiuNian : 调调 moss 呢，起码能商用
+    __Hell. : 这部分 sharegpt 的数据已经有洗好的了... 闲富 : 对的，但是它没有区分 gpt3 和 gpt4，我重新洗了一遍，把 4 挑出来
+    创业者-云飞 : 太干了 灯火煌煌 : 这，我表示走进了塔克拉玛干 墨鱼 : 太强了这。。。'
