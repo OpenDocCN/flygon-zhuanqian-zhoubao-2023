@@ -1,4 +1,15 @@
-- text: '# 耗时 7 天，终于把 15 种 ControlNet 模型搞明白了> 原文：[`www.yuque.com/for_lazy/thfiu8/qc7sz9g4v7yiuggc`](https://www.yuque.com/for_lazy/thfiu8/qc7sz9g4v7yiuggc)##
+- qas:
+  - 问题1：文章的主题是什么？
+  - 回答1：文章主题是关于「ControlNet」模型的详细介绍和应用指南。
+  - 问题2：作者在文章中提到了哪两个核心功能？
+  - 回答2：作者提到了「Lora」和「ControlNet」两个核心功能。
+  - 问题3：ControlNet 一共有多少种模型？
+  - 回答3：ControlNet 一共有 15 种模型。
+  - 问题4：作者在文章中提到的几个有趣的功能是什么？
+  - 回答4：作者提到了几个有趣的功能：1. 动漫转真人 2. 真人转动漫 3. 控制人物姿势、表情 4. 线稿 AI 上色 5. 固定主角。
+  - 问题5：文章末尾提到了什么内容？
+  - 回答5：文章末尾提到了整合包和模型的下载链接。
+  text: '# 耗时 7 天，终于把 15 种 ControlNet 模型搞明白了> 原文：[`www.yuque.com/for_lazy/thfiu8/qc7sz9g4v7yiuggc`](https://www.yuque.com/for_lazy/thfiu8/qc7sz9g4v7yiuggc)##
     (53 赞)耗时 7 天，终于把 15 种 ControlNet 模型搞明白了作者： 吴东子日期：2023-06-21《耗时 7 天，终于把 15 种 ControlNet
     模型搞明白了！》各位好，我是吴东子这篇文章是 SD 三部曲的第三篇——「ControlNet 的终极攻略」前面我们说到如果想真正把 SD 应用起来，最重要的两个功能是：Lora
     和 ControlNetLora 负责把想要画面的“主体”或“场景”炼制成模型 ControlNet 负责更好地“控制”这个“模型”或画面Lora 教程之前已经出了，感兴趣的朋友可以去翻看
