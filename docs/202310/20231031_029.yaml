@@ -1,0 +1,18 @@
+- qas:
+  - 问题1：文章的主要内容是什么？
+  - 回答1：利用RPA批量注册heygen账号，生成和剪辑视频，并批量上传视频的流程。
+  - 问题2：为什么要使用heygen平台？
+  - 回答2：因为heygen平台的数字人在动作和表情自然度上与真人无异。
+  - 问题3：heygen平台的缺点是什么？
+  - 回答3：积分消耗速度非常快，而且价格较高。
+  - 问题4：读者可以在哪里找到详细的操作指南？
+  - 回答4：请移步至飞书[`i2iygt5qes.feishu.cn/docx/DzxGdGJzvoCvLQxTJ5wcYFvMnXc`](https://i2iygt5qes.feishu.cn/docx/DzxGdGJzvoCvLQxTJ5wcYFvMnXc)。
+  - 问题5：读者的反馈中提到的问题有哪些？
+  - 回答5：有关免费版的视频生成是否有去除水印的方案，以及如何获取邮箱验证码的问题。
+  text: '# RPA+heygen10 倍提升视频产出率> 原文：[`www.yuque.com/for_lazy/thfiu8/gr0kzuld1lmo2zee`](https://www.yuque.com/for_lazy/thfiu8/gr0kzuld1lmo2zee)##
+    (119 赞)RPA+heygen10 倍提升视频产出率作者： 离心之巅日期：2023-10-27今年 ai 各领域都在迅速发展，在 ai 数字人视频领域，各大平台的流量，从女性情感、育儿到商业等多个领域，都出现了一些颇受欢迎的账号。其中，heygen
+    平台的数字人无论从动作，表情自然度来说，基本都与真人无异。然而用过 heygen 的人应该都知道，heygen 的积分消耗速度非常快，但价格还是比较贵的。本文主要是利用
+    rpa 批量注册 heygen 账号——批量生成视频——剪辑视频注意事项——批量上传视频整个流程来带大家手把手实操一遍，因为图片和视频内容比较多，为了方便大家阅读。请移步至飞书[`i2iygt5qes.feishu.cn/docx/DzxGdGJzvoCvLQxTJ5wcYFvMnXc`](https://i2iygt5qes.feishu.cn/docx/DzxGdGJzvoCvLQxTJ5wcYFvMnXc)![](img/8b2c8074dc6f15c61df620f43c38651a.png)*
+    * *评论区：大为 : 相当炸裂离心之巅 : [抱拳]哈哈，有帮助就好希平 : 感谢分享，我的确要研究一下 RPA 了崩崩 : 免费版的生成视频带水印有去除方案吗离心之巅
+    : 这个没办法，水印不大。裁剪一下或者贴纸遮住就行😂我一般都是把视频放大一点，超出框外就没了离心之巅 : [嘿哈]效率神器，值得学习登攀 : 求助邮箱的验证码怎么获取？😂博鱼
+    : 感谢分享，学到了![](img/1c37d505930596d12a88ab23e11aa07a.png)* * *'
