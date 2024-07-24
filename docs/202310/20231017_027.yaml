@@ -1,0 +1,20 @@
+- qas:
+  - 问题1：文中提到新手如何从零开始调制一个 prompt 的关键步骤是什么？
+  - 回答1：闭上眼睛想一想，现在最想解决的问题即需求，有需求就可以写 prompt。
+  - 问题2：作者枫晓陌主要学习和推荐的是什么类型的 prompt？
+  - 回答2：作者主要学习结构化 prompt。
+  - 问题3：GPT 和 prompt 的关系如何描述？
+  - 回答3：GPT 相当于一辆汽车，而 prompt 是驾驶这辆车的技巧。
+  - 问题4：结构化 prompt 的优势是什么？
+  - 回答4：结构化 prompt 的优势包括全文图片和代码块等。
+  - 问题5：在哪里可以找到更详细的结构化 prompt 内容？
+  - 回答5：在飞书上可以找到更详细的结构化 prompt 内容。
+  text: '# 新手如何从零开始调制一个 prompt，以拆解公众号爆文 prompt 为例> 原文：[`www.yuque.com/for_lazy/thfiu8/lc8kzlc9dhahdhgt`](https://www.yuque.com/for_lazy/thfiu8/lc8kzlc9dhahdhgt)##
+    (91 赞)新手如何从零开始调制一个 prompt，以拆解公众号爆文 prompt 为例作者： 枫晓陌日期：2023-09-28大家好，我是枫晓陌，微软认证的
+    AI 工程师。未来一年、我要用 AI 切入一百个工作场景，让大家感受到 AI 给我们带来的便利。大家想要用 AI 切入什么领域都可以告诉我呀，AI+写作、阅读、小红书、健身教练、AI+朋友圈营销、AI+简历、AI+热点分析……都可。这两天发现一个异常值，很多朋友看到一个
+    prompt，想去模仿、想去调制一个，但却不知道怎么写。这个不知道怎么写，不是指框架，而是框架里面的内容。**其实解决这个问题很简单，闭上眼睛想一想，你现在最想解决的问题是什么？问题即需求，有需求就可以写
+    prompt。**因为我学习的主要是结构化 prompt ，所以以下拆解内容以结构化 prompt 为主。待拆解的前精华贴：[`t.zsxq.com/12cSTRIYG`](https://t.zsxq.com/12cSTRIYG)**结构化
+    prompt 的优势**可能很多朋友没有听过结构化 prompt 这个词，甚至连 prompt 和 GPT 是什么关系都不太清楚，这里简单介绍一下：GPT
+    相当于一辆汽车，prompt 是你的车技，prompt 用的好，GPT 才用的好。那什么是结构化 prompt 呢？> 其优势：>> by：以上优势内容引用自
+    langGPT 社区。>> 全文图片和代码块很多，欢迎移步飞书观看：>> [`w194sny3eli.feishu.cn/wiki/AAocwTZk4iVQqKkJN0XcFhEen4g?from=from_copylink`](https://w194sny3eli.feishu.cn/wiki/AAocwTZk4iVQqKkJN0XcFhEen4g?from=from_copylink)>>
+    * * *>> 评论区：>> 暂无评论>> ![](img/1c37d505930596d12a88ab23e11aa07a.png)>> * * *'

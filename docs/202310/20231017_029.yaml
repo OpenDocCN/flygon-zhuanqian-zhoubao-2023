@@ -1,0 +1,17 @@
+- qas:
+  - 问题1：文章的原始链接是什么？
+  - 回答1：[`www.yuque.com/for_lazy/thfiu8/pnfz5z5k9r6uc4yk`](https://www.yuque.com/for_lazy/thfiu8/pnfz5z5k9r6uc4yk)
+  - 问题2：作者是谁？
+  - 回答2：黄小刀
+  - 问题3：文章中提到的灰度是指什么？
+  - 回答3：指功能仅对部分人测试使用，并收集反馈的阶段
+  - 问题4：在哪里可以找到整理后的图片？
+  - 回答4：在飞书文档的链接中可以找到：[`k0z8o16zas8.feishu.cn/docx/GgNGd7ZepotzU5xoQu6cGp8cnJg?from=from_copylink`](https://k0z8o16zas8.feishu.cn/docx/GgNGd7ZepotzU5xoQu6cGp8cnJg?from=from_copylink)
+  - 问题5：对于涉及容貌话题的问题，OpenAI 是否有特定设定？
+  - 回答5：是的，OpenAI 提前设定了规则，可能会拒绝涉及容貌相关话题的问题。
+  text: '# 玩疯了！ChatGPT4 的图形识别测试！> 原文：[`www.yuque.com/for_lazy/thfiu8/pnfz5z5k9r6uc4yk`](https://www.yuque.com/for_lazy/thfiu8/pnfz5z5k9r6uc4yk)##
+    (61 赞)玩疯了！ChatGPT4 的图形识别测试！作者： 黄小刀日期：2023-10-09![](img/502c49d9f4c110351cd2c074d313de7b.png)终于灰度到我了，从不同的应用场景玩了玩，大家一起来玩！图片较多，整理在飞书文档了：[`k0z8o16zas8.feishu.cn/docx/GgNGd7ZepotzU5xoQu6cGp8cnJg?from=from_copylink`](https://k0z8o16zas8.feishu.cn/docx/GgNGd7ZepotzU5xoQu6cGp8cnJg?from=from_copylink)*
+    * *评论区：向日葵花花 : 刀姐，为啥我的 gpt4.0 没有显示有图片功能标志呢宁王 : 有提到灰度，估计是该功能目前只对一部分人测试使用，收集反馈，暂时还没有全面开放，所以……深圳志哥
+    : 精华帖Zero : 哈哈 3 个帐号，其中一个灰度到了，全部按照你的测试了一遍，对它的能力边界又有了一些感知夙愿 : 测试一中不管是不是名人，只要涉及到容貌相关的话题，都有可能被拒绝，这是
+    OpenAI 提前设定好的，不过可以通过类似于"奶奶漏洞"的话术来骗 GPT 回答。![](img/1c37d505930596d12a88ab23e11aa07a.png)*
+    * *'
