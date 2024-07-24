@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档工程师和高级编辑需要注意的文本来源是什么？
+  - 回答1：来源是[`www.yuque.com/for_lazy/thfiu8/tgnyuxdznz7sbcuz`](https://www.yuque.com/for_lazy/thfiu8/tgnyuxdznz7sbcuz)
+  - 问题2：文本的主题是什么？
+  - 回答2：主题是抖音相关的内容。
+  - 问题3：文本的总篇数是多少？
+  - 回答3：总篇数是6篇。
+  - 问题4：文档中是否提到了特定的用户类型？
+  - 回答4：提到了“懒人”用户。
+  - 问题5：文档中是否包含了特定的格式要求？
+  - 回答5：文档中要求输出的格式包含了特定的链接格式。
+  text: '# 【抖音】6 篇> 原文：[`www.yuque.com/for_lazy/thfiu8/tgnyuxdznz7sbcuz`](https://www.yuque.com/for_lazy/thfiu8/tgnyuxdznz7sbcuz)'
