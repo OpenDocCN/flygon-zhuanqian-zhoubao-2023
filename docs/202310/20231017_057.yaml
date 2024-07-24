@@ -1,0 +1,17 @@
+- qas:
+  - 问题1：文章的作者是谁？
+  - 回答1：姬小光
+  - 问题2：文章的发布日期是什么时候？
+  - 回答2：2023-10-12
+  - 问题3：文章的主要内容涵盖哪些方面？
+  - 回答3：获取公众号历史文章标题、通过标题分析生成词云、RPA 自动获取、Python 方式获取、检测快捷转载状态
+  - 问题4：推荐的详细阅读链接是什么？
+  - 回答4：[`vfu5gh579k.feishu.cn/docx/WNCHdjeGdonClExU9yFcz6I2nwd?from=from_copylink`](https://vfu5gh579k.feishu.cn/docx/WNCHdjeGdonClExU9yFcz6I2nwd?from=from_copylink)
+  - 问题5：评论区中提到的“妞妞教练”是谁？
+  - 回答5：妞妞教练是公众号的一个示例，用来说明寻找文章标题的需求。
+  text: '# 无需爬虫，1 分钟获取公众号历史文章> 原文：[`www.yuque.com/for_lazy/thfiu8/tquu97w2uktwthul`](https://www.yuque.com/for_lazy/thfiu8/tquu97w2uktwthul)##
+    (50 赞)无需爬虫，1 分钟获取公众号历史文章作者： 姬小光日期：2023-10-12无需爬虫，1 分钟获取公众号历史文章（标题）大家好，我是姬小光。参加公众号航海的伙伴们经常需要参考其他人的文章标题寻找思路（尤其是妞妞教练的），但是大部分人是不会写爬虫的，即使
+    RPA 也要学一阵。这里教大家一个简便的无技术方法，可以快速获取文章标题。本文将涉及以下内容：1.  获取公众号历史文章标题2.  通过标题分析生成词云3.  RPA
+    自动获取4.  Python 方式获取5.  检测快捷转载状态具体请大家移步飞书：[`vfu5gh579k.feishu.cn/docx/WNCHdjeGdonClExU9yFcz6I2nwd?from=from_copylink`](https://vfu5gh579k.feishu.cn/docx/WNCHdjeGdonClExU9yFcz6I2nwd?from=from_copylink)![](img/3765575241d074aebf6a0b6190bf3882.png)*
+    * *评论区：胖大魔 : 都盯着妞妞教练那个号薅的[奸笑]姬小光 : 只是个例子，放别人更不合适😀青锋徐 : 感谢分享姬小光 : 客气啦松溪 : 虽然还不太懂，但就是说:很牛批！！胖大魔
+    : 哈哈姬小光 : 😀![](img/1c37d505930596d12a88ab23e11aa07a.png)* * *'
