@@ -1,0 +1,14 @@
+- qas:
+  - 问题1：文章的主题是什么？
+  - 回答1：RPA 干货分享之定制自己安卓手机的模拟人工操作脚本。
+  - 问题2：作者是谁？
+  - 回答2：坚韧的土豆。
+  - 问题3：文章的发布日期是什么时候？
+  - 回答3：2023-08-14。
+  - 问题4：适合阅读本文的人群有哪些特点？
+  - 回答4：对 RPA 技术感兴趣、想了解自动化操作、有一定的 Python 基础或者对编程有一定了解的人。
+  - 问题5：文章中提到的一个相关传送门是什么？
+  - 回答5：[https://xq23zki45o8.feishu.cn/docx/KYU8dqlH9oM40SxJpIPc976Nn4c](https://xq23zki45o8.feishu.cn/docx/KYU8dqlH9oM40SxJpIPc976Nn4c)
+  text: '# RPA 干货分享之定制自己安卓手机的模拟人工操作脚本> 原文：[`www.yuque.com/for_lazy/thfiu8/lgx7yn50o3pyzg3m`](https://www.yuque.com/for_lazy/thfiu8/lgx7yn50o3pyzg3m)##
+    (44 赞)RPA 干货分享之定制自己安卓手机的模拟人工操作脚本作者： 坚韧的土豆日期：2023-08-14如果你对 RPA 技术有兴趣想了解，如果你在运营抖音小红书时有一些繁琐重复的操作，想自动爬取一些信息，想自动发布一些东西，又或者是有其它
+    APP 上的 RPA 应用需求的话，本文应该可以提供给你一些参考与借鉴。另外因涉及到编程开发，本文更适合懂一点 python 基础的人员，编程 0 基础的本文也推荐的几款工具。飞书传送门：[https://xq23zki45o8.feishu.cn/docx/KYU8dqlH9oM40SxJpIPc976Nn4c](https://xq23zki45o8.feishu.cn/docx/KYU8dqlH9oM40SxJpIPc976Nn4c)评论区：暂无评论![](img/894d30a529e7c37bcd3392323c99941c.png)'
