@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：原文链接是什么？
+  - 回答1：[`www.yuque.com/for_lazy/thfiu8/mg5fd5wimg2an5hg`](https://www.yuque.com/for_lazy/thfiu8/mg5fd5wimg2an5hg)
+  - 问题2：文档工程师和高级编辑应该注意的事项有哪些？
+  - 回答2：需要注意只输出问答，不需要重复原文，并且不要省略概要前的格式。
+  - 问题3：有什么特定的格式要求？
+  - 回答3：回答应当按照原文的意思来进行。
+  - 问题4：你需要做什么来解析这些格式？
+  - 回答4：不要省略概要前的格式，以确保解析正确。
+  - 问题5：这个文档的主题是什么？
+  - 回答5：【海外项目】
+  text: '# 【海外项目】5 篇> 原文：[`www.yuque.com/for_lazy/thfiu8/mg5fd5wimg2an5hg`](https://www.yuque.com/for_lazy/thfiu8/mg5fd5wimg2an5hg)'
