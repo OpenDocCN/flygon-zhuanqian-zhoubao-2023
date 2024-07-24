@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的链接是什么？
+  - 回答1：[`www.yuque.com/for_lazy/thfiu8/apih61i4atpn5zg2`](https://www.yuque.com/for_lazy/thfiu8/apih61i4atpn5zg2)
+  - 问题2：这篇文档的来源是什么？
+  - 回答2：微信
+  - 问题3：文档的标题是什么？
+  - 回答3：【微信】
+  - 问题4：这篇文档的格式要求有哪些？
+  - 回答4：需要按照给定的格式输出问答，并保持原文的意思。
+  - 问题5：是否需要重复原文的注意事项？
+  - 回答5：不需要，只需提取问题和回答。
+  text: '# 【微信】> 原文：[`www.yuque.com/for_lazy/thfiu8/apih61i4atpn5zg2`](https://www.yuque.com/for_lazy/thfiu8/apih61i4atpn5zg2)'
