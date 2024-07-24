@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的主题是什么？
+  - 回答1：【生财认知】
+  - 问题2：文档的作者是谁？
+  - 回答2：for_lazy
+  - 问题3：文档的链接是什么？
+  - 回答3：[`www.yuque.com/for_lazy/thfiu8/kz6vniuqclaghu9h`](https://www.yuque.com/for_lazy/thfiu8/kz6vniuqclaghu9h)
+  - 问题4：文档的格式要求有哪些？
+  - 回答4：需要按照特定的问题和回答格式输出。
+  - 问题5：文档的注意事项有哪些？
+  - 回答5：包括不需要重复原文、不省略格式等。
+  text: '# 【生财认知】> 原文：[`www.yuque.com/for_lazy/thfiu8/kz6vniuqclaghu9h`](https://www.yuque.com/for_lazy/thfiu8/kz6vniuqclaghu9h)'
