@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文本的来源是什么？
+  - 回答1：小红书 10 篇。
+  - 问题2：提供的原文链接是什么？
+  - 回答2：[`www.yuque.com/for_lazy/thfiu8/fa4vdhqak6yfhie5`](https://www.yuque.com/for_lazy/thfiu8/fa4vdhqak6yfhie5)。
+  - 问题3：这篇文本的主要内容是什么？
+  - 回答3：需要访问链接来查看详细内容。
+  - 问题4：文本的作者是谁？
+  - 回答4：需要访问链接来查看详细信息。
+  - 问题5：文本的长度或篇幅有何特点？
+  - 回答5：需要访问链接来获取具体信息。
+  text: '# 【小红书 10 篇】> 原文：[`www.yuque.com/for_lazy/thfiu8/fa4vdhqak6yfhie5`](https://www.yuque.com/for_lazy/thfiu8/fa4vdhqak6yfhie5)'
