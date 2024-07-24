@@ -1,0 +1,20 @@
+- qas:
+  - 问题1：文章的主题是什么？
+  - 回答1：如何使用 ChatGPT 从零实现 heygen 的批量注册。
+  - 问题2：heygen 的免费账号有什么限制？
+  - 回答2：仅提供一个 credit，用完后需要手动注册新账号。
+  - 问题3：作者如何描述使用 ChatGPT 实现批量注册的过程？
+  - 回答3：通过和 ChatGPT 对话，花了一个多小时写了一个脚本，实现了 heygen 的自动化注册。
+  - 问题4：在评论区中，有人提到了使用什么方法解决注册的限制？
+  - 回答4：提到了使用1元购买100个163邮箱来注册。
+  - 问题5：有人在评论中提供了哪些建议来解决注册限制？
+  - 回答5：建议使用无限邮箱或临时邮箱，还有封装了多种邮箱供选择。
+  text: '# 如何使用 ChatGPT 从零实现 heygen 的批量注册？> 原文：[`www.yuque.com/for_lazy/thfiu8/tew04h3hg42gxe4k`](https://www.yuque.com/for_lazy/thfiu8/tew04h3hg42gxe4k)##
+    (39 赞)如何使用 ChatGPT 从零实现 heygen 的批量注册？作者： 钱塘江鲤日期：2023-11-16如何使用 ChatGPT 从零实现 heygen
+    的批量注册？我们都知道最近一段时间 heygen 非常火爆，特别是在抖音上，不少小和尚和心灵鸡汤内容都是通过 heygen 制作的。然而，heygen 的免费账号仅提供一个
+    credit，一旦用完就需要手动注册新账号。那我能不能通过 ChatGPT 写脚本实现批量注册呢？今天中午试了一下，通过和 ChatGPT 对话，一个多小时的时间从零写一个脚本，实现
+    heygen 的自动化注册，实测完全可行。以下是整个过程的分享，请移步飞书查看：[`ia0969wpr2.feishu.cn/docx/ODqvdz4FUotoHhxcde3czpHknne`](https://ia0969wpr2.feishu.cn/docx/ODqvdz4FUotoHhxcde3czpHknne)*
+    * *评论区：bgz 洲洲 : 我是 1 元买 100 个 163 邮箱注册[大哭]Adam : 看不太懂，但是大受震撼，膜拜技术大佬三疯 : 无限邮直接可以解决，不过思路值得借鉴钱塘江鲤
+    : 无限邮箱怎么直接解决呢？这个比较好奇，是直接使用临时邮箱吗钱塘江鲤 : 有了 chatgpt 这都不算什么[呲牙]钱塘江鲤 : 还是指用谷歌.或者后缀拼加➕实现不困
+    : 学习精神很足[强]我这里有个现成的，封装了好几种邮箱，抗风险还不错，希望对你这个业务更上一层楼[`wx.zsxq.com/dweb2/index/topic_detail/211244118488421`](https://wx.zsxq.com/dweb2/index/topic_detail/211244118488421)钱塘江鲤
+    : 不需要![](img/1c37d505930596d12a88ab23e11aa07a.png)* * *'

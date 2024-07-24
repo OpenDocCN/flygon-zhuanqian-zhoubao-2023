@@ -1,0 +1,19 @@
+- qas:
+  - 问题1：文章的主要主题是什么？
+  - 回答1：文章的主要主题是如何从零开始构建自己的第一个 GPTs。
+  - 问题2：GPTs 的上线对初创 AI 公司有什么影响？
+  - 回答2：GPTs 的上线对初创 AI 公司可能会造成一定的竞争压力，因为它能够快速构建具备专属技能的 GPT，这可能影响到它们的市场前景和竞争力。
+  - 问题3：如何构建自己的第一个 GPTs？
+  - 回答3：通过简单的对话聊天方式或者配置一些参数，即可快速构建一个具备专属技能的 GPT。
+  - 问题4：GPTs 的应用场景有哪些？
+  - 回答4：GPTs 可以应用于各种 AI 应用领域，帮助初创公司快速构建和开发具备个性化能力的应用。
+  - 问题5：GPTs 的未来发展方向是什么？
+  - 回答5：未来可能会上线 GPT 应用商店，使得用户可以将自己构建的 GPTs 上架并赚取利润，进一步推动个性化 GPT 的应用和发展。
+  text: '# 实战干货，0 基础打造你的第一个 GPTs> 原文：[`www.yuque.com/for_lazy/thfiu8/cve93anf34dyf1ro`](https://www.yuque.com/for_lazy/thfiu8/cve93anf34dyf1ro)##
+    (46 赞)实战干货，0 基础打造你的第一个 GPTs作者： 熊猫 Jay日期：2023-11-13实战干货，0 基础打造你的第一个 GPTs！记得前几天在
+    OpenAI 的发布者大会后，一张梗图广为流传：「Sam Altman 毁掉了我价值 300 万美元的创业公司，而我只得到了 500 美元的 OpenAI
+    API 代金券」。的确，GPTs 的上线和这个月晚些即将上线的 GPT 应用商店，对于正在 大量 AI 应用领域的初创公司而言，无疑是一场浩劫。而毁掉那些初创
+    AI 公司的最大“凶手” 就是本次新版本的重头戏 --- 个性化 GPT ，你 无需编程经验，通过简单的对话聊天方式或者配置一些参数，就可以快速构建一个 具备专属技能的
+    GPT，甚至可以在未来上架到 GPT Store 里来赚取利润，每一个点都足够惊艳。那到底 GPTs 有什么用？怎么构建自己的第一个 GPTs 呢？我们一起来看看！全文请移步：如果有用，请帮忙点个赞，谢谢啦！[`zzi7a49xoa.feishu.cn/wiki/A9eOwy6FzixYZQkka0dccFQ7nIf?from=from_copylink`](https://zzi7a49xoa.feishu.cn/wiki/A9eOwy6FzixYZQkka0dccFQ7nIf?from=from_copylink)![](img/f0c6c69b6b09f396040c691e13ae5e62.png)*
+    * *评论区：生哥 : 立马实操了下，很有收获熊猫 Jay : 👍![](img/1c37d505930596d12a88ab23e11aa07a.png)*
+    * *'
