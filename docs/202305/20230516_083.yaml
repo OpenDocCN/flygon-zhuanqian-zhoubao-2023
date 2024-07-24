@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档工程师和高级编辑需要注意的事项是什么？
+  - 回答1：输出问答，不需要重复原文。
+  - 问题2：如何处理概要前的格式？
+  - 回答2：不要省略（-   ）或（1.  ），以确保解析正确。
+  - 问题3：在处理文本时，应注意哪些内容？
+  - 回答3：需要按照原文的意思来回答。
+  - 问题4：给定的链接指向什么内容？
+  - 回答4：[`www.yuque.com/for_lazy/thfiu8/unbgl4eg5rkxdur2`](https://www.yuque.com/for_lazy/thfiu8/unbgl4eg5rkxdur2)
+  - 问题5：如何处理抖音相关内容？
+  - 回答5：按照格式要求输出。
+  text: '# 【抖音】> 原文：[`www.yuque.com/for_lazy/thfiu8/unbgl4eg5rkxdur2`](https://www.yuque.com/for_lazy/thfiu8/unbgl4eg5rkxdur2)'
