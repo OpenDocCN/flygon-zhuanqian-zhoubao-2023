@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的来源是什么？
+  - 回答1：原文链接是[`www.yuque.com/for_lazy/thfiu8/knwul8ywrv4cn9kc`](https://www.yuque.com/for_lazy/thfiu8/knwul8ywrv4cn9kc)。
+  - 问题2：文档的主题是什么？
+  - 回答2：主题是【小红书】。
+  - 问题3：文档的作者是谁？
+  - 回答3：作者是“for_lazy”。
+  - 问题4：文档中包含哪些内容？
+  - 回答4：文档内容可以在提供的链接中查看。
+  - 问题5：文档的格式和结构是怎样的？
+  - 回答5：文档格式是Markdown，并包含特定的结构和内容。
+  text: '# 【小红书】> 原文：[`www.yuque.com/for_lazy/thfiu8/knwul8ywrv4cn9kc`](https://www.yuque.com/for_lazy/thfiu8/knwul8ywrv4cn9kc)'
