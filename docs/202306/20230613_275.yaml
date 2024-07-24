@@ -1,4 +1,15 @@
-- text: '# 《Stable Diffuion 出图玩法及落地应用大全》> 原文：[`www.yuque.com/for_lazy/thfiu8/sqpxfaag3rc29sus`](https://www.yuque.com/for_lazy/thfiu8/sqpxfaag3rc29sus)##
+- qas:
+  - 问题1：文章的主题是什么？
+  - 回答1：《Stable Diffuion 出图玩法及落地应用大全》
+  - 问题2：文章的作者是谁？
+  - 回答2：番茄🍅
+  - 问题3：SD 是什么的缩写？
+  - 回答3：Stable Diffusion
+  - 问题4：文章提到的飞书链接是用来做什么的？
+  - 回答4：提供更好的观感体验
+  - 问题5：CN 是指什么？
+  - 回答5：ControlNet
+  text: '# 《Stable Diffuion 出图玩法及落地应用大全》> 原文：[`www.yuque.com/for_lazy/thfiu8/sqpxfaag3rc29sus`](https://www.yuque.com/for_lazy/thfiu8/sqpxfaag3rc29sus)##
     (精华帖)(163 赞)《Stable Diffuion 出图玩法及落地应用大全》作者： 番茄🍅日期：2023-05-18大家好，本篇我将从玩法应用的角度带领大家认识不一样的
     stable diffusion本篇主要内容如下：①持续学习 stable diffusion2 个月，如今的我已经基本构建起了对 SD 较为全面功能的认识及应用玩法全流程的整体框架，特别来跟大家分享关于
     SD 目前较为进阶的玩法及案例应用等的相关思路和个人对于 SD 的相关经验总结，希望能帮大家打开思路，收获经验。②对比 midjourney，stable

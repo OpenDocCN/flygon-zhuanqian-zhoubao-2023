@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的主题是什么？
+  - 回答1：抖音相关内容。
+  - 问题2：文档的链接是什么？
+  - 回答2：[`www.yuque.com/for_lazy/thfiu8/sygeu486zev8ndx5`](https://www.yuque.com/for_lazy/thfiu8/sygeu486zev8ndx5)。
+  - 问题3：文档中是否包含具体的注意事项？
+  - 回答3：是的，文档开头列出了一些注意事项。
+  - 问题4：文档的格式要求是什么？
+  - 回答4：按照指定的格式提出问题并回答。
+  - 问题5：这份文档需要什么样的处理？
+  - 回答5：需要提取出指定的问题，并根据原文内容给出对应的回答。
+  text: '# 【抖音】> 原文：[`www.yuque.com/for_lazy/thfiu8/sygeu486zev8ndx5`](https://www.yuque.com/for_lazy/thfiu8/sygeu486zev8ndx5)'
