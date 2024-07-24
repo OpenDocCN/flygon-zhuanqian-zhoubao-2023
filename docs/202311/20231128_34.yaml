@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：这篇文档的主题是什么？
+  - 回答1：这篇文档的主题是关于小红书的相关内容。
+  - 问题2：文档中提供了多少篇原文链接？
+  - 回答2：文档中提供了一篇原文链接。
+  - 问题3：这篇原文的链接是什么？
+  - 回答3：这篇原文的链接是[`www.yuque.com/for_lazy/thfiu8/yoxc9a1fm8ayy1cv`](https://www.yuque.com/for_lazy/thfiu8/yoxc9a1fm8ayy1cv)。
+  - 问题4：文档中是否提到了文档工程师和高级编辑？
+  - 回答4：未提及。
+  - 问题5：这篇文档的作者是谁？
+  - 回答5：未提及。
+  text: '# 【小红书】5 篇> 原文：[`www.yuque.com/for_lazy/thfiu8/yoxc9a1fm8ayy1cv`](https://www.yuque.com/for_lazy/thfiu8/yoxc9a1fm8ayy1cv)'
