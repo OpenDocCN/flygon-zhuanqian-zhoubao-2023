@@ -1,0 +1,12 @@
+- qas:
+  - 问题1：文档的主题是什么？
+  - 回答1：线下实体。
+  - 问题2：文档中提到了多少篇原文？
+  - 回答2：3 篇原文。
+  - 问题3：原文的链接是什么？
+  - 回答3：[`www.yuque.com/for_lazy/thfiu8/mo6chwvh0oope3yn`](https://www.yuque.com/for_lazy/thfiu8/mo6chwvh0oope3yn)
+  - 问题4：在文档中，什么部分是最重要的？
+  - 回答4：可能是线下实体的描述或内容。
+  - 问题5：文档的作者是谁？
+  - 回答5：未提及文档的作者。
+  text: '# 【线下实体】3 篇> 原文：[`www.yuque.com/for_lazy/thfiu8/mo6chwvh0oope3yn`](https://www.yuque.com/for_lazy/thfiu8/mo6chwvh0oope3yn)'
