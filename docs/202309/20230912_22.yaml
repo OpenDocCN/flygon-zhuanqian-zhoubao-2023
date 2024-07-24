@@ -1,4 +1,15 @@
-- text: '# 指令工程师的新宠：从 0 到 1 了解结构化 Prompt> 原文：[`www.yuque.com/for_lazy/thfiu8/bpnrugzh8m27igs9`](https://www.yuque.com/for_lazy/thfiu8/bpnrugzh8m27igs9)##
+- qas:
+  - 问题1：什么是结构化 prompts？
+  - 回答1：结构化 prompts 是什么？
+  - 问题2：为什么建议使用结构化 prompts？
+  - 回答2：为什么建议使用结构化 prompts？
+  - 问题3：怎么高效使用结构化 prompts？
+  - 回答3：怎么高效使用结构化 prompts？
+  - 问题4：结构化 prompts VS 文字型 prompts？
+  - 回答4：结构化 prompts VS 文字型 prompts？
+  - 问题5：如何生成结构化 prompts？
+  - 回答5：如何生成结构化 prompts？
+  text: '# 指令工程师的新宠：从 0 到 1 了解结构化 Prompt> 原文：[`www.yuque.com/for_lazy/thfiu8/bpnrugzh8m27igs9`](https://www.yuque.com/for_lazy/thfiu8/bpnrugzh8m27igs9)##
     (45 赞)指令工程师的新宠：从 0 到 1 了解结构化 Prompt作者： 陈少安日期：2023-09-04文章：《指令工程师的新宠：从 0 到 1 了解结构化
     Prompt》[太阳]大家好～我是陈少安，目前是一家互联网的企业培训师。这段时间，相信小伙伴在看精华贴时，都有看到【下方截图】类型的指令，大家看完是不是有点好奇？是不是感觉有点像代码？以及想它是如何生成的？之前有在研究有关结构化
     Prompt 的资料，也尝试自己输出结构化 Promp，有一些小小的感悟和心得，于是想结合这个契机，倒逼自己输出，把我所了解到的资讯分享给大家，可以给想要了解结构化
