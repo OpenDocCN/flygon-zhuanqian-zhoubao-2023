@@ -1,0 +1,15 @@
+- qas:
+  - 问题1：什么启发 Lukas 创办 Weights & Biases？
+  - 回答1：Lukas 意识到机器学习和深度学习的迅速发展，但缺乏适合的工具来支持从事这些领域的人员。
+  - 问题2：Weights & Biases 的创办者认为研究人员和从业者需要什么样的工具？
+  - 回答2：他认为他们需要更好的工具来追踪模型性能、数据版本控制以及模型注册。
+  - 问题3：为什么文章提到“最疯的还是投资人”？
+  - 回答3：这可能指的是投资人对于支持一个看似冒险的项目（LLM）的胆识和勇气。
+  - 问题4：LLM 是什么？
+  - 回答4：文章中提到几乎没有人将 LLM 投入生产，但具体没有解释 LLM 是什么。
+  - 问题5：文章中是否提到了具体的技术或产品功能？
+  - 回答5：文章提到了支持模型性能追踪、数据版本控制和模型注册等功能的需求，但没有具体提到技术或产品的细节。
+  text: '# Weights&Biases 创始人：最疯的还是投资人，几乎没人将 LLM 投入生产> 原文：[`www.yuque.com/for_lazy/thfiu8/iznynhxx0yx3v3u3`](https://www.yuque.com/for_lazy/thfiu8/iznynhxx0yx3v3u3)##
+    (5 赞)Weights&Biases 创始人：最疯的还是投资人，几乎没人将 LLM 投入生产作者： 亦仁的收藏夹日期：2023-09-22创办 Weights
+    & Biases，源于 Lukas 本人意识到机器学习和深度学习的迅速发展，但缺乏适合的工具来支持从事这些领域的人员。他认为研究人员和从业者需要更好的工具来追踪模型性能、数据版本控制以及模型注册。[`mp.weixin.qq.com/s/NIVBW08cxZUuhx5BzHXwIA`](https://mp.weixin.qq.com/s/NIVBW08cxZUuhx5BzHXwIA)*
+    * *评论区：暂无评论![](img/1c37d505930596d12a88ab23e11aa07a.png)* * *'
