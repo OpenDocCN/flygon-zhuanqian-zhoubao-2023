@@ -1,0 +1,336 @@
+<h1>手把手教你使用影刀RPA批量获取小红书低粉爆款的商品！全自动解放双手！</h1>
+<blockquote>来源：<a href="https://riodtlbegu.feishu.cn/docx/EkcLdKXHSowEJ1xsX67csVhunad">https://riodtlbegu.feishu.cn/docx/EkcLdKXHSowEJ1xsX67csVhunad</a></blockquote>
+<h1>前言：</h1>
+<p>这个脚本适合有有一定影刀RPA基础的小伙伴使用，不然的话看起来会很复杂!实际上并不难，只是代码看起来比较多，我自己学习影刀也就几个礼拜的时间！</p>
+<p>今天主要讲的是思路，就算是别的脚本，到时候也可以根据这个思路去写，而不是只会学习写这一个代码</p>
+<p>这个脚本是在手机里面运行，在我这边能流畅运行，在你那边可能不能运行，所以分享给你也不一定有用。</p>
+<p>所以讲清楚原理，可以自己去尝试写写看！</p>
+<p>最后也会附上所有的代码，可以拿来参考！</p>
+<h1>一.先上操作视频！</h1>
+<p>获取到第一个低粉爆款商品链接从28秒开始！</p>
+<p>获取到的链接分享效果从45秒开始。</p>
+<h2>1.1 视频演示</h2>
+<h2>1.2 批量抓取小红书商品的销量视频演示</h2>
+<h1>二.需求挖掘：</h1>
+<h2>2.1 为什么要写这样一个脚本</h2>
+
+<p>因为很多人在刚开始接触小红书电商带货，卡在了选品阶段.</p>
+<p>买一些数据网站的会员又比较贵，对新手不是很友好，所以很多新手选择了刷对标账号，自己跟品</p>
+<p>然后自己跟品的话又是非常浪费时间，并且很无聊的，并且这个动作也有重复性，适合用RPA</p>
+<p>注意:任何有重复性的动作，都可以考虑使用RPA来解放双手！</p>
+
+<p>根据这个需求，我就有了这个想法可以尝试写一个脚本来获取低粉爆款的商品！</p>
+<p>思路来源于：https://articles.zsxq.com/id_xwveu3e0usfv.html 书豪的这篇文章的选品方法一！</p>
+
+<p><img src="img/0734104d07072397d60163fa86f8a3ba.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/A4W5bAnFYoLjENxVrtRcwGDLnmd/"/></p>
+<h1>三.如何开始：</h1>
+<h2>3.1 想法如何转变成脚本</h2>
+
+<p>深入了解需求，我们抓取的商品要是 销售量&gt;100，并且粉丝数量&lt;200的</p>
+<p>我们先在自己的手机里面试着手动抓取商品链接，</p>
+<h3>1.模拟手机手动抓取：</h3>
+<h4>手动抓取详细的步骤为：</h4>
+<p>1.打开小红书app</p>
+<p>2.点击左下角的购物按钮，会出来商品链接</p>
+<p>3.点击商品链接，查看销量</p>
+<p>如果销量&gt;100，点击店铺图标，查看粉丝数量，如果粉丝数量&lt;200 就返回记录商品链接</p>
+<p>如果粉丝数量&gt;200 就返回到购物页面，点击下一个商品链接</p>
+<p>如果销量&lt;100，直接返回购物页面，点击下一个商品链接</p>
+
+<h3>2.流程图：</h3>
+<p><img src="img/b58c1f1ee29c715591ca58c3e7aab6c4.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/DcwabZQdToz0j4xuLhgcqdhLnEc/"/></p>
+
+<p>制作流程图，有助于我们理清自己的思路，方便我们在写代码的时候思路更清晰，不会乱！</p>
+<p>可以把每个部分制作成子流程，方便优化代码的时候方便查看，编辑，这些要养成习惯</p>
+<p>如果有遇到报错，等异常代码，也更方便修改！</p>
+
+<h1>准备阶段：</h1>
+<h2>1.配置电脑端环境：</h2>
+<p>来自官方文档：https://www.yingdao.com/yddoc/topic-basedDoc/a5c87b1d3996d052c4d24649863a4e9d.html?</p>
+
+<p>第一步：打开影刀首页的设置中心</p>
+<p>第二步：点击 ⌈ 自动化插件 ⌋ 中的 ⌈ Android 自动化组件 ⌋</p>
+<p>第三步：点击之后，手机管理器打开后会自动检测当前机器是否已安装自动化环境。未安装则会提示用户安装，若已安装，且手机已开启调试模式，会自动连接当前手机</p>
+<p>第四步：点击"立即配置"</p>
+<p>第五步：等待环境安装成功</p>
+<p>第六步：安装成功后，会自动启动内置安卓自动化组件。同时影刀管理器进入扫描设备状态。只要将开启调试模式的通过数据线连接电脑即可连接</p>
+<h2>2.配置手机端环境：</h2>
+<p>来自官方文档：https://www.yingdao.com/yddoc/topic-basedDoc/7dc8582d60cea069e994d96d84531ea6.html?</p>
+<p>我使用的手机是 小米9A</p>
+<p>1.手机开启开发者模式</p>
+<p>2.手机开始USB调试，数据线连接电脑之后选择文件传输</p>
+<p>具体可以看这个官方文档里面的视频：</p>
+
+<p>电脑端和手机端的环境都配置完了之后，尝试在影刀的手机配置器里面连接</p>
+<p>第一次连接他会自动下载影刀的插件，一直点同意就可以了！</p>
+<p><img src="img/a294a1dffbbe92b6d58125e9b4dc75e7.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Wc5QbiWoLomrO1x2p9Yc4llPn0c/"/></p>
+
+<p>如果你想更快掌握影刀手机脚本，推荐观看这个官方视频：</p>
+<p>影刀RPA中级课程：12 手机自动化：</p>
+<p>https://www.bilibili.com/video/BV1Zk4y1w7HA/?spm_id_from=333.337.search-card.all.click&amp;vd_source=14a3ed1caf691b990c61aad056f9fc03</p>
+<h1>开始阶段：</h1>
+<h2>第一步：确保手机能正确连接</h2>
+<p><img src="img/1baa6a3aba67f48a83a1b789203b0568.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/CcgWbYjfmo6rPKxScyacZRagnXb/"/></p>
+<p>只有保证这步能正常执行，才能执行接下来的所有步骤！</p>
+<p>如果这步没有搞定的话，就去重新看上面的官方文档，如果自己实在搞不定，也可以联系官方人员远程帮你操作！</p>
+<p>我刚开始测试模拟器连接，一直都不行，也可以联系官方人员帮忙处理的！</p>
+<p><img src="img/6c10890760b75503678a3c8da793f166.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/T6USboLfzotr2AxoN06cZFSRnCh/"/></p>
+<h2>第二步：根据流程图写代码</h2>
+<h3>流程图第一部分：</h3>
+<p><img src="img/1bae861e379fd8d148e68eaec87524ac.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/NJ2JbdxtMo9OXMxxbbWcZaHlnVg/"/></p>
+<p>连接手机之后，第一步打开小红书APP</p>
+<p>直接使用 打开手机APP的命令，具体配置如下</p>
+<p><img src="img/e933445696da06b93f73e4f1a081a69c.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/CYuab3emZoFQx2xJFs2cF3X7nhf/"/></p>
+<p>如果APP包名那边是空的，在影刀手机管理器里面打开小红书app，这里点击右边的获取就可以获取到了！</p>
+<p>打开小红书app之后还需要点击购物按钮，才能跳转到商品链接</p>
+<p>我们使用：</p>
+<p><img src="img/4ab61374a063c5999ec076ed4cfacfad.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Q976bem6RoOLxzxS4kdcjA9lnM2/"/></p>
+<p>这里的购物图标元素，直接捕获元素就可以直接捕获了比较简单！</p>
+<p>这里加了一个等待2秒的动作，是因为有时候手机比较卡，打开小红书账号页面还是空白的，所以加2秒的等待</p>
+<p>至此，我们流程图的第一部分已经搞定了！是不是很简单</p>
+<h3>流程图第二部分：</h3>
+<p><img src="img/0a7e238b468933bbd8178c7bf621e048.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/W3gNbj0ELop9STxNUTTc693enMf/"/></p>
+<p>首先需要获取到我们要找的商品链接</p>
+<p>直接使用 获得相似元素列表(手机)  就行！这个也比较简单.获取到的列表我们自定义名称为：商品链接_element_list，也可以使用别的名称，只要方便自己记就行，养成好习惯！</p>
+
+<p>然后使用 循环相似元素(手机） 依次点击我们获取到的商品链接，在单独在商品链接页面内进行判断销量和粉丝数量！</p>
+<p><img src="img/9c0aa2c4135a5499a52043cead5192b5.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/MkpWbE1tEoHrEBxCNDHccAVjn8g/"/></p>
+<h3>流程图第三部分：</h3>
+<h4>第三部分准备工作：</h4>
+
+<p>第三部分也是比较关键的部分，我们的核心代码都在这边，我们要点击到商品链接之后</p>
+<p>依次判断 销量和粉丝数量！</p>
+
+<p>注意！！！注意！！注意！！：</p>
+<p>这个时候我们需要捕获很多元素，包括返回，分享，微信图标等等！</p>
+<p>这里有两个元素需要注意，我们使用直接捕获是捕获不到的，或者捕获到了换了一个商品链接就没办法校验了</p>
+<p>所以我们需要使用Xpath定位，我这个也是现学的，看完视频，马上测试就成功了！在我们这个流程中也不难</p>
+<p>官方教学：</p>
+<p>https://www.bilibili.com/video/BV1Zk4y1w7HA?p=7&amp;vd_source=14a3ed1caf691b990c61aad056f9fc03</p>
+<p>这两个元素分别是:</p>
+<p>已售数量的元素：//*[contains(@text, "已售")][1]</p>
+<p><img src="img/b8dd45ce7b95de98d6ef9855162b11ec.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/BAkibyT6Zo5m6jx0ICacgsegnKc/"/></p>
+<p>粉丝数量的元素：//[contains(@text, "粉丝")]/preceding-sibling::</p>
+<p><img src="img/a70dd7e7dfaf0da861e9f34175b515c2.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/LGjZbMHpMorCUAx88Vzces9pnpb/"/></p>
+
+<p>注意，元素的定位方式要选择：Xpath！</p>
+<p>这样我们就捕获到了我们所需要的所有元素，总的元素很少，这里我有一些还重复了！</p>
+<p>接下来只要根据我们的流程图，一步一步走就可以了！</p>
+
+<p><img src="img/75e7cdc0e70b8700463c9793512efa7e.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/DwNobXJRYoNwKhxazf7chEi5nIh/"/></p>
+<h4>第三部分开始：</h4>
+<p>我们首先观察流程图，我们要做的就是先判断已售的数量</p>
+<p>在第二部分结束的时候，这个时候我们的手机页面已经进入了一个商品链接，</p>
+<p>因为我们又已经获取到了已售元素，所以我们直接获取已售元素的文即可</p>
+<p>使用命令：获取手机元素信息</p>
+<p><img src="img/5e9db7a2b310f4663a4155a146623486.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/MmRlbQAemoKVlix8BiJcqsKNnih/"/></p>
+<p>注意：</p>
+<p>我们这个时候获取到的元素的文本内容大概是：已售4.4万 或者 已售328</p>
+<p>有两种形式：</p>
+<p>一种带【万】字的，</p>
+<p>一种没有带的！</p>
+
+<p>1.判断  已售数量元素 有没有【万】字！</p>
+<p>如果有【万】字，我们把元素的 数字部分记录下来 *10000 就是具体的销售额</p>
+<p>如果没有【万】字，我们直接获取元素的 数字部分，就是我们的销量！</p>
+<p>具体代码如下：</p>
+<p><img src="img/721a923eb71b5853d4f9ec08a796b3be.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/TNILbrRA3oc4dMxB7XSc1aMFnPy/"/></p>
+<p><img src="img/8e55bda75158a54e6c367c0e0e233360.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/NPsIbaU2goJ8AKxHrZTcFYOSnVM/"/></p>
+
+<p>这样我们就判断完了已售数量：</p>
+<p>接下来的思路根据流程图走：</p>
+<p><img src="img/996d472ea09915c892506e9b892245a8.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/MacrbnXBAocrzWxBysXcGoJMnvD/"/></p>
+
+<h4>判断已售数量&gt;100</h4>
+<p>如果销量&gt;100，我们通过我们模拟手机抓取过程发现</p>
+<p>我们可以点击左下角的店铺图标，这个时候我们就可以看到粉丝数量，并且获取到！</p>
+<p>具体代码如下：</p>
+
+<p><img src="img/2ca499abec4e5733f265d2b076b7b81c.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Op8LbLnEmoRSX5xEqgbcpJldnTe/"/></p>
+<p>因为这里要获取粉丝数量，但是这个时候代码现在太杂了</p>
+<p>我把获取粉丝数量单独弄成一个子程序，拿来调用！</p>
+<p>B获取粉丝数量子程序代码如下：</p>
+<p><img src="img/f14bf6e8109e665a2ce3104e44489762.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Skrub7jW5oQdUtxMdhgcmIaMn5b/"/></p>
+<h5>获取粉丝数量：</h5>
+<p>这个时候，获取粉丝数量子程序就会返回对应店铺的粉丝数量！</p>
+<p>这个时候我们要注意，跟已售一样</p>
+<p>我们获取的粉丝数量也有两种形式：</p>
+<p>一. 2.8万</p>
+<p>二. 3266</p>
+<p>这样两种类型，我们也要分别对这两种进行判断</p>
+<p>判断的依据是，文本里面是否带【万】字</p>
+<p>有的话:        数字部分*10000</p>
+<p>没有的话:     最终粉丝数量=数字部分</p>
+<p>这个跟已售一样，不多做赘述！</p>
+<hr/>
+<h5>判断粉丝数量&gt;200</h5>
+<p>根据流程图的思路走：</p>
+<p><img src="img/a49bd08a2d07040939ce2618f16e9b9c.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/IkiPbyHlto99RNxG3cTc1UCPnre/"/></p>
+<p>由于上面已经判断了已售数量是&gt;100，并且我们获取到了粉丝的数量：</p>
+<p>这个时候我们只需要判断粉丝的数量即可：</p>
+<p>如果粉丝数量&gt;200</p>
+<p>因为我们这个时候点进店铺头像，是个人主页的页面</p>
+<p>我们需要返回上一个页面，就是商品链接页面</p>
+<p>点击右上角三个点，点击分享到微信</p>
+<p>分享到我们设定好的微信好友或者微信群聊！</p>
+<h6>导出目标链接到微信</h6>
+<p>具体代码如下:</p>
+<p><img src="img/3a22f356396e21e686e17b86e4286d6e.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/P8hCbHEB8oXzBXxOavScoLkjnFb/"/></p>
+<h5>判断粉丝数量&lt;200</h5>
+<h6>直接返回到商品链接页面</h6>
+<p>如果粉丝数量&lt;200，我们直接就返回商品主页面</p>
+<p>注意，这个时候我们进入的是个人主页的页面</p>
+<p>我们需要点击两次返回</p>
+<p>一次返回到商品连接页面</p>
+<p>第二次返回到购物主页面</p>
+<p>这样才能保证能继续点击下一条链接</p>
+<hr/>
+<h4>判断已售数量&lt;100：</h4>
+<p>如果销量&lt;100,根据我们构建这个脚本的想法，我们直接不要，并且返回到购物主页面，</p>
+<p>中间要用到返回，使用点击屏幕或者点击元素都可以！</p>
+<p>准备点击下一个商品链接！</p>
+<p><img src="img/d14b48a6c35d41aca5558dd2115a66de.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Cpo1bXJxAoUYgVxjK1QcbwG6nSf/"/></p>
+<p>具体代码如下：</p>
+<h6>直接返回到商品链接页面</h6>
+
+<p><img src="img/e6d681f9ef0a643101602b72909cf7c1.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/XmT7bxgl1omVgOxC7KmceuE2nfc/"/></p>
+<p>注意:中间的点击屏幕，是点击我手机里面返回键的位置</p>
+<p>因为我们我们发现已售数量&lt;100，这个时候还在商品链接里面，</p>
+<p>这个时候想要点击下一个商品链接，需要先返回，才能获取到下个商品链接，不然会报错！</p>
+<p>这个代码是 IF 代码，</p>
+<p>我把销量&gt;100 写在IF里面</p>
+<p>所以这里 销量&lt;100，我写在else里面</p>
+
+<h3>第一阶段代码结束</h3>
+<hr/>
+<h1>第三步：调试阶段</h1>
+<p>以上核心代码写完之后，我们已经可以开始简单的运行</p>
+<p>1.检测脚本是否正常</p>
+<p>2.检测脚本会不会报错，如果有报错，就记录报错的原因</p>
+<p>3.脚本能正常运行，但是一直循环等等</p>
+
+<p>分享几个我前几版遇到的问题，并且是如何解决的。</p>
+<p>如果你刚好也遇到了，可以直接解决！</p>
+<p>注意！！注意！！注意！！</p>
+<p>每次运行能正常，但是要加代码的时候切记一定要备份了在备份那边写</p>
+<p>我这个也备份了好几个版本，就怕哪里改了 就出错 改不回来了！</p>
+<p><img src="img/2fd8bf7fcd550eff800cad8a6db3932f.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/QmgRbVhUhoil5GxLKhYcLn2pnOg/"/></p>
+
+<h4>1.可能遇到的报错</h4>
+<p>报错1：匹配到多个元素, 无法唯一定位</p>
+
+<p>这个我遇到的是 已售元素 匹配到多个元素，绝大多数商品都正常的，但是其中一个商品有两个 已售元素</p>
+<p>解决方法是：//*[contains(@text, "已售")][1]</p>
+<p>在最后加[1]表示获取前面一个！</p>
+
+<p>报错2：循环的时候下标超过最大值：</p>
+<p>这个时候看看是哪条指令错误，检查对应的指令是哪个元素，</p>
+<p>我遇到最多的就是商品链接 提示这个</p>
+<p>原因为：手机页面卡在个人主页页面或者店铺页面，获取不到商品链接，所以报错！</p>
+<p>解决方法是：增加放回到购物页面动作</p>
+
+<p>报错3：商品没有已售，销量为0，脚本获取不到</p>
+<p><img src="img/ff4d24e72b3b0112041f4c6492657c63.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/AVC2bmd2toeRy1xWUURceEQ0nze/"/></p>
+<p>直接在 获取元素对象(手机)里面设置，并且加上代码</p>
+<p>如果已售数量=0，直接进行下一次循环！</p>
+<p><img src="img/851bf99e7e3e9f9140c3c5646a45bf21.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/XolmbBvF8ohjkvxG6apcGLWonXy/"/></p>
+<p>报错4：商品主图太长，获取不到 已售元素，</p>
+<p>解决方案：增加 屏幕上滑动作</p>
+<p><img src="img/682477e65802b83817869d2f8ecef256.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Vxh0bcTwroPGIKxklEYcI8bXn0b/"/></p>
+<p>我的手机坐标大概是：</p>
+<p>小米9a手机可以参考!</p>
+<p><img src="img/675807675ee3562779f37da4691a604d.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/QMyEbbOz2oySvhxMDRjcWWwYnHQ/"/></p>
+<p>别的基本没有什么大问题了，有的话都是很简单的，自己就能解决！</p>
+
+<h4>2.增加无限循环操作</h4>
+<p>可以固定次数或者无限抓取</p>
+<p>注意：</p>
+<p>我这边无限循环使用的操作是上滑！</p>
+<p>就是获取一组商品链接完了之后，上滑刷新，获取新的商品链接</p>
+<p>下滑也可以，但是下滑可能会重复，所以我设置的上滑</p>
+<p>也可以设置成，通过关键词抓取对应类目的商品链接，这个我有空了会做出来！</p>
+
+<p>一些报错都解决完了之后，就可以在整个循环代码外面增加一个 无限循环 命令，并且设置循环次数</p>
+<p>这里可以用到全局变量</p>
+<p>设置一个全局变量拿来当作循环的次数</p>
+<p><img src="img/482bdd4612e866287218f2e7e0721666.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/F6t5buuINo6NavxyrdqcHp7bnwf/"/></p>
+<p>具体代码如下：</p>
+<p><img src="img/6acb2cbcffec21851b81f0b5d606984f.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/NTR5bN8dRoVyrzx72XdcBK25nrd/"/></p>
+<p><img src="img/2a1558fa45930cb49d8c8fd57931041e.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/KDmtbIgVao91rYxR8PAcs7K3n4f/"/></p>
+<p>并且设置一个自定义对话框，可以选择自己要抓取的次数！</p>
+<p><img src="img/11ed9588115c4c947dbac97e5bbcc0cd.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/KzhvbGwiEoyzrIxgAEecNU7yn3f/"/></p>
+<p><img src="img/0c6ad087faef1573bd3c7510684120d8.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/IxBnbVSLpoR8YqxJ5cGcjjJbnec/"/></p>
+<p>设置好退出循环的条件，这样就可以固定次数或者无限次数抓取</p>
+<p>也可以设置定时运行，每天定时或者设多少分钟定时获取等等！</p>
+<p>定时运行在影刀主页面的触发器里面：</p>
+<p>可以根据自己的需求设置:</p>
+<p><img src="img/b30f2ad6ab502ce15c24fae06839938c.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/HgHAbCx5io8f9axp5EAcPveEnod/"/></p>
+<p><img src="img/cbc9dfd469ad21e516ab59fadaad07bf.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Napjbc4Aeo3eLux0gNBcsmNKnIc/"/></p>
+
+<p><img src="img/967df534ad418309961d76179524b390.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/XmGJbLO34obl9Wxvd2rc8yCsnHh/"/></p>
+
+<p><img src="img/8d9f527abc9347a95367cdd0fe31fbbf.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Izo8bfZ4uon3eOxEhjRcZLkenFd/"/></p>
+
+<h1>第三步：增加稳定性，设置容错</h1>
+<p>推荐观看影刀官方视频：</p>
+<p>影刀RPA中级课程：03 异常处理</p>
+<p>https://www.bilibili.com/video/BV1Uh411u72J/?spm_id_from=333.999.0.0&amp;vd_source=14a3ed1caf691b990c61aad056f9fc03</p>
+<p>我这个脚本里面的异常处理主要是使用</p>
+<p>Try命令和Catch命令</p>
+<p>简单解释： Try命令和Catch命令</p>
+<p><img src="img/36e3534dab74aaced486ce6fb1c97c3a.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/KMpabhFlGo3dgCxckV6cwLwbnIc/"/></p>
+<p>如果脚本正常运行的话 ，这段代码就跟没有一样</p>
+<p>如果try里面的代码报错了，就会转入Catch命令！执行里面的代码！</p>
+<h4>我的异常机制处理：</h4>
+<p><img src="img/f23a8b262538dd61be42a3a380c83c82.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/OruzbPVePoWyxcx7YadcVCVpnzc/"/></p>
+<h5>1.首先记录错误信息</h5>
+<h5>2.通过错误信息判断问题，并且解决，我一般遇到的是获取不到商品链接，这个时候我卡在个人主页</h5>
+<p>所以我点击了两次返回，并且进行上滑刷新动作！</p>
+<p><img src="img/a5ab3d005eb0106bcdb448a7502cea4f.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/K2M0b45Bion7qPxVkUTcGjconEe/"/></p>
+<h5>3.跟2同理！</h5>
+<h1>总结：</h1>
+
+<p>影刀RPA适合有很多重复性的动作，我学习影刀的初衷也是希望自己平常的工作中也可以用到上.</p>
+<p>今天讲的思路适合做很多平台，包括抖音，视频号等等</p>
+<p>这几天刚好给自己写了这个脚本，希望这个分享对你有帮助！</p>
+<p>本人刚开始做小红书电商，如果你喜欢影刀RPA或者正在做小红书电商·</p>
+<p>希望可以多交流！</p>
+<p>本次代码中也有很多不足的地方，有影刀大佬的话可以多多指教！</p>
+
+<p>往期跟RPA有关的文章：</p>
+
+
+<h2>本文所提到的所有链接：</h2>
+<p>1.思路来源于：https://articles.zsxq.com/id_xwveu3e0usfv.html  书豪的文章【小红书单店铺单月6000+利润选品保姆级教程】</p>
+
+<p>2.影刀配置电脑端环境：</p>
+<p>来自官方文档：https://www.yingdao.com/yddoc/topic-basedDoc/a5c87b1d3996d052c4d24649863a4e9d.html?</p>
+
+<p>3.影刀配置手机端环境：</p>
+<p>https://www.yingdao.com/yddoc/topic-basedDoc/7dc8582d60cea069e994d96d84531ea6.html?</p>
+
+<p>4.影刀RPA中级课程：12 手机自动化：</p>
+<p>https://www.bilibili.com/video/BV1Zk4y1w7HA/?spm_id_from=333.337.search-card.all.click&amp;vd_source=14a3ed1caf691b990c61aad056f9fc03</p>
+
+<p>5.Xpath定位，官方教学：</p>
+<p>https://www.bilibili.com/video/BV1Zk4y1w7HA?p=7&amp;vd_source=14a3ed1caf691b990c61aad056f9fc03</p>
+
+<p>6.影刀RPA中级课程：03 异常处理</p>
+<p>https://www.bilibili.com/video/BV1Uh411u72J/?spm_id_from=333.999.0.0&amp;vd_source=14a3ed1caf691b990c61aad056f9fc03</p>
+
+<h1>完整代码奉上：</h1>
+<p>本人也是0编程基础学习了几个星期做出来的</p>
+<p>代码肯定有不好的地方，有影刀大佬也可以交流一下！</p>
+<p>核心流程太长了，</p>
+<p>这几天会简化一下，多设置几个子流程</p>
+<p>这块自己还不是很熟练，还在学习中</p>
+<p>后续可能会出搜索关键词，抓取低粉爆款商品！</p>
+
+<h2>图1.主流程</h2>
+<p><img src="img/7ca56e848643d63296ea6751580bac35.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Z9DFbhV5ZoSFHNxDxNLc1umbntg/"/></p>
+
+<h2>图2.获取粉丝数量</h2>
+<p><img src="img/c6b5de326bf73ad7568fb3df061a7641.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/G1X6b4N67oQghCxXr0Ncqu3Cnje/"/></p>
+<h2>图3.核心流程循环获取到的商品链接：</h2>
+<p><img src="img/9fb6a4cefe6f1448ac563d55b9c49f6c.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/J97tbzXnZoFXVmxZHvwcwJoInRb/"/></p>
+
