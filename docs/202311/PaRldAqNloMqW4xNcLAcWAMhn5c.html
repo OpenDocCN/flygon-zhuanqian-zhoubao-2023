@@ -1,0 +1,103 @@
+<h1>自动监控+加图表分析 对标数据</h1>
+<blockquote>来源：<a href="https://w0kp7t5wqc.feishu.cn/docx/PaRldAqNloMqW4xNcLAcWAMhn5c">https://w0kp7t5wqc.feishu.cn/docx/PaRldAqNloMqW4xNcLAcWAMhn5c</a></blockquote>
+<p>做抖音有一年了 抖音对标的帐号不说一百 至少也有大几十个了</p>
+<p>所以呢经常就在找各种方法 想把对标的数据第一时间统计下来 对标的作品几点发的 什么时候爆的 今天100个或者更多的对标中谁的视频爆了 我能不能第一时间跟上</p>
+<p>有没有什么办法能够帮我定时去帮我扒对标的点赞 （比如定时1小时帮我去记录一下）</p>
+<p>然后记录下来的数据还能做到EXCEL一样的图表</p>
+<p>就比如像下面的表格  到了这里相信会用EXCEL 图表的应该就懂了</p>
+<p><img src="img/a5f60c2ee38cd0c70370691c391dff66.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/BcEFbbQuwoCAqkxvT5hcdneYnTc/"/></p>
+
+<p><img src="img/f316a9f0b3ec1b0b23fc9b9e1c3e946a.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/ZWkJbHAa5olfiBxB8IPcCYjJnVd/"/></p>
+<p><img src="img/8b37a584b3994ab2ce470fc18482346a.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/WBGIb4D4xoV2UExgZ2hcrNlkn8f/"/></p>
+<p>好了下面是我的一个流程图</p>
+<p>工具 ：</p>
+<p>影刀RPA +飞书的多维表格 （这两个全是免费的）</p>
+<h1>1 用影刀写一个脚本 让机器人定时固定的时间 或者每隔多少时间去扒一下对标</h1>
+<p>影刀的脚本地址：（明天 等待分离脚本）影刀的脚本 https://api.winrobot360.com/redirect/robot/share?inviteKey=12838d2e26f47359（密码2023）</p>
+<p>1先在C盘下 建个 【抖音配置文件.xlsx】</p>
+<p><img src="img/ab03d22947c290739de947601b4ede8c.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/QoDBbEpNqoUSyBxOFHXcBxOOn1j/"/></p>
+<p>2在excel下建</p>
+<p><img src="img/cc5d35af66bbcc1ebce0f075357b8557.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/DA8PbrhwvoijqnxVos1cKJcKnTg/"/></p>
+<p>3配置对标主页(一行一个对标 不要有空行 因为我没有空行所以不知道中间空了会怎么样)</p>
+<p><img src="img/941424da2b7eba0d8a0edf0660f4ef19.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/PkByba7fmoHRS9xe58dcl6khnOh/"/></p>
+<p>4【记录] 页是数据的一个本地备份 这里也是自动的不用管 但是要把这个页面建好</p>
+<p>5影刀的一个设置页面 其它的就没有</p>
+<p>https://ydrpa.yuque.com/org-wiki-ydrpa-xtutvv/ga4dm6/ir3mh6orhy4ib7zf（多维表格ID 示列）</p>
+<p><img src="img/f4ba95cf920c7686c234b225492c56c4.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/FcoObzL1zokDDuxjaZncES9enMe/"/></p>
+<p>6注意 注意 注意 注意 注意 （因为影刀的原因系统不一样 会有不兼容的情况  这是我的系统版本 结尾贴上影刀的代码</p>
+<p><img src="img/d0fcd64451d712cb354f775d874f4e3e.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/OYGBbItNVocoA1xRMgxcBup4ndd/"/></p>
+<p>）</p>
+<p>如果影运行出现 下图报错问题第一次把这个C列有数据的地方加个时间 （不能是未来的时间不然就不抓取了）</p>
+<p><img src="img/4711a29018b7a5754ffb25d4eca0a55c.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/L6bObxUBjoRKb9xPMLgcQikEnYb/"/></p>
+<p><img src="img/56b729cb47f96bfc8d026851e1dcce73.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/SpIbbDd52oWq2PxJg1vckhysnlc/"/></p>
+<h1>2 让影刀把每一条数据通过飞书的API接口</h1>
+<p><img src="img/8b230830dfdb604de1f8c248bb6ccf06.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/MCodbmLSyoAqzsxnvpvcnKZGneg/"/></p>
+<p>把数据传到多维表格</p>
+<p><img src="img/467b73a4053e4fb46ccd86edffd7f9c1.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/TG8wbvC3moB8XexMkLWcXzYlneh/"/></p>
+<p>https://open.feishu.cn/app/</p>
+<p>1对接前需要去飞书开发平台去开放权限</p>
+<p><img src="img/8e504b9f7e40fa59b96d4bf631aff2b1.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Ch0qbrLonoShWNxEWs1cLp0Onje/"/></p>
+
+<p>2点新建的应用</p>
+<p><img src="img/4a3f5f4a7b0180ba7ea8eabe2b5d1c03.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/HKbkb8Rlko7awsxjeQXch2XKnnK/"/></p>
+<p>保管好自己的ID 后面填写到影刀当中</p>
+<p>3开通记录的权限</p>
+<p><img src="img/b702d0bf1ad01049e15fd9283de7e9c0.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/DsDpbk8iqoaQjtxGJOqcBPOqnsg/"/></p>
+<p>4发布应用版本</p>
+<p><img src="img/8c22bacba431cd6f8eef68d0a8ff2b0a.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/WYpNbF7ZDodghZxtP2qcahnqnBd/"/></p>
+<p>5去自己的飞书建个多维表格</p>
+<p><img src="img/ae755159cadd3b9957355bdbaf95a8a3.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/TVL3bm5ymoBZaVxfEQBcFMtvnNh/"/></p>
+<p>6把这个多维表格 添加到刚才的应用里去</p>
+<p><img src="img/2bf4452fc65eb6961bb8e94704b27e50.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/BTMMbm7FfoWzlXxOyXMcDT1ynMb/"/></p>
+<p><img src="img/3e51ee8deb358b2dccf993491e826ee1.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/OXOqbiaaKo11uOxszl4cwS97n2g/"/></p>
+<p><img src="img/cd78d27591f319a4e0cbf8d87a36c15b.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/LqWRbVTWgoPuzzxPDwEcQVgnnZb/"/></p>
+<p>并且给到编辑的权限</p>
+<p>7 等影刀机器人自动上传数据 有数据了 你就可以去飞书的仪表盘添图表了</p>
+<p>不会图表的 要自行去补一下EXCEL了</p>
+<p><img src="img/d2a2bddc9550af92a4ca2ae4867c1b71.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/OjHbb95vFoYz8BxV0aMcn8PwnYc/"/></p>
+<p>8去多维表格建表的时候注意</p>
+<p><img src="img/54607ec1d3e64fab56db1ddcf785939d.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/JHspbH41potgKJxsvx1cL7iWnSe/"/></p>
+<p><img src="img/977ae1e31bc19184edf32dac32f9d6f1.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/FPkwbahH9oXSoQxpOR4c8r2PnUd/"/></p>
+<p><img src="img/1ffcc8b74e97065fd8e9390efe6c4cee.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/VtmHblPgVoAlLNx1moYcAhPWn8b/"/></p>
+<p><img src="img/9af02135648df901be2a72de1d9cf401.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/YOtjbZme4oN6P1xQMXfctt1CnVb/"/></p>
+<p><img src="img/9766a9217ef052eb0a98f960ac1c68be.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/RYnAbdlcHonGXMxTlSBcEdkzn5x/"/></p>
+<p>其它的全文本格式</p>
+<p>9自由发挥查你想看的数据了 下面是我自己用的着的一个数字仪表盘，每个数字都可以单击 都能点出明细表</p>
+
+<p><img src="img/995ed6efe33c9105823ab42b3877199b.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/F2oDb7HeQoIZS4xRUytcSuuTn1g/"/></p>
+<p><img src="img/86ac5d9db593d34bd8c114b666f04104.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/EXunbB4SfofwGjx1kiIcN0UdnDg/"/></p>
+<p>就比如上面 这样对标的数据是不是一目了然  非常的安逸</p>
+
+
+<hr/>
+<h1>3影刀代码</h1>
+<h2>主流程代码</h2>
+<p><img src="img/225e7260d1801216359b5fc90d10aa97.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/ZVe7bTeXJoAqJ0xJoJ1cSHNTnJg/"/></p>
+<p><img src="img/5e3c2b27738bb524b795dccfbd528a16.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/XqDrbZ68Sowmqvxt1Kqcdyvpnsy/"/></p>
+<p><img src="img/1db65a27b5be45a622aa2163988a7e08.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/CrqcbW8l3o8LmBx9gFdcBlxFnfe/"/></p>
+<p><img src="img/e746a88cff096ed73cd7bdbfdda99c55.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/EBHDbW8NPojmrNxghLucVGs9nvc/"/></p>
+<p><img src="img/7cf72fcf966bdcd671da2b8b9508e85d.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/B5E6bqdeyozND1xYiXKc0bsFnaf/"/></p>
+<p><img src="img/050011d1938dced9c1932b6f70c82743.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/I3lpby6y3oSREHxNRWDcGLkjnIb/"/></p>
+<h2>2监控流程代码</h2>
+<p><img src="img/5c43062bbad2f0546c9603983a93c8e2.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/EwCzbbJ0uoWzBWxcNjbcv6ugnDh/"/></p>
+<p><img src="img/8a02cbca8863c702c5d1809a41e72aee.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/TdzpbYg8Uo2V0pxKsDCc7t0dnKc/"/></p>
+<p><img src="img/ffdc296464865cf7d63c4d4373c3b51d.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/F4rVbvMu7oBo1Fx48KXcuMi8n6f/"/></p>
+<h2>3 检查微信存在流程</h2>
+<p><img src="img/fb9705d6ffd85581287441e153ef9e14.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/JloXbTQJFohv2jxjoBIcvk6wn47/"/></p>
+<h2>4配置流程</h2>
+<p><img src="img/36b8f5f423285fb82a8677af7c12f69a.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/H8f1bdkCZot43YxRi6KcL9cpnxH/"/></p>
+<p><img src="img/49d2e2fdaf24d0907935a49f60b8e4df.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/MboZbPXglosKv5xTUvgcIwVWnoc/"/></p>
+<p><img src="img/3e053df0851e85ecfbe3d515c193ddec.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/R9g1b3vdEoNrPRxhUMjcFgNBniL/"/></p>
+<h2>5筛选流程</h2>
+<p><img src="img/7981eeed3e11ab9cf86726919f3b4ed1.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/NQzVbscdtoU5UjxiCPwcCG8rnrf/"/></p>
+<p><img src="img/d93aabaaf9bb6d4f0cd04dc121d78e99.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/EmuWbQGP3oExYcxfSDJc84kAnWc/"/></p>
+<p><img src="img/c9016cefe815c2ae794878e6ae68650c.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/L7bxbX2sqohBmSxDGUfc27aqnVe/"/></p>
+<p><img src="img/c479ed7fc8e8909a98fc895b4b39bf73.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/AMZ3b9Ctjo6LDJxGb5tcNICRnVh/"/></p>
+<p><img src="img/db99c61f5d13755b02a122147e146d62.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/WOB8bPbe4oJagSx7sxZcYuIBnfh/"/></p>
+<p><img src="img/448086155411a7a51841aef7292b3115.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/H5pzbwWikoRngVxohQzcKtobn0g/"/></p>
+<p><img src="img/26676bd22341f5210f4a195d3934fad1.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/PWQ7bFmLjoDuMcxJuR6cFD8GnVh/"/></p>
+<h2>6微信发送流程</h2>
+<p><img src="img/3dc61f265a50d5043f32ee424ba78695.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/UqVjbwTjXo5t1Sx4pJucj9zvnRe/"/></p>
+<p><img src="img/7d285644223c1cb39e194e6e20efa93e.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/VxHzbiHDEohSh1xbXMocGzDDnRd/"/></p>
+<p>到此 所有结束  原来的工作原理是发送的微信的 后来发现飞书比微信好用 所以微信部分的有会写代码的可以自行删减一下</p>
+<p>第一次分享 排版不好将就着看吧</p>
