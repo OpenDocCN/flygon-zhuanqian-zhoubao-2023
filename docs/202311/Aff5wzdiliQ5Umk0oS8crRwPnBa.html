@@ -1,0 +1,199 @@
+<h1>【实战】效率神器：ChatGPT和Zapier实现自动化！</h1>
+<blockquote>来源：<a href="https://zzi7a49xoa.feishu.cn/docx/H4L5dC5VFozWrlx6sI7cmnRpn8e">https://zzi7a49xoa.feishu.cn/docx/H4L5dC5VFozWrlx6sI7cmnRpn8e</a></blockquote>
+<h2>一、引言</h2>
+
+<p>在这个快节奏的数字时代，我们每天都被大量的信息和繁复的任务所淹没。邮箱里堆积的未读邮件、日益增长的工作清单、还有那些重复劳动——这一切不仅消耗了我们宝贵的时间，也消磨了我们的创造力。</p>
+
+<p>如果你正因为这些问题而感到困扰，有了 GPTs 和 Zapier，这些挑战不再是问题。</p>
+
+<p>GPTs 我不用再过多介绍了，相信大多数人都已经熟悉，还不了解概念或者基本配置方式的小伙伴可以看之前那篇文章。</p>
+
+<p>但是，要充分利用 GPTs 的潜力，我们需要一些工具来帮助它与我们日常使用的应用程序和服务无缝对接。这就是Zapier发挥作用的地方。Zapier 是一个强大的在线自动化工具，它可以连接数以千计的应用程序，无需编写任何代码。通过将 GPT 与 Zapier 结合，我们可以实现许多自动化任务，从而显著提高工作效率。</p>
+
+<p>本文旨在为小伙伴们提供一个通俗易懂的指南，解释如何利用 Zapier 让 GPTs 支持自动化。那话不多说, 我们开始吧!</p>
+
+<h2>二、Zapier是什么?</h2>
+
+<h3>一）基本功能</h3>
+
+<p>Zapier是一个在线自动化工具，它通过“Zaps”（自动化工作流程）连接了数以千计的应用程序。这些Zaps可以将两个或更多的应用程序连接在一起，实现数据的无缝传输和任务的自动执行。</p>
+<ul><li>创建工作流程：用户可以轻松创建自定义工作流程。例如，当您在一个应用程序中执行特定操作时，Zapier可以自动触发在另一个应用程序中的相应动作。</li></ul>
+<ul><li>多种应用集成：Zapier支持超过3000种不同的应用，如 Gmail、微软全家桶、Slack、Trello、Google Sheets 等，实现各类应用间的动态交互。</li></ul>
+<ul><li>无需编程知识：用户不需要有编程背景即可使用 Zapier，所有的工作流程都可以通过简单的拖放界面来创建。</li></ul>
+
+<h3>二）优势</h3>
+
+<p>利用Zapier进行自动化有多种优势：</p>
+<ul><li>提高效率：自动化重复性任务可以大幅节约时间，让用户能够专注于更重要的工作。</li></ul>
+<ul><li>减少错误：自动化流程可以减少人为操作错误，确保数据的准确性和一致性。</li></ul>
+<ul><li>定制和灵活性：用户可以根据自己的需要定制 Zaps，实现高度个性化的工作流程。</li></ul>
+<ul><li>提高协作效率：Zapier 可以帮助团队成员共享数据和通知，从而提高团队合作的效率。</li></ul>
+
+<p>通过Zapier，即使是技术知识有限的用户也能轻松实现复杂的自动化任务。这对于希望将GPT技术应用于日常工作的人来说尤其有价值，因为它打开了一扇通往更高效和智能工作方式的大门。</p>
+
+
+<h2>三、操作流程</h2>
+<h3>一）注册账号</h3>
+
+<p>可以使用 Google 和 其他邮箱 进行免费使用。</p>
+<p>地址： https://zapier.com/</p>
+<p><img src="img/72eb8ccc2fee14ec1229d179b6894c50.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/GfwhbBT1yoqhg4xjlQscMbt0nWc/"/></p>
+
+<p>输入简单个人信息，点击 Continue。</p>
+<p><img src="img/55b313fd1358cff791dc1325206bdda0.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/QMiAbm65nou0EJxUqJ4chwJWnyf/"/></p>
+
+<p>选择需要集成的应用程序。有众多知名的应用软件， 如 Gmail、Nition、Google Forms、Discord、Stripe、ChatGPT、YouTube、Microsoft 系列、 EverNote（印象笔记）等。我这边为了案例演示， 选择了 Gmail、ChatGPT 等几款软件。</p>
+<p><img src="img/280c79b7dd1cf695da9e659dc902f19d.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Z9jJb8cGUo4lZyx1JiBcOdTEnnd/"/></p>
+
+<p>目前国内支持的软件较少，相对著名的国内办公软件里 我看到了 Tencent Docs。</p>
+<p><img src="img/c60eb37ce9fb75d06d089a91b7cf4074.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Wtzbbf92Ho1plvxkDpqcnxGRnDg/"/></p>
+
+<h3>二）配置 GPTs</h3>
+
+<p>1、点击  Explore &gt; Create a GPT，来到配置页面。</p>
+<p><img src="img/6de1578bf65df12deb6a1be2f5cb0c0b.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/WcGEb3Cu3oLktPx8IzncuWwunre/"/></p>
+
+<p>2、来到配置页面， 点击 Create new action。</p>
+<p><img src="img/1a4b62d3d5e8c4ec7d469e68f5caa830.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/O6V8bc4FsoevwjxbeROcplIxn1b/"/></p>
+
+<p>3、配置 url 并点击 Import ，再配置 Privacy policy。</p>
+<ol><li>url : https://actions.zapier.com/gpt/api/v1/dynamic/openapi.json?tools=meta</li></ol>
+<ol><li>Privacy policy: https://zapier.com/legal/data-privacy</li></ol>
+
+<p><img src="img/b9dc619d87771e9040aafb5b1386a3d2.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/CgYDbiuKho1FaexWx2Kcqd1ZnC9/"/></p>
+
+<p><img src="img/e15388747d1d9dd7a07e1bab6c1ceb29.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/GHkObqIqUokiqQxY0WRcN1pqn2d/"/></p>
+
+
+<p>4、回退到上一步，配置 Instruction。</p>
+<pre>### Rules:
+- Before running any Actions tell the user that they need to reply after the Action completes to continue.
+### Instructions for Zapier Custom Action:
+Step 1. Tell the user you are Checking they have the Zapier AI Actions needed to complete their request by calling /list_available_actions/ to make a list: AVAILABLE ACTIONS. Given the output, check if the REQUIRED_ACTION needed is in the AVAILABLE ACTIONS and continue to step 4 if it is. If not, continue to step 2.
+Step 2. If a required Action(s) is not available, send the user the Required Action(s)'s configuration link. Tell them to let you know when they've enabled the Zapier AI Action.
+Step 3. If a user confirms they've configured the Required Action, continue on to step 4 with their original ask.
+Step 4. Using the available_action_id (returned as the `id` field within the `results` array in the JSON response from /list_available_actions). Fill in the strings needed for the run_action operation. Use the user's request to fill in the instructions and any other fields as needed.</pre>
+
+<p>5、名称、描述、Logo 等参数可以按照自己的需要进行配置。</p>
+<p><img src="img/55a60f2e1b949ccf8f76cbdea17b3fd5.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/DvTzbBg6XophR6xduGScVgxAnHe/"/></p>
+
+<p>6、输入 配置zapier，开始配置。点击 Sign in with actions.zapier.com 进行登录</p>
+<p>非开发人员忽略这段话：在配置状态下测试时，默认将显示Debug模式，既可以看见接口之间请求和响应的日志信息，。</p>
+<p><img src="img/061a54f54a76f2076908844758945223.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/JR7fbNhH0ohDtGxn5wQcyO2Nnlh/"/></p>
+
+<p>7、点击 Allow。</p>
+<p><img src="img/0e4fa75498c168d2ed21ab42c8c7cdde.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/CiY0bpj2iolOAixIeSpcG6b4nIe/"/></p>
+
+<p>之后，页面会自动返回，然后你可以看到成功提示。"You have successfully signed in via OAuth"</p>
+<p><img src="img/f5578b736f546795a461ff2e5ab727bd.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/NRDRb9h8lovIB2xLtjuc6fuen4d/"/></p>
+
+<p>8、输入 请列出我可以配置的 Zapier AI Actions，并使用中文和我对话 , 点击 配置 Zapier 的链接.</p>
+<p><img src="img/ed41350c5e02165e123bae1bc9959bca.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/WRAjbezHmoyNkLxLFVzcXLTyngc/"/></p>
+
+<p>9、在链接中, 点击右下角 Add a new action. 这里, 接下来将使用 查看邮件 的功能来演示。</p>
+<p>若之前没有登陆,这里会要求先登陆。</p>
+<p><img src="img/c14a8bd2822859e47fd842d1589ada4e.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/V2C9bKpwAoNv2Nx83svcX93pnNf/"/></p>
+
+<p>10、搜索 查看邮件 的功能。输入关键词 Gmail，找到 Gmail：Find Email 选项。</p>
+<p><img src="img/330e006dec67bb42d5cab61552454a7c.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/DZP3bkEkVoBG6CxhnLHcszkJnsf/"/></p>
+
+<p>11、点击 Connect a new Gmail account，并绑定邮箱。</p>
+<p><img src="img/5dedd93532da28fd267c29547164705f.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/RuG0bv5cqoIyKhx7eLOc6cOLnMc/"/></p>
+
+<p>点击 Yes，Continue to Gmail。</p>
+<p><img src="img/fde9429dbe582b724d7f27bdb49b8b6a.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/G9sOb8VIyoELu2xPnRecPidKnxd/"/></p>
+
+<p>选择邮箱账号。</p>
+<p><img src="img/85d2048afe593fe647a3f5bbb72859f7.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/OQLubS9j3osyC2xyb55cGEccnUb/"/></p>
+
+<p>点击允许，进行授权访问邮箱账号。</p>
+<p><img src="img/f20377f713f906c41a648a5834434154.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/ScCWbfytHoFNugxQYLac1ozwnec/"/></p>
+
+<p>12、点击 Enable action。</p>
+<p><img src="img/79113e42f9f2b0b4ede51483a6c9485c.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/AytLbqSKKoUsmjxMLPXcZiThnld/"/></p>
+
+<p>这样代表已经启动了，如果需要添加其他动作，可以点击 Add a new action 来操作。</p>
+<p><img src="img/b79e6fe4ee71fac8fe30cc1e1bd95eab.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Nrc7b60DkoDUtIxJ13ocHgjOnKf/"/></p>
+
+<p>13、回到 GPTs 中，回复已经完成。</p>
+<p><img src="img/29aef16896e32b7871bd0753c9a48e06.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/X59UbuL8doTJfpx3pk3cPOcKnIb/"/></p>
+
+<h3>三）简单测试</h3>
+
+<p>1、要求小助手列出过去一周关于 AI 的邮件。在处理指令时，会要求用户确认是否信任对应的网站，可以点击 Allow 来授权。</p>
+<p><img src="img/bcdd0c04a57883226cdcde0c8ad9d844.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/YtNsbX0XVoymV8xTR6icfaqFnFd/"/></p>
+
+<p>2、输出结果基本满足要求。</p>
+<p><img src="img/6604cf8abc9caf8f13643c296b21ba80.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/LdNBb2dOdoCjbDxJpCbcht9lnvc/"/></p>
+
+
+<p>3、指定时间，针对邮箱内容进行简单的汇总。</p>
+<p><img src="img/dd1a2bc846964445f842b5a96f60abdd.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/XXH5boRSho2PTyxiTXacZoKLnWb/"/></p>
+
+<h2>四、案例 - 邮件摘要与关键信息批量提取</h2>
+
+<h3>一）背景</h3>
+
+<p>假设你是一名项目经理，每天需要处理大量的工作相关邮件。这些邮件中包含了项目更新、会议纪要、客户反馈等重要信息。手动阅读和总结这些邮件非常耗时。</p>
+
+<p>我们实现一个自动化的工具流， 让它可以从长篇的工作邮件中提取关键信息和摘要，帮助你快速了解邮件的核心内容。</p>
+
+<h3>二）实操</h3>
+
+<p>当邮件中的正文内容是 图片、或者具备特定样式的内容，在 GPTs 中利用 Zapier 获取不到正文的内容， 这是一个瓶颈，大家需要注意！</p>
+
+<p>注意,  这个具体特定样式怎么理解呢？ 比如我从 ChatGPT 中复制 Markdown 样式的输出内容作为邮件正文进行模拟时，在 GPTs 中利用 Zapier 始终获取不到正文。</p>
+
+<p>1、输入相关信息后，GPT 会要求先登录 Zapier。</p>
+<p><img src="img/be845ddb59d203a94f609750670118e6.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/RlDYb3u2ooyp3Lx6GaccIMdTnjb/"/></p>
+
+<p>2、登录成功。</p>
+<p><img src="img/c4525b2860c21da9277e1da5f60cf932.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/R1YgbkGN1osdH1xxDdicwLBVnHe/"/></p>
+
+<p>3、先了解目前该账号已经配置的 Zapier AI Actions，来判断是否需要 配置额外的动作来满足需求。没问题后进行下一步。</p>
+<p><img src="img/8b140cdda5caf236df02ff9e20867a36.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/KiIGbCP2ioXodzxwsMkcv111nAd/"/></p>
+
+<p>4、输入提示词，将项目相关的邮件进行汇总，并输出项目汇报相关邮件的 “当前状态”、“主要问题”、“下一步计划”。</p>
+<p><img src="img/a32cb2a1696942a31b4906cefec3fba8.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/E2FObA9CMoJ8XkxeC8IcHZHxn0c/"/></p>
+
+<p>5、由于项目之间存在差异，且项目背景相对比较复杂，这里将不继续演示更多内容。基于 第 2 步 获取的信息可以作为处理工作的依据，再继续准备下一步的动作。</p>
+
+<h2>五、案例 - 智能邮件分类与回复</h2>
+
+<h3>一）背景</h3>
+
+<p>假设你是一家公司的客服代表,或者是一位独立开发者，每天都会收到大量的客户邮件，这些邮件包括咨询、投诉、反馈等多种类型。手动处理这些邮件既费时又易出错。</p>
+
+<p>我们可以实现一个自动化工具流，它可以根据邮件的内容自动分类（例如投诉、感谢信等），并生成相对合适的回复内容，再发送给对应的发件人.</p>
+
+<h3>二）实操</h3>
+
+<p>1、获取可以操作的动作。</p>
+<p><img src="img/130347c634195930ff74db9f2cc5a274.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/P6WobRkVuoABDYxZf6gc1g6ont9/"/></p>
+
+<p>2、点击 Sign in with actions.zapier.com 后在新窗口点击 Allow， 进行初始化登陆。</p>
+<p><img src="img/2cb810ddfbeb37646e09a0905a876841.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Oeteb1FJIoh3Tcxw8e4cpAu6njd/"/></p>
+
+<p>3、重新获取可以操作的动作。</p>
+<p>如果没有 Reply to Email, 可以参考 三、操作流程 / GPTs 章节添加 Gmail：Reply to Email 的动作。</p>
+<p><img src="img/ee0ee48854b16f75436cd5a2360f06f2.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/VMO1bZoF9oyp8hxHgukc8ic2nHh/"/></p>
+
+<p>4、获取昨天的邮件简要汇总。</p>
+<p><img src="img/2ec44fc68c440c2cf7268bf046505947.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/KnLabDIVooW2e4xBJD0c0ScJnNg/"/></p>
+
+<p>5、自动分类并生成对应的回复建议。</p>
+<p><img src="img/f9974f49c564dac9b6df9aba36d37894.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/BpK9bP9exobLMixZJxCcmtAenve/"/></p>
+
+<p>6、将生成的内容自动回复给发件人。</p>
+<p><img src="img/9ef5f9efda4ff5df6d1864bf7c289b4b.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/JbKrbktpNoipHWx0S1CcOlyGnbc/"/></p>
+
+<p>7、检查邮件，发现回复正确。</p>
+<p><img src="img/6ef7c5c8bb220b3661083d490a3c77eb.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/QbYVbnq1foxExoxG276cWpzSnuh/"/></p>
+
+<p><img src="img/fd7e688aa0895e272c3cad58eef92d69.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/DjrvbolyGo0oHHxQWnwcroALnBh/"/></p>
+
+<h2>六、总结</h2>
+
+<p>在这篇文章中，我们结合配置方式、简单的使用案例探索了如何利用 Zapier 这一强大的自动化工具来增强 GPTs 的功能，相信大家也一定有了更多的灵感去应用自动化工具流的场景。（有条件的小伙伴，建议使用API 获取精准数据，再配合 GPT 的能力，这种方式的稳定性更强！）</p>
+
+<p>小伙伴们可以尝试自己动手，将这些工具融入日常工作中，体验它们带来的变革。记住，技术的真正力量在于它 如何被应用来改善我们的生活和工作。期待大家的实践反馈，我们下期教程再见！</p>
