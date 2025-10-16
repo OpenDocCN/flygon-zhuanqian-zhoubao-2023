@@ -1,0 +1,125 @@
+<h1>利用Colab和Stable Diffusion实现云端、免费、自动、批量、无限AI出图</h1>
+<blockquote>来源：<a href="https://zyb2zrrrem.feishu.cn/docx/Md2KdAjbDo0cdGxGMtncyb8CnLb">https://zyb2zrrrem.feishu.cn/docx/Md2KdAjbDo0cdGxGMtncyb8CnLb</a></blockquote>
+<p>我是林同，加入生财两年，理工男，坐标广州，主业工程管理，爱好健身，有健身粉几万，在做运动健身产品推广，也是工具控，懂点写代码，喜欢偷懒，擅长让工具干活，自己多点时间摸鱼，以下是正文：</p>
+<h1>背景介绍</h1>
+<ul><li>Stable Diffusion是目前最火的AI绘图工具，但安装使用对计算机配置有较高要求。</li></ul>
+<ul><li>在硬件条件不具备的情况下，可以利用云端进行出图。</li></ul>
+<ul><li>google colab提供了云端环境，可以实现免费云端出图。</li></ul>
+<ul><li>AI绘图结果通常不能直接使用，大概30张中选1张能用的，因此需要大量出图，人工筛选。</li></ul>
+<ul><li>由于colab分配给每个账户的算力有限，无法不断出图。</li></ul>
+<ul><li>按本文方法可以利用colab和Stable Diffusion实现云端、免费、自动、批量、无限AI画图。</li></ul>
+<h1>部署：Colab云部署Stable Diffusion WebUI</h1>
+<ul><li>自备梯子账户</li></ul>
+<ul><li>自备google账户</li></ul>
+<ul><li>登录google账户，通过以下链接，打开笔记，点击运行代码块</li></ul>
+<ul><li>本colab笔记属于camenduru大神</li></ul>
+<p>https://colab.research.google.com/github/camenduru/stable-diffusion-webui-colab/blob/main/nightly/stable_diffusion_v2_1_base_webui_colab.ipynb</p>
+<p><img src="img/f97b157b46d1f94c1c328b3636fed464.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/ZlSnbsaq0oUw4XxBcA8cGLqFnJW/"/></p>
+<ul><li>可能会弹出对话框，或者人机交互测试，根据提示往下走</li></ul>
+<ul><li>代码块运作的时候，在下方可看到不断输出</li></ul>
+<ul><li>期间可能会弹出几次人机交互测试，根据提示操作</li></ul>
+<ul><li>等待完成资源下载和安装，直到出现几个Public WebUI Colab URL</li></ul>
+<ul><li>这几个Public WebUI Colab URL就是部署好的Stable Diffusion WebUI操作界面地址，复制到浏览器打开</li></ul>
+<p><img src="img/2716c6bc95bacb24b6a8984f704dbf85.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Tk8Yb2sshoAOlGxKeL1cYy0tnre/"/></p>
+<p><img src="img/9c062ab3d3ee5a1e129e34c39ada5df3.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/K4NTbmwuzoCCC5xaMcxceQTJnFd/"/></p>
+<h1>实操：Stable Diffusion 出图实操</h1>
+<h2>下载大底模型</h2>
+<p>ChilloutMix 是基于亚洲人物训练集训练出来的大底模型，可以生成比较理想的亚洲人物状态</p>
+<ol><li>点击Civitai选项卡</li></ol>
+<ol><li>Content Type选择Checkpoint</li></ol>
+<ol><li>Search by term打勾</li></ol>
+<ol><li>Search Term输入chilloutmix</li></ol>
+<ol><li>点击Get List，会从Civita中搜索并加载模型信息</li></ol>
+<ol><li>在Model中选择chilloutmix</li></ol>
+<ol><li>在Version中选择最新版本</li></ol>
+<ol><li>在Model FileName中选择模型名称</li></ol>
+<ol><li>等待Download Url中出现模型下载地址</li></ol>
+<ol><li>点击Download Model</li></ol>
+<ol><li>回到Colab界面，看到下载进度，等待出现Successful Downloaded说明下载完成</li></ol>
+<p><img src="img/ec4a7cd12d7d692827b777eb3b4af135.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Uz70br5RZoe55axYxPwcBFvgnFg/"/></p>
+<p><img src="img/781019cdf82a79708ae59699b1e94cc2.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/AcQsbZlnjo7BaYx8RkrcjF0Mnoc/"/></p>
+<h2>下载Lora模型</h2>
+<p>LoRA模型是一种可以生成出符合指定样式图像的模型，具有速度快、体积小等特点。</p>
+<ol><li>点击Civitai选项卡</li></ol>
+<ol><li>Content Type选择Lora</li></ol>
+<ol><li>Search by term打勾</li></ol>
+<ol><li>Search Term输入自己喜欢的Lora模型名称</li></ol>
+<ol><li>点击Get List，会从Civita中搜索并加载模型信息</li></ol>
+<ol><li>在Model中选择</li></ol>
+<ol><li>在Version中选择版本</li></ol>
+<ol><li>在Model FileName中选择模型名称</li></ol>
+<ol><li>等待Download Url中出现模型下载地址</li></ol>
+<ol><li>点击Download Model</li></ol>
+<ol><li>回到Colab界面，看到下载进度，等待出现Successful Downloaded说明下载完成</li></ol>
+<p><img src="img/e48f374cab0ac119e028457fcfc32d6c.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/VBNgbx9aqoYpFlxmE9ucN5eXnzd/"/></p>
+<p><img src="img/8426bd20ae6d5a2d9be1dc4c8c3d388f.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/G2WUbahZOo8lj7x0Nqjcvia7n7f/"/></p>
+<h2>选择大底模型</h2>
+<ol><li>点击txt2img选项卡</li></ol>
+<ol><li>点击左上角刷新大底模型</li></ol>
+<ol><li>在左侧选择刚才下载的ChilloutMix</li></ol>
+<ol><li>等到界面刷新</li></ol>
+<p><img src="img/7f949fb3610fbb66ff1c5cbe5b66c96d.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/ScwIb9vGFokvGBxL0o2cDp1Encc/"/></p>
+<h2>选择Lora模型</h2>
+<p>左下方展开Additional Networks</p>
+<ol><li>Enable打勾启用Lora模型</li></ol>
+<ol><li>点击Refresh Model刷新模型</li></ol>
+<ol><li>在Model 1处选择刚才下载的Lora模型</li></ol>
+<p><img src="img/945e81b0696c2c145cae672479647a2e.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/U0jQbRM5xotdYcxRwK3cLbBDn57/"/></p>
+<h2>设置参数并出图</h2>
+<ol><li>输入正面提示词</li></ol>
+<ol><li>输入反面提示词</li></ol>
+<ol><li>选择采样方法</li></ol>
+<ol><li>选择步数</li></ol>
+<ol><li>选择面部修复</li></ol>
+<ol><li>选择CFG Scale</li></ol>
+<ol><li>修改长宽</li></ol>
+<ol><li>点击Generate出图</li></ol>
+<p><img src="img/e5b4e9dbdb39498972da1fbe2c79a1c3.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/BaHmb6JzWoGd7JxPu0occaryn9b/"/></p>
+<p><img src="img/955b2c4586f24e20b0b91395de052f0a.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/DpndbloI8osV2NxLXCLchYSancQ/"/></p>
+
+<h1>提高：自动、批量、无限出图</h1>
+<h2> 如何实现自动出图</h2>
+<p>使用Colab出图很快，大约30秒-1分钟可以出一张，当把参数设置调试好后，在Generate按钮右键，选择Generate Forever，让程序自动出图</p>
+<p><img src="img/0e7ea7df52d6cd3e2c51d2cd287495ac.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/YjdsbqV7joAakfx8QjGcrmTmn3e/"/></p>
+<h2>如何找到自动出图的图片</h2>
+<ol><li>回到Colab界面</li></ol>
+<ol><li>左侧找到文件选项卡</li></ol>
+<ol><li>图片存放路径在/content/stable-diffusion-webui/outputs/txt2img-images/出图日期</li></ol>
+<ol><li>双击某个图片，右侧可以打开预览</li></ol>
+<p><img src="img/2153b9a9dd29802df8077656607b0d6f.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/RanabmKcBo5zjqxxL2mcqjLrn0d/"/></p>
+
+<h2>如何实现打包下载图片</h2>
+<p>回到Colab界面</p>
+<ol><li>点击停止运行Stable Duffusion WebUI代码块</li></ol>
+<ol><li>点击+代码，新增代码块</li></ol>
+<ol><li>复制以下代码，粘贴到代码块，把路径修改为自己图片存放路径</li></ol>
+<ol><li>点击运行代码块，等待下方进度条走完，就自动下载</li></ol>
+<pre>import os, tarfile
+ 
+import os
+from google.colab import files
+
+def make_targz_one_by_one(output_filename, source_dir):
+  tar = tarfile.open(output_filename,"w")
+  for root,dir_name,files_list in os.walk(source_dir):
+    for file in files_list:
+      pathfile = os.path.join(root, file)
+      tar.add(pathfile)
+  tar.close()
+ 
+  files.download(output_filename)
+
+#把第二个参数修改为自己图片存放路径 
+make_targz_one_by_one('neg_tar', '/content/stable-diffusion-webui/outputs/txt2img-images/2023-04-26')</pre>
+<p><img src="img/23ea7a7aae336db915faab512118d6b6.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/VUg3bUvyTopl9NxXqy1c1e6QnJg/"/></p>
+<p><img src="img/89baee9f78bf03d2e4c23a97f324b767.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/CLiVbhhMmoPHTfxqAaHc2fZ2nug/"/></p>
+<h2>如何实现批量出图</h2>
+<ul><li>电脑安装多款浏览器，如Chrome、Edge、Firefox等</li></ul>
+<ul><li>每个浏览器登录不同的google账号，同时操作，批量出图</li></ul>
+<ul><li>也可使用指纹浏览器批量出图</li></ul>
+<h2>如何实现无限出图</h2>
+<ul><li>每个免费账户每天大概有3-6小时的gpu算力</li></ul>
+<ul><li>最简单的方法：氪金，升级Colab pro会员，增加可用gpu算力</li></ul>
+<ul><li>准备大量google账号，或找到靠谱低价渠道购入大量账号</li></ul>
+<ul><li>等某个账户的gpu算力消耗完，则换号继续</li></ul>
+<ul><li>按5个浏览器计算，1分钟能出3张图，1小时可以出900张图，够够的了。</li></ul>

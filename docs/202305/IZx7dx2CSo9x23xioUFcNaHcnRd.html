@@ -1,0 +1,23 @@
+<h1>通过ChatGPT+RPA 13次拖拽实现文案全流程自动化</h1>
+<blockquote>来源：<a href="https://rztam6ckur.feishu.cn/docx/IZx7dx2CSo9x23xioUFcNaHcnRd">https://rztam6ckur.feishu.cn/docx/IZx7dx2CSo9x23xioUFcNaHcnRd</a></blockquote>
+<p>4月12号在生财发了一条关于rpa的资源对接，主要是2个目的：</p>
+<p>1、确定市场是不是有这个需求；</p>
+<p>2、通过圈友的需求推动我学习rpa解决具体问题。</p>
+<p><img src="img/1ab847f1f86337ebbdc3f8ecc8e4d15f.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/C1FcbEmgpoSMwUxTQdCcTIOfnve/"/></p>
+<p>因此一位圈友加到了我，需求是因为太忙，经常需要将文案标题重复粘贴到ChatGPT再将文案手动粘贴到表里，比较浪费时间。</p>
+<p>先来看下实现后的效果（建议电脑端观看，电脑录屏手机可能看不清）</p>
+
+<p>整体代码过程实现比较简单，根据需求做实现过程拆解</p>
+<p>开始前准备：</p>
+<p>已打开chatgpt网页、表格已填写文案内容</p>
+<h3>1、表格部分：</h3>
+<h3>表格文案填充，将要实现的文案通过公式实现</h3>
+<p>A列填入要写的文案标题</p>
+<p>B列填写</p>
+<pre>=CONCAT("写一篇","“",A2,"”的文章，标题+正文")</pre>
+<h3>2、影刀实现自动操作</h3>
+<p>整体测试比较简单，影刀获取网页、打开文案表格、循环提取文案标题、在chatgpt填写文案标题(过程中等待chatgpt输入完毕)、抓取最后一条回复、</p>
+<p><img src="img/4515a97027b0db4081e651dfeba72a69.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/GsnAboHXVoCvbPxy0hMc7qoZnHg/"/></p>
+
+<p>影刀rpa整体来说真心比较简单，B站也有影刀官方的初中高阶课程，过程中基本不用任何代码，有点类似小孩玩儿的编程机器人,如果工作中有天天机械重复的某些动作（类似于日报表、数据抽取）完全可以通过RPA解放自己的双手。</p>
+
