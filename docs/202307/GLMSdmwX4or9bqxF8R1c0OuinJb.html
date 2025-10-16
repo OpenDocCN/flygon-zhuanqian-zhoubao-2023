@@ -1,0 +1,102 @@
+<h1>电商新媒体结合 AI，实现矩阵化降本增效</h1>
+<blockquote>来源：<a href="https://yjl4lwvs75.feishu.cn/docx/GLMSdmwX4or9bqxF8R1c0OuinJb">https://yjl4lwvs75.feishu.cn/docx/GLMSdmwX4or9bqxF8R1c0OuinJb</a></blockquote>
+<p>大家好，我是陈思成。</p>
+
+<p>从 AI 的相关软件陆续发布，我的团队都会根据使用到，并且感觉顺手和不错的 AI 软件应用，结合实际，从电商的角度出发，应用到工作做，今天就跟大家分享一下，希望大家看完，都能和自己现有岗位结合，实现真正的降本增效。</p>
+<h1>让 AI 运营帮你引流：抖音/小红书/快手-无违规引流二维码</h1>
+<p>别怀疑，扫他，试试</p>
+<p><img src="img/ab0d5f3f786f5a5af161445256b58ada.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/PlJnbaQrro84SQxj9Z5ccABAn3c/"/></p>
+<p><img src="img/203a7a636993a6657c990fcf7d56a8d1.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/LEHoba78Eoi8WGxH2LwcSwSUnSe/"/></p>
+<p>抖音/小红书/快手/微信等等——无违规引流二维码</p>
+<h2>无违规引流的逻辑</h2>
+<p>直接发二维码必被判定违规，如果能超过抖音/小红书的识别算法，让他的审核机制无法识别发布的内容包含二维码，我们就可以直接可以直接发码引私域。</p>
+<p>（做 LSP，黑 5 还有莆田系的深刻理解这个威力）</p>
+<h2>解码现有二维码网址，通过 antfu 生成新的二维码</h2>
+<p>为什么不能用现成的二维码？有两个原因：</p>
+<p>1、目前网上各种工具生成的二维码，点阵不具有连续性，如果直接拿来用于 AI 绘制，就必须在“艺术性”和“可读性”之间做取舍，要么扫不出来，要么不够好看。</p>
+<p>2、 平台自带二维码，比如微信和公众号的二维码，原始内容比较庞大，导致二维码比较复杂。</p>
+<p>实测下来，超过 50 个英文字母和符号，艺术二维码可读性就开始直线下降。所以我们要自行拟合，不要用现成的。</p>
+<h3> 第一步：</h3>
+<p>将自己的二维码放到草料二维码 https://cli.im/ 里点击解码</p>
+<p><img src="img/5c0f3a9bca2d3697acb4ef66281f67ae.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Ixc0b5Kc0o1YJZxZbgwck7Agn9e/"/></p>
+<p>上传自己的二维码之后就会收到一个破解出的二维码网址：</p>
+<p><img src="img/1a9a30251a2e664daf84d4423bafa9a9.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/M9sNbRn4QouWnYx0Kb1cAHYSn8c/"/></p>
+<h3>第二步：</h3>
+<p>之后打开 https://qrcode.antfu.me/ 按照我的常用配置生成新的二维码</p>
+<p><img src="img/28d411bad38006d9f3f796ee9923cf63.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/OoDobtyggo37NuxQnWicNmPDnPf/"/></p>
+<h3> 第三步：模型的准备</h3>
+<h4>打开 Stable Diffusion 模型我选的是麦橘 V6</h4>
+<p><img src="img/a6470da1140ff3dba58a8ff6e4e705db.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/YYZGbKO7noL8oIxwVgVctH45nOc/"/></p>
+<p>除主模型外，还需要以下两个 controlnet 模型</p>
+<p>CN Brightness:https://huggingface.co/ViscoseBean/control_v1p_sd15_brightness/tree/main</p>
+<p>CN QRMonster:https://huggingface.co/monster-labs/control_v1p_sd15_qrcode_monster/tree/main</p>
+<p>两个 CN 模型放置于 SD 主目录 /extensions\sd-webui-controlnet\models 文件夹下。记得 ckpt/safetensor 文件和 yaml 文件都要下！</p>
+<h3>第四步：绘制</h3>
+<p>建议从最简单的正向和反向提示词起手，能顺利绘制之后再加更多内容：</p>
+<p>正向：（photographic equipment），3d， Knolling，masterpiece， The best quality， ultra-high definition，extreme detail，8k，</p>
+<p>反向：pale skin，（worst quality， low quality， normal quality:1.4），（inaccurate limb:1.2），white background，simple</p>
+<p><img src="img/5dce9de8e600347cb69882ca2227c95c.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/MOcGbrqD0oPMqExnwkLcAaWsn7f/"/></p>
+<h3>第五步：</h3>
+<p>启用 Controlnet 两层控制，一层为 QRMonster，一层为 Brightness</p>
+<p><img src="img/6396f851150187dd342c0f1ac837a548.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/HZ1gbNOb5onD6OxiLEhcibidnsc/"/></p>
+<p>权重控制我们拉到 1.4 经过多次测试，太高艺术性降低，太低扫不出来！！！！！</p>
+<p>如果你期望图像更加“艺术化”，可以将 CN 的干预控制缩短，比如这里将 Ending 调整为 70%时停止干预。</p>
+<p><img src="img/a859968e4061f33ed0b4d0a2d3e7a455.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/SMtybiLlOo6FwZxlitgc5SGknuf/"/></p>
+<p>第二层 CN 使用 brightness 模型，这个模型会使二维码可识别部分和边界更加明显，增加可扫描性。但这会降低“艺术性”，</p>
+<p>所以只在绘制中间插入干预时间，我们选择 60% - 80% 中段干预。</p>
+<h3>第六步：点击生成</h3>
+<p>测试生成的二维码图片能否扫描，如果做了 10 张还是不能扫描跳回到二维码制作界面，检查是否参数正确。</p>
+<p>当然如果你只是想美化一下自己的二维码，也有现成的小程序，可以付费制作，但经过实测小程序做的 不能规避违规问题，像这样</p>
+<h1>让 AI 运营帮你写爆款短视频文案：ChatGPT 生成爆款文案/标题</h1>
+<p>在星球发现大家想用 AI 去制作爆款三秒或者标题，今天我就以标题为例，给大家分享下，如何用 GPT 来进行爆款内容生成</p>
+<h2>登录你的 GPT 或者 claude</h2>
+<p>如果大家没用过这些生成式 AI 软件也不会魔法上网，可以用小伙伴搭建的 gpt.pcbso.com 来免费试用。</p>
+<p>Prompt:</p>
+<p>你是一名非常专业的电商运营，现在需要你根据我给的爆款短视频标题，来帮我改写出更多的标题，请注意有以下几个需要注意的：</p>
+<p>1.不能有绝对化词语</p>
+<p>2.要吸引人，让读者看完标题 想了解更多内容</p>
+<p>3.每次生成 20 个让我选择，不要有其他的解释</p>
+<p>4.我的产品是 XXX，结合我的产品来创作</p>
+
+<p>爆款参考：</p>
+<p>1."新婚之夜，34 岁老公突然提出不寻常的要求，我泪流满面，却瞒着所有人"</p>
+<p>2."我 26 岁，大学教授悄然约我晚修，结果他的一句话让我瞬间惊愕"</p>
+<p>3."我 38 岁，只身一人前往山区教书，不料晚上山里有个陌生男人敲我门"</p>
+<p>4."我的丈夫去外地打工，我被婆婆强迫做她一件无法接受的事情"</p>
+<p>5."40 岁离婚的我，租住在农村，房东老汉每天晚上都会来敲我的门"</p>
+<p>6."我 35 岁，每晚都要应付隔壁老王的夜袭，我的人生像是一部廉价的小说"</p>
+<p><img src="img/fe4446bba7ea8e418e3900d54d47affc.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Bn1PbLN6dokJDixozMnckPDonrd/"/></p>
+<p>这里的爆款内容和第四条要求里的 XXX 需要大家替换成自己的内容，每个项目对爆款定义不同，炒你同行最爆的几条就 OK</p>
+<p>最需要学习 ChatGPT 的是任何一名线上内容创作者，而一切围绕 GPT 的内容、教学实际上他们的目标人群是内容创作者而不是普通个人。</p>
+<p>其实我们可以把 GPT 当成一个 3 岁神童，他的原始知识库是很粗浅的。但架不住他智商高呀，几千字的内容他一下子就能学会了。所以，他一定会成为我们 24 小时在线，任劳任怨，而且一教就会一点就通的天才童工。</p>
+<h1>3.让 AI 帮你做短视频：洗稿+AI 剪辑</h1>
+<p>不适用所有类目，带货类的短视频还是不适合，口播，科普，EMO 风适用</p>
+<p><img src="img/5282374c00a303fd73e94fa90fe35734.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/PvOwb0A2Voy9wqx19GqcUtUxnDd/"/></p>
+<p>以上面这篇知乎爆文为例，我们先让 GPT 进行改写</p>
+<p>不难看出，经过 GPT 的休整，每一句都改了，但是整体内容还是我们想要的，达到了原创标准</p>
+<p><img src="img/5676d22c82f2464425bed72bed576357.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/LyEMb9CRZoEORyxuZc5cwxHXnUb/"/></p>
+<p>打开剪映更新到最新的版本，点击文字成片</p>
+<p><img src="img/b8a494a280d30db2b73cf79d5b3e9603.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/UsNZb9rAeoCxZ6xrFHUcaf5InR3/"/></p>
+<p>点击生成视频-再点击智能匹配素材</p>
+<p><img src="img/c54b67c797afa76a4d16cb4ea1328f58.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/KMzFb8URYo2TfDxWiQyc97FLneb/"/></p>
+<p><img src="img/43f1424b09910806a0de101bdf82d9b9.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/CbYhbTK4NoI4HhxQNhvc05NhnNc/"/></p>
+<p>三两分钟就做好了，我们想要的短视频，如果你觉得这种内容不会爆，请参考抖音：emo 乌托羊</p>
+<p>视频放到抖音上了，大家可以测试观看！</p>
+<h1>4.让 AI 帮你做直播背景图：AI 美工-MJ/SD</h1>
+<p>我们经常做无人/半无人直播，所以总要根据产品来搭建直播间，今天举个例子来给大家展示最近怎样用 MJ 来进行直播背景制作</p>
+<p>如果大家之前没有用过 MJ 可以用 #小程序：//闪电炼丹/GcBWjvOM8FPKduc 来试用，不需要魔法（微信小程序）</p>
+<p>今天我们搭建一个高端口红专柜促销现场，现在需要一个装修有档次的商场化妆品专柜，场景里不能有人出现，档次要高，口红要漏出来，竖版，清晰度高</p>
+<p>我们根据这些要求 进行 MJ 的关键词描写 prompt：China's high-end shopping mall， lipstick counter， luxurious decoration， bright light --no people --ar 9:16 --s 250 --v 5.2</p>
+<p>30 秒我们就得到了 4 张逼格，档次超高的场景图</p>
+<p><img src="img/4f945d494215a914c6d7981ff4ff5f45.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/OMzGb5CXloFsuixkazdc5x2jnHh/"/></p>
+<p>选出我认为最符合我的第一张放大给大家看一下</p>
+<p><img src="img/57144e1f2bd212391aebbde1cb06c6c6.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Gh4SbLOrIoXI9nxElcrc5gJZnAf/"/></p>
+<p>同理：我们可以获得服装卖场，生鲜，玩具，采茶基地等等任何你能用语言描绘出来的直播场景。</p>
+<p><img src="img/3b4ff2d4d7b80ffdb807b7eaf515fc72.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/ErQMbiBbCoy6D2xZmxvcGhwQnhc/"/></p>
+<p>OK，至此我们已经让 AI 完成了 4 项牠擅长在抖音或者其他电商新媒体平台上完成的内容，还有更多工作我会慢慢的和大家进行分享，欢迎大家和我进行链接，</p>
+<p>姓名：陈思成</p>
+<p>联系方式：你想，你细想... 第一块的内容里，留了好几个二维码。</p>
+<h1>5.彩蛋</h1>
+
+
+<p>觉得干的，看完记得给小弟点个赞～感谢！！！</p>
