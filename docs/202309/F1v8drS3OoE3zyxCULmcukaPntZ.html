@@ -1,0 +1,201 @@
+<h1>AiGC运营：小红书爆款概率预测分析（一）</h1>
+<blockquote>来源：<a href="https://txt6wm3b04b.feishu.cn/docx/F1v8drS3OoE3zyxCULmcukaPntZ">https://txt6wm3b04b.feishu.cn/docx/F1v8drS3OoE3zyxCULmcukaPntZ</a></blockquote>
+<p>我是越越，一位AiGC工具人，一位小红书全平台6w+粉的新生博主。</p>
+<p>我出生在世界小商品的海洋中，致力使用AiGC技术服务生活、工作。</p>
+<p>荣幸成为生财九月航海的 GPT+自媒体 大船的志愿者，一起下海弄脏手！</p>
+<p>AiGC运营自媒体平台的策略是可行、可落地、可提高效率的！</p>
+<p>但是AiGC作为辅助工具，更多的是人工参与，不断调教、不断摸索才能在Ai蓝海中深耕！</p>
+<p>本文提供思路和方向，该模型不够完善需要继续调教！</p>
+<h1>传统小红书运营SOP痛点</h1>
+<ol><li>获取运营数据成本过高，自身不具备数据分析能力。</li></ol>
+<ol><li>传统方法寻找对标账户，样本数据不够精准、科学。</li></ol>
+<ol><li>平台笔记风同质化加剧，内容缺乏创新体现差异化。</li></ol>
+<ol><li>笔记文案制作头痛不堪，主页装修千篇一律易违规。</li></ol>
+<h1>AiGC帮助你解决这些问题</h1>
+<ol><li>透视运营数据，调整运营策略。</li></ol>
+<ol><li>高效寻找对标，快速切换赛道。</li></ol>
+<ol><li>紧跟大盘趋势，抢流量创笔记。</li></ol>
+<ol><li>高效装修主页，节省时间财力。</li></ol>
+<h1>测试数据获取与初步处理</h1>
+<h2>明确需求点</h2>
+<p>根据自己的实际需求确定数据类型</p>
+<p>【关键词】：你需要进入赛道的关键词。</p>
+<p>【延伸关键词】：主关键词延伸的热词，可从搜索框下拉表中获取。</p>
+<p>【带货笔记】：与你发布笔记目的相关笔记，从事带货则需要寻找带货博主为对标。</p>
+<p>【商业笔记】：与平台合作的带货笔记，该笔记质量高通常可以对标。</p>
+<p>【低粉爆文】：低粉爆文笔记一般有“内容”上的优势可以借鉴，是寻找对标账户最快的途径之一。</p>
+<p>当约束条件越多时结果数越少，往往会导致样本数不够充分</p>
+<p>导致原本优秀的博主被遗漏因此可以适当从【带货笔记】、【商业笔记】处放宽条件。</p>
+<h2>使用八爪鱼获取数据</h2>
+<p>数据需要具备可靠、大量、实时的特点，可以通过从第三方数据平台获取公开的实时数据</p>
+<p>高效搜集数据，八爪鱼采集器免费使用、稳定可靠，无代码编写规则采集，适合小白操作</p>
+<p>具体软件使用方法参考官方教程：https://www.bazhuayu.com/tutorial8/hottutorial/gnd</p>
+<p><img src="img/4abf7c08758117f107dcc41e9248d374.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/J2X7b3INoolPTuxhceRcHVn8nIc/"/></p>
+<p>本文以某数据平台为例演示：此数据仅用于演示，请合法使用数据平台！！！</p>
+<p>用户可以通过首页中“拉新领会员”获取三天的个人版体验资格，如需更进一步分析数据建议购买企业版</p>
+<p><img src="img/ae4781cf2d9951800bc40639125de7d3.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/BB6Wbi3nxo3liTxSuzmcwwm7nze/"/></p>
+<p>采集的字段名与GPT分析时用的字段名相关，务必做到统一，我自己使用的采集字段名文件：</p>
+<p>采集笔记、博主数据，具体方法自己学习，我可以提供技术规则指导，生成的数据文件统一使用csv格式保存。</p>
+<p><img src="img/0ce952240843b7ac6319c2bafadaf248.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/RCwPbMeqvou14vxei7ycAeednjg/"/></p>
+<p><img src="img/5c5577cb03f9c32948a67e838aeb4075.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/SXt5bEUS7oV4gLxN6aFcY2ornif/"/></p>
+<p><img src="img/509604c095a6ab240794185ae67ebb38.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Gk5TbS14Jo3ER5x3BsCcFxalnhc/"/></p>
+<h2>获取平台大盘流量数据</h2>
+<p>使用近期话题、热词数据能很好说明平台流量趋势</p>
+<p>我们需要收集以下公开数据：选取最近四周的话题增量榜、热词增量榜、大盘流量榜进行导出。</p>
+<p><img src="img/16652111d2b80afbe3a3bca4c999e092.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/G236bXv7mo7wGyx5imeckyH2ntc/"/></p>
+<p><img src="img/999930bdfedaca1df0046081773b6f55.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/VxPxb7kWUokvzqxl18Nc3dO9nng/"/></p>
+<h2>数据文件整理归纳</h2>
+<p>为了后续高效进行数据分析因此需要将数据文件进行编号、归纳。</p>
+<ol><li>【话题】命名为【话题2.csv】、【话题3.csv】、【话题4.csv】、【话题5.csv】</li></ol>
+<ol><li>【热词】命名为【热词2.csv】、【热词3.csv】、【热词4.csv】、【热词5.csv】</li></ol>
+<p>【笔记博主数据集】命名为【原始数据A.csv】</p>
+<p>为了方便导入文件因此将建立单独的文件夹存放，文件夹名称应该简单明了。</p>
+<p><img src="img/dbcf42e59ddb0831cb37ef033354e07d.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/IF2fbe5sJoHjKnxVgDicS2uqnhe/"/></p>
+<h2>数据清洗</h2>
+<p>数据清洗是数据预处理的重要步骤，目的是识别并纠正（或删除）数据中的错误和不一致，以提高数据质量。</p>
+<p>”数据清洗“可以让GPT完成，也可手动使用Excel操作，教程参考数据清洗教程，及时保存原始文件、新文件。</p>
+<p><img src="img/5397afe5701dc526c0301c6a913a42e4.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Ebw1blA4zo5TWKx0EItcWKwUnWg/"/></p>
+<h1>ChatGPT介入</h1>
+<h2>ChatGPT平台初始设置</h2>
+<p>Code Inter preter基于GPT-4，帮助你做数学运算、绘制热力图、做数据分析等它生成的内容质量会非常优秀。</p>
+<p>Chat GPT环境准备：</p>
+<p>神奇的魔法——开启GPT PLUS模式——选择Code Inter preter（代码解释器）——上传数据集</p>
+<p><img src="img/ce56b0c1453bc826f2535651f40c9aee.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/MXNFbTl6bojOEwxr60vces1Gnsd/"/></p>
+<h2>上传数据文件至ChatGPT平台</h2>
+<p>点击上传文件（最多十个文件，支持多数格式文件），一定要分步骤导入数据集：</p>
+<p><img src="img/661512c910f99229852cfceb38bef609.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/TX3rbyaqBoOgCWxxJ5lcIpBKn2d/"/></p>
+<p><img src="img/aa49dcf5220bd010343b49f2cc1717a4.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/ToW6bRez8o5QnNxIhVGchuVDnPI/"/></p>
+<h2>发送数据指令ChatGPT学习</h2>
+<p>向ChatGPT发送以下指令，学习数据集内容并进行反馈，接下来每一步都需要反馈。</p>
+<pre>背景：小红书平台上许多零基础的博主需要提升他们的运营质量。
+角色：一位资深数据分析师，专长小红书平台数据分析。
+任务：
+1. 加载并命名为【数据集A】的文件。
+2. 学习并理解该数据集的内容和结构。
+3. 完成学习后，回复“OK”以确认。
+要求：在整个过程中，请确保使用中文与用户进行交互。</pre>
+<p><img src="img/612347b6542d505f9baff3d997080fb6.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/H81lb5KdWoAJyExdEFFc5IgrnNf/"/></p>
+<p>按照上述步骤继续上传【话题】、【热词】数据集：</p>
+<pre>任务：学习多个文件的内容及其结构。
+步骤：
+1. 读取所有提供的文件，注意文件名中的数字，数字越小代表时间越早。
+2. 学习每个文件的列名定义和用途。
+3. 当接收到关键词【话题】，选择并理解【话题2】、【话题3】、【话题4】和【话题5】这四个文件。
+4. 当接收到关键词【热词】，选择并理解【热词2】、【热词3】、【热词4】和【热词5】这四个文件。
+5. 一直学习不用征求我的建议，学习完毕后只回复"OK"表示已经完成学习任务。</pre>
+<p><img src="img/c69085e7bc39eb5f574ee628fdd61492.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/CE9kb9lh6omfQWx6RI8cdujSnae/"/></p>
+<p>虽然数据集经过人工初步清洗，但是难免会出错，请放心GPT会自动处理。</p>
+<pre>任务：对【数据集A】进行数据清洗。
+步骤：
+加载【数据集A】。
+对【数据集A】中的数据进行格式转换，确保数据格式统一。
+在【数据集A】中，找到所有数值列中带有“w”的数据，将其转换为阿拉伯数字（例如，“3.5w”转换为35000）。
+在【数据集A】中，找到所有值为“--”的数据，将其替换为该列的数值平均值。
+数据清洗完成后，保存并下载【数据集A】。
+输出：回答“OK”并提供【数据集A】的下载链接。</pre>
+<p><img src="img/82ea32039114387489c0c7738ffa8bea.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/KVb4bLVJLoZanHxCUxLc3iSMnOn/"/></p>
+<p>GPT毕竟是机器人，所以接下来的每步都需要GPT进行反馈检查。</p>
+<p>下载新的【数据集A】进行备份和检查，防止数据清洗错误。</p>
+<h2>ChatGPT进行列名定义学习</h2>
+<p>ChatGPT需要学习数据集中的字段定义</p>
+<p>上传“列名定义文件”，列名定义文件指的是各数据列列名的定义与应用文档，可让GPT自动生成。</p>
+<p>列名定义文件：</p>
+<p><img src="img/917cf381f390be0ba2fe0068cfdc4c84.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/RuSDbbu4OojRdhxoklCcsI72nel/"/></p>
+<pre>学习【列名定义】和【数据集A】中列名定义与用途。学习完毕后，只回复“OK”，无需过多解释。</pre>
+<p><img src="img/d92e64b4ab08c7f4a7998bb5fd60c9b3.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/PSTkbwHvFomDKlxZFZJcra9gnmd/"/></p>
+<p>检测Chat GPT学习情况，防止GPT学习错误，方便进一步纠错：</p>
+<pre>解释【点赞量】的含义</pre>
+<p><img src="img/654b063eda49c7595f43c663b3782b82.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/GWCOb2sykoHIfcxXYudcMkVenMh/"/></p>
+<p>如果回答提示未发现字段，则重新使用相同指令学习：</p>
+<p><img src="img/4567920eae8d714af3579a39aca8ba7c.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/AXcGb5pGxooF2ox8wzJchiGlnPg/"/></p>
+<h2>Chat GPT字段分类学习</h2>
+<p>向Chat GPT明确数据集中的内容分类，以便后续进行数据分类分析：【数据集A】=爆文笔记数据+博主数据</p>
+<pre>请你学习【数据集A】中以下字段：
+【笔记标题】、【笔记类型】、【笔记内容】、 
+【笔记发布时间】、【预估阅读量 】、【互动量】、
+【点赞量】、【收藏量】、【评论量】、【 分享量】
+为【爆文笔记详细信息】，其余字段为【博主详细信息】，学习完毕只回答“OK”。</pre>
+<p><img src="img/469a3e214c33d1fbfa5f1f20011daa08.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/LJlUbtL2GoyHsax5OdFcVPwingg/"/></p>
+<p>检测Chat GPT学习情况，防止GPT学习错误，方便进一步纠错：</p>
+<pre>【分享量】是属于哪个信息？</pre>
+<p><img src="img/340f9f0a4881088c3aa27c8382dac917.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/HmCYbKBxuonB29xy67bcdFY8nyc/"/></p>
+<h2>ChatGPT学习数据分析类型</h2>
+<p>接下来详细数据分析，需要向GPT明确能够使用这些数据集能进行哪些分析？</p>
+<pre>请你基于【数据集A】、【话题】、【热词】数据集学习、分析，详细介绍你能够完成的数据分析类型？
+同时输出简单易懂的GPT指令。</pre>
+<p><img src="img/10a85d42d1781312ecb5daff2af4743e.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/WxnWbK9DHowIq2xSF84cqa4pnuf/"/></p>
+<pre>1. 使用Descriptive Statistics对【数据集A】、【话题】、【热词】等数据集进行描述性统计分析，获取数据的总体分布、中位数、均值、方差等关键指标。
+2. 应用Time Series Analysis对小红书平台的发展趋势进行分析，识别潜在的季节性、趋势和周期性。
+3. 进行Correlation Analysis分析不同数据之间的相关性，如笔记的点赞量与评论量之间的关系。
+4. 使用热词关联分类分析，识别小红书平台上的热门话题和关键词。
+5. 使用Cluster Analysis对博主进行聚类，识别不同的博主类型和其特点。
+6. 使用Predictive Analysis预测小红书平台的未来发展，如预测未来一个月的用户增长。
+7. 应用随机森林等人工智能算法，预测哪些笔记或博主有更高的潜在发展潜力。
+8. 根据上述分析，为小红书初级博主提供切实可行的运营策略建议，帮助他们调整和优化运营方向。</pre>
+<p>ChatGPT能对数据集进行许多项目分析，我们可以通过日常的提问充分挖掘潜能。</p>
+<p><img src="img/39994dc75fad063a6910af52356e10df.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/NBXwb9fNQozu9ixzSKGcsR1intc/"/></p>
+<p><img src="img/244c00b3a6075f83bf3f6461b588edc4.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Gw55b0UI9oisuSxGQHVch6lQnqh/"/></p>
+<h2>Chat GPT深层次模型训练</h2>
+<p>接下来使用数据数据进行评价：</p>
+<pre>任务：制定“综合评分制”规则，从数据层面评估笔记、博主的质量与发展潜力。
+步骤：
+1. 加载【数据集A】、【话题】、【热词】数据集。
+2. 使用"特征重要性"方法，选择特征和目标变量，并处理非数值数据，保留笔记标题、笔记类型、博主名称、达人等级、笔记内容、红薯号、达人属性、红薯等级等列原始数据。
+3. 使用随机森林模型进行训练。
+4. 根据特征重要性分析，输出每个特征的权重。
+5. 使用【爆文笔记详细信息】数据，计算笔记得分。
+6. 结合【博主详细信息】和质量指数、历史数据变化，计算每位博主的得分。考虑合并近7天、近30天、近90天的点赞、收藏、评论和分享数据为“近期互动数据”。
+7. 结合【话题】和【热词】数据，分析大盘趋势和外部流量影响。
+8. 结合笔记得分、博主得分和大盘趋势，计算综合评分。对于多次出现的博主，取平均得分。
+9. 对于相同综合评分的笔记或博主，使用近7天互动数据、质量指数、近30天和近90天互动数据进行排序。
+10. 使用统计方法和随机森林进一步分析数据，计算未来爆款的概率（如果笔记的【预估阅读量】高于90%分位数，，则认为它是“爆款”），预测未来可能成为爆款的笔记或博主。
+11. 将得分标准化为100分制，并使用合适的算法增大分值差异度。
+输出：综合评分和爆款概率（百分比表示）。</pre>
+<p>指令还需要深入优化，尤其是“爆款”的参数定义。</p>
+<p>该指令的回答流程有点漫长不过你不用担心，GPT会自动根据数据情况自动调整</p>
+<p><img src="img/aa447259d3b4e34c0f6e00cdcbbeee0c.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/FZQ9b1kTdo7HP7xUYd0c5tzUnSd/"/></p>
+<p><img src="img/cf04415bfde0e6caca968bc88e286e51.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Gt1MbgrzlofuOmxjLG6cawgSnre/"/></p>
+<p><img src="img/871d4954522f9a0f94a8fbd503c2269a.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Rg9obVts6oMPvgxirvJcZ4fhnxd/"/></p>
+<p><img src="img/b2c80449102bd5849dcda0e5f73b3243.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/DWIqb2ZcKoWwNOxoMJYcBQEmnub/"/></p>
+<p><img src="img/678fef08acdebd834c485c30197d0be2.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Sp9CbGrJ5oiC2Px6DPmchX4un9e/"/></p>
+<p><img src="img/6906d4f4323eb72ec736ac2e7a93d644.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/N2X9beLu6owPCnxpWThclO46n6J/"/></p>
+<p><img src="img/87c434f05aee95cb4574645a77d8657b.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Ggmlbl3P5oivDwxsXmAcJlmvnRf/"/></p>
+<p><img src="img/3de5c9a267ef98af55220488b9f539d8.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/V3q9bh8Nuo0GdoxsET6c0Kennze/"/></p>
+<p>GPT拥有强大的纠错功能，在计算过程中遇到错误会自动纠正和调试，这个你不必过于担心。</p>
+<p><img src="img/c66a810b37052d7840d583ff44832803.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/V76AbiTWWo6sXNx6WKZc1QXrnsb/"/></p>
+<p>Chat GPT计算综合评分后，我们应该向GPT提问我们的具体需求：</p>
+<pre>背景：综合评分越高，笔记和博主的质量及发展潜力越大，更值得用户关注和学习。
+角色：资深数据分析师，专长小红书平台数据分析。
+任务：根据综合评分制，推荐对标账户。
+步骤：
+1. 加载【数据集A】、【话题】、【热词】数据集。
+2. 筛选数据集，选择笔记类型为“【图文】”，粉丝数少于【1000】人。
+3. 根据综合评分，对筛选后的数据进行降序排序。
+4. 选择综合评分最高的前【5】个账户。
+5. 按照以下格式输出：
+【博主名】：
+【红薯号】：
+【笔记类型】：
+【粉丝总数】：
+【质量指数】：
+【水平段】：
+【差异化综合评分】：
+【优化建议】</pre>
+<p><img src="img/80d2c8ce51ea1a4431cabb8fe209b161.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/QspIbGX75ouDsXxW8hxcfEFynvd/"/></p>
+<p>必看！！！！</p>
+<p>以上分析仅从数据层面进行，选择对标账户需要结合笔记内容、图片设置、主页装修风格而定，因此我们往往通过数据选择20个准“对标账号”进行筛选，进入博主主页分析风格、分析垂直度、分析评论确定最终的对标账户。</p>
+<h2>Chat GPT模型固化应用</h2>
+<p>除了以上内容，你需要向GPT明确“请记住以上所有内容”，告诉GPT当你发送某个关键词后请找出对应的数据。</p>
+<pre>请你请记住以上所有内容，当接收到【博主名称】、【变化趋势】等信息时请输出对应数据分析。</pre>
+<h2>Chat GPT趋势预测</h2>
+<p>基于以上的Chat GPT模型可以进行笔记、博主未来发展趋势预测，模型基于笔记、博主的多维数据进行分析，那就要求数据样本数量足够大、质量足够优秀、字段足够典型。</p>
+<p>该模型中能够给予用户初步互动量预测，本文不再详细论述具体的预测，感兴趣的圈友可以链接我一起研究。</p>
+<h2>Chat GPT成果检验</h2>
+<p>接下来我会根据综合得分计算出来的对标账户继续跟踪分析，反馈在该文档中。</p>
+
+<p>大家会疑惑GPT分析出来的东西准确吗？</p>
+<p>模型的精确度可能受到数据质量、特征工程、模型选择与参数、训练数据量、数据偏见、模型训练方法、评估策略、时间和空间变异、外部因素以及数据泄露等多种因素的影响，其中数据的质量和代表性、特征的选择与处理以及模型的复杂度与参数设置尤为关键。</p>
+<p>因此ChatGPT需要不断调教，优化数据采集处理。</p>
+<p>从这个案例分析来看GPT除了用于文案书写、办公用途，还可以使用于深层次数据分析。</p>
+<p>我打算做一系列的GPT生活化主题，为期100天，尝试在AiGC蓝海里挖掘宝藏。</p>
+<p>你们的AiGC小能手越越！</p>
