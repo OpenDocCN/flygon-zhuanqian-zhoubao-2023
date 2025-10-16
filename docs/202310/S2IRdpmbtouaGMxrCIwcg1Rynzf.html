@@ -1,0 +1,82 @@
+<h1>gpt+影刀rpa,小白不用一行代码就可以爬虫/自动化</h1>
+<blockquote>来源：<a href="https://bc8fd5oefm.feishu.cn/docx/S2IRdpmbtouaGMxrCIwcg1Rynzf">https://bc8fd5oefm.feishu.cn/docx/S2IRdpmbtouaGMxrCIwcg1Rynzf</a></blockquote>
+<h2>简介</h2>
+<p>在上次发布第一弹之后https://t.zsxq.com/12k6dgddP</p>
+<p>有幸得到了亦任大大的加精，同时应圈友的另一困惑，苹果设备安装python配置环境过于复杂，问能不能出一期不用python的爬虫</p>
+
+<p>这就必须要提及到圈友们最常用的rpa了，只需要搭积木式的搭建好整个过程，不需要任何专业知识，就可以完成爬虫</p>
+<p>我也是第一次使用影刀rpa，也是在探索中完成了该文章，如果有所启发，感谢圈友的点赞</p>
+
+<p>同时为了让这个过程更加容易理解，我同步录制了一个视频并上传了bilibili</p>
+<p>不过建议先看一遍文字教程（更加详细），然后再看视频版</p>
+
+<p>bilibili视频链接如下：</p>
+<p>https://b23.tv/QHCCCQH</p>
+
+<p>声明：本案例最终可以实现爬取几乎大部分平台，如下案例只是作为参考，换了网站只需要更换提示词，但也仅作参考使用，请勿用于非法用途</p>
+<h2>1，获取操作rpa步骤</h2>
+<p>第一步问gpt，提示词如下：</p>
+<pre>我是一个代码小白，完全零基础，也不会/想安装python等环境，但是我想使用爬虫爬取weixin.sogou.com的微信文章，我应该如何使用影刀rpa从https://weixin.sogou.com/weixin?ie=utf8&amp;s_from=input&amp;_sug_=y&amp;_sug_type_=&amp;type=2&amp;query=aigc&amp;w=01019900&amp;sut=1028&amp;sst0=1695214126073&amp;lkt=1%2C1695214125965%2C1695214125965获取到标题，时间，来源等数据呢</pre>
+<p>得到操作步骤如下：</p>
+<p><img src="img/a87d3256fc941ce9044634b4dccd416b.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/C9jzbs9NVoTpR2xMilTcosWNn9e/"/></p>
+
+<h2>2，根据步骤逐步操作</h2>
+<p>建议可以安装一个snipaste，可以直接把截图贴到屏幕上，这样我们可以看着步骤来</p>
+
+<h3>1，安装影刀rpa</h3>
+<h3>2，打开影刀rpa</h3>
+<p>先注册，登录，进入主页面，创建新任务</p>
+<p><img src="img/2fd3cf961c2f57e8d00da8c0218fe0a3.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Y7IvbgkRqo5ZqBxd6oScRxywnHg/"/></p>
+<h3>3，打开浏览器动作</h3>
+<p>一开始我就直接点击右上方的浏览器，后面发现没用之后，原来是在左边有一个添加指令</p>
+<p>搜索打开，有个打开网页，直接拖到右边</p>
+<p><img src="img/13f995655bee2baac61ed835cc823e85.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/D3emb1zDHoKs2BxWeMvcKBz9npb/"/></p>
+<p>然后让你设置参数，咋们把要爬取的链接放在这里，浏览器我就默认影刀浏览器了，因为其他浏览器好像有额外设置，大家根据自己需要</p>
+<p><img src="img/c6fa16c01df309a73fd81c5cbf5963d5.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/JMkvblBxwoAtQ3xshUEc23Y1nyf/"/></p>
+<h3>4，设置等待时间</h3>
+<p>直接左边搜索等待，第一个拖过来，设置3s差不多就行，如果网页加载较慢，可以调整</p>
+<p><img src="img/c3233b107a309ec0cbb681eb199677aa.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/HQddb7UbqogJD3xvAzdce6sGns8/"/></p>
+<p><img src="img/37e71d13caf390936df08de61085dcb3.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/HatJbRQMBolOLMxJ1AAcG9jVnhc/"/></p>
+
+<h3>5，获取元素内容</h3>
+<p>我在左边没有搜索到，后来发现在上面有个数据抓取，不过他会打开默认的浏览器</p>
+<p><img src="img/8ee61231a349c63af0fff27d2620168a.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/WI1cbcIlWo7M1FxdgGacgnGQnJk/"/></p>
+<p>我们先点击右边的运行，打开一个窗口，我们不关闭，直接切回来，再点击数据抓取默认窗口在右边，点击开始抓取，按住ctrl点击标题，发现它默认把内部元素都给选中了，真可谓意外之喜</p>
+
+<p><img src="img/0f4729c848125b3ad7555c49312b019b.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/WvR5bFPX4om8cFxRIzzcYOgnnab/"/></p>
+<p>点击完成，但是我们要爬肯定是爬取多页啊，勾选爬取多页，再，勾选其下方的去元素库选择，捕获新元素，翻到最下面，按住ctrl，点击下一页，他就会识别到下一页按钮，然后设置一下爬取页数，设置一下数据保存到哪儿，该获取数流程就完成了</p>
+<p><img src="img/345f5342c1c5b4cc574021f4a8824f18.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/IRhDbu0Sgo3ss1xfVj0cZqWxnpc/"/></p>
+<p><img src="img/1aa35ecdc827ae741ead986adc5dae1e.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Q9t0bYYQNombPfxf9eUc7gzjn4f/"/></p>
+<p>记得拖动一下等待的位置，它默认弹了下去</p>
+<h3>6，保存数据</h3>
+<p>我一开始直接搜索保存，找到保存excel，然后拖到右边，发现缺少了一个excel对象，我寻思默认来一个呗，结果没有，它报错（左边有一个小叉叉），我于是点击了右上方的使用说明，发现需要先启动ecel</p>
+
+<p><img src="img/99163c9abb3255f1ae4f01b5f231d0eb.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/JLmEbX6DFohEZHxe8YdcvRq2nQh/"/></p>
+<p><img src="img/3effbc9908734f0f43aed0b255068561.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/QGIJby2jpoNs1vx3TJZcalVgnph/"/></p>
+<p><img src="img/327e9397a358744ed004171f8b457bdb.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/QDjObBKFbo7r8PxhJV9cN08Enpc/"/></p>
+<p>搜索启动，有一个打开/新建excel，然后配置内容【新建excel，预览一个地址（我选择桌面），设置保存对象】</p>
+
+<p><img src="img/24e569d4c6a8fabe4529c65a1d948824.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/DCFebRKnIoI1ukx3pttcpRHCnuh/"/></p>
+<p><img src="img/f9e5eed6bf59f5ba1873620dd059b760.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/VaJabNdE3oK2ayxxSUDcEAFAnFe/"/></p>
+<p><img src="img/1b6faa0cc0c3b2db4624ccb0d0a53c08.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/A85ubeU6BofbUQxbU8Nco2I4ncr/"/></p>
+<p>这个时候再把保存excel拖过去，他默认设置咋们之前设定的内容，勾选保存后关闭</p>
+<p><img src="img/a136bea2747437594f0e48b4901b6632.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/Ci2abauxdo4LAJxWfezcWzIqncc/"/></p>
+<p>最后一步，将数据写入表格，搜索写入，配置行号1，列名A，写入内容选择我们再批量数据抓取的部分保存的变量</p>
+
+<p><img src="img/948990665e797d91ac955c9f64c6f529.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/ZqNkbNi5roAS5tx8cTDc8CLKnxc/"/></p>
+<p><img src="img/5492dee3e151d486f1a65cf578caaccd.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/KFchbwDuGoJQBJxVnIjcCErFnLf/"/></p>
+<p><img src="img/07f85c2e19223381a73f2d5caa8dca0c.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/AEh4bCvc9oc9fXxxhTucA3lLnpc/"/></p>
+
+<p>这样整个流程就完成了</p>
+<p><img src="img/c842a6596e31694ae7839ebd81e2fa07.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/G0KlbT7QsoqM81xDtiocJeVgntg/"/></p>
+
+<h3>7，执行任务</h3>
+<p>这一步发现，保存excel是多余的</p>
+<p><img src="img/97b5f0a94551eac275d6fce1029de2df.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/I7Shb2VXyoKynDxExCLc9QIonef/"/></p>
+
+
+
+<h2>3，获取到预期结果</h2>
+<p>去除最后一步，直接运行，拿到结果，在设置的excel文件中拿到了期待的结果</p>
+
+<p><img src="img/7ca39062477c468fb381d032fa5e65b1.png" data-original-src="https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/v2/cover/SD3bbF29moVivLxuxrsccTganrg/"/></p>
